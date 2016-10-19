@@ -1,0 +1,2752 @@
+fileFormatVersion: 2
+guid: 96342f3372e68cc4a9f651379e504dd2
+timeCreated: 1475504860
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zerox4sheet_0
+    21300002: zerox4sheet_1
+    21300004: zerox4sheet_2
+    21300006: zerox4sheet_3
+    21300008: zerox4sheet_4
+    21300010: zerox4sheet_5
+    21300012: zerox4sheet_6
+    21300014: zerox4sheet_7
+    21300016: zerox4sheet_8
+    21300018: zerox4sheet_9
+    21300020: zerox4sheet_10
+    21300022: zerox4sheet_11
+    21300024: zerox4sheet_12
+    21300026: zerox4sheet_13
+    21300028: zerox4sheet_14
+    21300030: zerox4sheet_15
+    21300032: zerox4sheet_16
+    21300034: zerox4sheet_17
+    21300036: zerox4sheet_18
+    21300038: zerox4sheet_19
+    21300040: zerox4sheet_20
+    21300042: zerox4sheet_21
+    21300044: zerox4sheet_22
+    21300046: zerox4sheet_23
+    21300048: zerox4sheet_24
+    21300050: zerox4sheet_25
+    21300052: zerox4sheet_26
+    21300054: zerox4sheet_27
+    21300056: zerox4sheet_28
+    21300058: zerox4sheet_29
+    21300060: zerox4sheet_30
+    21300062: zerox4sheet_31
+    21300064: zerox4sheet_32
+    21300066: zerox4sheet_33
+    21300068: zerox4sheet_34
+    21300070: zerox4sheet_35
+    21300072: zerox4sheet_36
+    21300074: zerox4sheet_37
+    21300076: zerox4sheet_38
+    21300078: zerox4sheet_39
+    21300080: zerox4sheet_40
+    21300082: zerox4sheet_41
+    21300084: zerox4sheet_42
+    21300086: zerox4sheet_43
+    21300088: zerox4sheet_44
+    21300090: zerox4sheet_45
+    21300092: zerox4sheet_46
+    21300094: zerox4sheet_47
+    21300096: zerox4sheet_48
+    21300098: zerox4sheet_49
+    21300100: zerox4sheet_50
+    21300102: zerox4sheet_51
+    21300104: zerox4sheet_52
+    21300106: zerox4sheet_53
+    21300108: zerox4sheet_54
+    21300110: zerox4sheet_55
+    21300112: zerox4sheet_56
+    21300114: zerox4sheet_57
+    21300116: zerox4sheet_58
+    21300118: zerox4sheet_59
+    21300120: zerox4sheet_60
+    21300122: zerox4sheet_61
+    21300124: zerox4sheet_62
+    21300126: zerox4sheet_63
+    21300128: zerox4sheet_64
+    21300130: zerox4sheet_65
+    21300132: zerox4sheet_66
+    21300134: zerox4sheet_67
+    21300136: zerox4sheet_68
+    21300138: zerox4sheet_69
+    21300140: zerox4sheet_70
+    21300142: zerox4sheet_71
+    21300144: zerox4sheet_72
+    21300146: zerox4sheet_73
+    21300148: zerox4sheet_74
+    21300150: zerox4sheet_75
+    21300152: zerox4sheet_76
+    21300154: zerox4sheet_77
+    21300156: zerox4sheet_78
+    21300158: zerox4sheet_79
+    21300160: zerox4sheet_80
+    21300162: zerox4sheet_81
+    21300164: zerox4sheet_82
+    21300166: zerox4sheet_83
+    21300168: zerox4sheet_84
+    21300170: zerox4sheet_85
+    21300172: zerox4sheet_86
+    21300174: zerox4sheet_87
+    21300176: zerox4sheet_88
+    21300178: zerox4sheet_89
+    21300180: zerox4sheet_90
+    21300182: zerox4sheet_91
+    21300184: zerox4sheet_92
+    21300186: zerox4sheet_93
+    21300188: zerox4sheet_94
+    21300190: zerox4sheet_95
+    21300192: zerox4sheet_96
+    21300194: zerox4sheet_97
+    21300196: zerox4sheet_98
+    21300198: zerox4sheet_99
+    21300200: zerox4sheet_100
+    21300202: zerox4sheet_101
+    21300204: zerox4sheet_102
+    21300206: zerox4sheet_103
+    21300208: zerox4sheet_104
+    21300210: zerox4sheet_105
+    21300212: zerox4sheet_106
+    21300214: zerox4sheet_107
+    21300216: zerox4sheet_108
+    21300218: zerox4sheet_109
+    21300220: zerox4sheet_110
+    21300222: zerox4sheet_111
+    21300224: zerox4sheet_112
+    21300226: zerox4sheet_113
+    21300228: zerox4sheet_114
+    21300230: zerox4sheet_115
+    21300232: zerox4sheet_116
+    21300234: zerox4sheet_117
+    21300236: zerox4sheet_118
+    21300238: zerox4sheet_119
+    21300240: zerox4sheet_120
+    21300242: zerox4sheet_121
+    21300244: zerox4sheet_122
+    21300246: zerox4sheet_123
+    21300248: zerox4sheet_124
+    21300250: zerox4sheet_125
+    21300252: zerox4sheet_126
+    21300254: zerox4sheet_127
+    21300256: zerox4sheet_128
+    21300258: zerox4sheet_129
+    21300260: zerox4sheet_130
+    21300262: zerox4sheet_131
+    21300264: zerox4sheet_132
+    21300266: zerox4sheet_133
+    21300268: zerox4sheet_134
+    21300270: zerox4sheet_135
+    21300272: zerox4sheet_136
+    21300274: zerox4sheet_137
+    21300276: zerox4sheet_138
+    21300278: zerox4sheet_139
+    21300280: zerox4sheet_140
+    21300282: zerox4sheet_141
+    21300284: zerox4sheet_142
+    21300286: zerox4sheet_143
+    21300288: zerox4sheet_144
+    21300290: zerox4sheet_145
+    21300292: zerox4sheet_146
+    21300294: zerox4sheet_147
+    21300296: zerox4sheet_148
+    21300298: zerox4sheet_149
+    21300300: zerox4sheet_150
+    21300302: zerox4sheet_151
+    21300304: zerox4sheet_152
+    21300306: zerox4sheet_153
+    21300308: zerox4sheet_154
+    21300310: zerox4sheet_155
+    21300312: zerox4sheet_156
+    21300314: zerox4sheet_157
+    21300316: zerox4sheet_158
+    21300318: zerox4sheet_159
+    21300320: zerox4sheet_160
+    21300322: zerox4sheet_161
+    21300324: zerox4sheet_162
+    21300326: zerox4sheet_163
+    21300328: zerox4sheet_164
+    21300330: zerox4sheet_165
+    21300332: zerox4sheet_166
+    21300334: zerox4sheet_167
+    21300336: zerox4sheet_168
+    21300338: zerox4sheet_169
+    21300340: zerox4sheet_170
+    21300342: zerox4sheet_171
+    21300344: zerox4sheet_172
+    21300346: zerox4sheet_173
+    21300348: zerox4sheet_174
+    21300350: zerox4sheet_175
+    21300352: zerox4sheet_176
+    21300354: zerox4sheet_177
+    21300356: zerox4sheet_178
+    21300358: zerox4sheet_179
+    21300360: zerox4sheet_180
+    21300362: zerox4sheet_181
+    21300364: zerox4sheet_182
+    21300366: zerox4sheet_183
+    21300368: zerox4sheet_184
+    21300370: zerox4sheet_185
+    21300372: zerox4sheet_186
+    21300374: zerox4sheet_187
+    21300376: zerox4sheet_188
+    21300378: zerox4sheet_189
+    21300380: zerox4sheet_190
+    21300382: zerox4sheet_191
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -3
+    compressionQuality: 100
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zerox4sheet_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1525
+        width: 6
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1525
+        width: 6
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1516
+        width: 16
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1524
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1520
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1517
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_6
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1517
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_7
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1519
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_8
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1520
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_9
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1520
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_10
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1451
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1452
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_12
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1452
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_13
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1453
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_14
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1453
+        width: 43
+        height: 47
+      alignment: 9
+      pivot: {x: 0.51198846, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_15
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1453
+        width: 43
+        height: 47
+      alignment: 9
+      pivot: {x: 0.51, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_16
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1453
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.51, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_17
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1453
+        width: 43
+        height: 47
+      alignment: 9
+      pivot: {x: 0.51, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_18
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1453
+        width: 43
+        height: 47
+      alignment: 9
+      pivot: {x: 0.51, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_19
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1389
+        width: 39
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5836475, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1383
+        width: 43
+        height: 57
+      alignment: 9
+      pivot: {x: 0.56069344, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_21
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1382
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.65173304, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_22
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1382
+        width: 44
+        height: 56
+      alignment: 9
+      pivot: {x: 0.63345546, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_23
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1382
+        width: 43
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5606931, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_24
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1379
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5606931, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_25
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1382
+        width: 39
+        height: 52
+      alignment: 9
+      pivot: {x: 0.61710614, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_26
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1374
+        width: 40
+        height: 55
+      alignment: 9
+      pivot: {x: 0.6794243, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_27
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1305
+        width: 36
+        height: 64
+      alignment: 9
+      pivot: {x: 0.63994855, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_28
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1296
+        width: 35
+        height: 77
+      alignment: 9
+      pivot: {x: 0.67273605, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_29
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1294
+        width: 35
+        height: 79
+      alignment: 9
+      pivot: {x: 0.68713117, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_30
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1294
+        width: 37
+        height: 80
+      alignment: 9
+      pivot: {x: 0.63616616, y: 0.558}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_31
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1296
+        width: 40
+        height: 59
+      alignment: 9
+      pivot: {x: 0.55038226, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_32
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1297
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.54798234, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_33
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1297
+        width: 43
+        height: 47
+      alignment: 9
+      pivot: {x: 0.4414169, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_34
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1294
+        width: 43
+        height: 47
+      alignment: 9
+      pivot: {x: 0.4297003, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1235
+        width: 36
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5279897, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_36
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1235
+        width: 38
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5795497, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_37
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1237
+        width: 51
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5987869, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_38
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1235
+        width: 50
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6007623, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1235
+        width: 48
+        height: 46
+      alignment: 9
+      pivot: {x: 0.61545753, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_40
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1235
+        width: 46
+        height: 47
+      alignment: 9
+      pivot: {x: 0.6642874, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_41
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1236
+        width: 44
+        height: 48
+      alignment: 9
+      pivot: {x: 0.763357, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_42
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1235
+        width: 40
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6889305, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_43
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1172
+        width: 45
+        height: 47
+      alignment: 9
+      pivot: {x: 0.70152557, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_44
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1172
+        width: 49
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6645106, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_45
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1171
+        width: 45
+        height: 46
+      alignment: 9
+      pivot: {x: 0.63435024, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_46
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1171
+        width: 50
+        height: 47
+      alignment: 9
+      pivot: {x: 0.6410675, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_47
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1171
+        width: 46
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7190492, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_48
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1171
+        width: 43
+        height: 49
+      alignment: 9
+      pivot: {x: 0.7811982, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_49
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1170
+        width: 42
+        height: 49
+      alignment: 9
+      pivot: {x: 0.75250244, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_50
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1171
+        width: 45
+        height: 48
+      alignment: 9
+      pivot: {x: 0.71086156, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_51
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1102
+        width: 39
+        height: 46
+      alignment: 9
+      pivot: {x: 0.44275275, y: 0.69414485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_52
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1101
+        width: 39
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5858714, y: 0.6976827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_53
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1101
+        width: 49
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5911286, y: 0.52658033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_54
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1101
+        width: 78
+        height: 63
+      alignment: 9
+      pivot: {x: 0.41412902, y: 0.5442999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_55
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1101
+        width: 87
+        height: 60
+      alignment: 9
+      pivot: {x: 0.395016, y: 0.55277306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_56
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1101
+        width: 91
+        height: 48
+      alignment: 9
+      pivot: {x: 0.4263963, y: 0.70931244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_57
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1100
+        width: 83
+        height: 49
+      alignment: 9
+      pivot: {x: 0.39240238, y: 0.70504075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_58
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1045
+        width: 70
+        height: 45
+      alignment: 9
+      pivot: {x: 0.42823634, y: 0.73566896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_59
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1045
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.42388707, y: 0.76047635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_60
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1044
+        width: 59
+        height: 45
+      alignment: 9
+      pivot: {x: 0.48107937, y: 0.76047635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_61
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1045
+        width: 52
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5214673, y: 0.76047635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_62
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1045
+        width: 45
+        height: 45
+      alignment: 9
+      pivot: {x: 0.62403566, y: 0.748074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_63
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1045
+        width: 49
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5227823, y: 0.71086156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_64
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1044
+        width: 47
+        height: 46
+      alignment: 9
+      pivot: {x: 0.464373, y: 0.718413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_65
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1044
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.46194318, y: 0.718413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_66
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1044
+        width: 41
+        height: 46
+      alignment: 9
+      pivot: {x: 0.40470478, y: 0.7305457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_67
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1044
+        width: 43
+        height: 46
+      alignment: 9
+      pivot: {x: 0.4221177, y: 0.7305457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_68
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 993
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5966049, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_69
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 993
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.440801, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_70
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 993
+        width: 83
+        height: 45
+      alignment: 9
+      pivot: {x: 0.29825455, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_71
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 993
+        width: 108
+        height: 46
+      alignment: 9
+      pivot: {x: 0.33978695, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_72
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 938
+        width: 66
+        height: 46
+      alignment: 9
+      pivot: {x: 0.63865405, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_73
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 938
+        width: 67
+        height: 46
+      alignment: 9
+      pivot: {x: 0.6621943, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_74
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 938
+        width: 73
+        height: 46
+      alignment: 9
+      pivot: {x: 0.57834905, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_75
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 938
+        width: 60
+        height: 46
+      alignment: 9
+      pivot: {x: 0.58579254, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_76
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 938
+        width: 53
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5539574, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_77
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 936
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.48756674, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_78
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 937
+        width: 43
+        height: 46
+      alignment: 9
+      pivot: {x: 0.4467958, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_79
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 865
+        width: 46
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5641257, y: 0.6478613}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_80
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 864
+        width: 47
+        height: 50
+      alignment: 9
+      pivot: {x: 0.68828374, y: 0.65628904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_81
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 864
+        width: 54
+        height: 59
+      alignment: 9
+      pivot: {x: 0.78873473, y: 0.52142745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_82
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 864
+        width: 96
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42976728, y: 0.42098904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_83
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 856
+        width: 103
+        height: 71
+      alignment: 9
+      pivot: {x: 0.38135478, y: 0.48219493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_84
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 855
+        width: 104
+        height: 66
+      alignment: 9
+      pivot: {x: 0.3743917, y: 0.5319251}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_85
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 788
+        width: 104
+        height: 70
+      alignment: 9
+      pivot: {x: 0.38654715, y: 0.49398106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_86
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 788
+        width: 72
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5409692, y: 0.5314486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_87
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 788
+        width: 58
+        height: 55
+      alignment: 9
+      pivot: {x: 0.6816364, y: 0.63791174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_88
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 792
+        width: 53
+        height: 43
+      alignment: 9
+      pivot: {x: 0.7544279, y: 0.6959995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_89
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 795
+        width: 51
+        height: 40
+      alignment: 9
+      pivot: {x: 0.7644061, y: 0.66855925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_90
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 796
+        width: 51
+        height: 39
+      alignment: 9
+      pivot: {x: 0.7644055, y: 0.66207653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_91
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 796
+        width: 51
+        height: 39
+      alignment: 9
+      pivot: {x: 0.7644061, y: 0.6512717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_92
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 796
+        width: 41
+        height: 44
+      alignment: 9
+      pivot: {x: 0.7158367, y: 0.66281265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_93
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 707
+        width: 49
+        height: 57
+      alignment: 9
+      pivot: {x: 0.6547987, y: 0.7439672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_94
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 705
+        width: 52
+        height: 62
+      alignment: 9
+      pivot: {x: 0.6053492, y: 0.6427317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_95
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 706
+        width: 70
+        height: 60
+      alignment: 9
+      pivot: {x: 0.48796016, y: 0.619396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_96
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 700
+        width: 89
+        height: 65
+      alignment: 9
+      pivot: {x: 0.41003898, y: 0.6037288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_97
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 699
+        width: 100
+        height: 74
+      alignment: 9
+      pivot: {x: 0.34829742, y: 0.5797243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_98
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 700
+        width: 54
+        height: 76
+      alignment: 9
+      pivot: {x: 0.6872875, y: 0.5499027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_99
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 699
+        width: 52
+        height: 75
+      alignment: 9
+      pivot: {x: 0.6701795, y: 0.54494953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_100
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 697
+        width: 41
+        height: 78
+      alignment: 9
+      pivot: {x: 0.6336149, y: 0.5324159}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_101
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 696
+        width: 36
+        height: 79
+      alignment: 9
+      pivot: {x: 0.72240365, y: 0.5373396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_102
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 630
+        width: 49
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6265597, y: 0.7349027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_103
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 630
+        width: 52
+        height: 54
+      alignment: 9
+      pivot: {x: 0.63009965, y: 0.60440063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_104
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 630
+        width: 70
+        height: 55
+      alignment: 9
+      pivot: {x: 0.4919462, y: 0.57175183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_105
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 630
+        width: 89
+        height: 55
+      alignment: 9
+      pivot: {x: 0.39231426, y: 0.57175183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_106
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 623
+        width: 101
+        height: 67
+      alignment: 9
+      pivot: {x: 0.354872, y: 0.54207146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_107
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 630
+        width: 54
+        height: 62
+      alignment: 9
+      pivot: {x: 0.6774818, y: 0.4545347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_108
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 630
+        width: 54
+        height: 44
+      alignment: 9
+      pivot: {x: 0.698362, y: 0.6793795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_109
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 630
+        width: 48
+        height: 47
+      alignment: 9
+      pivot: {x: 0.62919617, y: 0.66792977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_110
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 630
+        width: 39
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52891034, y: 0.7083475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_111
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 570
+        width: 36
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5484438, y: 0.69572616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_112
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 570
+        width: 38
+        height: 46
+      alignment: 9
+      pivot: {x: 0.6070862, y: 0.71483845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_113
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 568
+        width: 47
+        height: 45
+      alignment: 9
+      pivot: {x: 0.7102674, y: 0.7454495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_114
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 569
+        width: 56
+        height: 42
+      alignment: 9
+      pivot: {x: 0.7076168, y: 0.6937764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_115
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 568
+        width: 58
+        height: 35
+      alignment: 9
+      pivot: {x: 0.7205032, y: 0.68270266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_116
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 569
+        width: 58
+        height: 35
+      alignment: 9
+      pivot: {x: 0.7205037, y: 0.6494838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_117
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 569
+        width: 58
+        height: 35
+      alignment: 9
+      pivot: {x: 0.7104808, y: 0.6660941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_118
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 569
+        width: 46
+        height: 44
+      alignment: 9
+      pivot: {x: 0.6390129, y: 0.7113911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_119
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 570
+        width: 42
+        height: 45
+      alignment: 9
+      pivot: {x: 0.45847648, y: 0.7066949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_120
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 568
+        width: 42
+        height: 46
+      alignment: 9
+      pivot: {x: 0.3892706, y: 0.6895633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_121
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 568
+        width: 42
+        height: 46
+      alignment: 9
+      pivot: {x: 0.38927206, y: 0.76538885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_122
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 494
+        width: 36
+        height: 58
+      alignment: 9
+      pivot: {x: 0.51566017, y: 0.78188246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_123
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 497
+        width: 40
+        height: 56
+      alignment: 9
+      pivot: {x: 0.52818793, y: 0.7315467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_124
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 495
+        width: 43
+        height: 58
+      alignment: 9
+      pivot: {x: 0.49999964, y: 0.68468183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_125
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 492
+        width: 35
+        height: 65
+      alignment: 9
+      pivot: {x: 0.53221524, y: 0.6821392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_126
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 492
+        width: 36
+        height: 64
+      alignment: 9
+      pivot: {x: 0.53132033, y: 0.6761761}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_127
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 498
+        width: 44
+        height: 57
+      alignment: 9
+      pivot: {x: 0.6153155, y: 0.72748446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_128
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 505
+        width: 43
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5655539, y: 0.7659267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_129
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 505
+        width: 43
+        height: 57
+      alignment: 9
+      pivot: {x: 0.57866436, y: 0.767047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_130
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 419
+        width: 27
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_131
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 418
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_132
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 419
+        width: 90
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_133
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 420
+        width: 91
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_134
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 423
+        width: 91
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_135
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 422
+        width: 71
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_136
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 424
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_137
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 422
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_138
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 418
+        width: 37
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_139
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 327
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_140
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 327
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_141
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 329
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_142
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 333
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_143
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 326
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_144
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 326
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_145
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 325
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_146
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 328
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_147
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 333
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_148
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 328
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_149
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 331
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_150
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 345
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_151
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 357
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_152
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 360
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_153
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 241
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_154
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 244
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_155
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 244
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_156
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 242
+        width: 87
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_157
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 245
+        width: 91
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_158
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 247
+        width: 94
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_159
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 244
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_160
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 245
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_161
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 243
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_162
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 179
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_163
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 179
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_164
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 179
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_165
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 175
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_166
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 180
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_167
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 180
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_168
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 180
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_169
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 180
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_170
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 112
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_171
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 167
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_172
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 114
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_173
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 116
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_174
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 116
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_175
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 116
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_176
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 43
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_177
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 43
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_178
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 43
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_179
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 43
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_180
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 43
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_181
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 43
+        width: 41
+        height: 54
+      alignment: 9
+      pivot: {x: 0.6074457, y: 0.74473625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_182
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 43
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_183
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 43
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_184
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 41
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_185
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 40
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_186
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 39
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_187
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 44
+        width: 26
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_188
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 36
+        width: 6
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_189
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 36
+        width: 6
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_190
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 16
+        width: 156
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zerox4sheet_191
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 3
+        width: 123
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Dead
+  - Alive
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Platform
+  - Enemy
+  - Character
+  - DeadOnes
+  - Background
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: DeadOnes
+    uniqueID: 3749156839
+    locked: 0
+  - name: Background
+    uniqueID: 2361706193
+    locked: 0
+  - name: Platform
+    uniqueID: 1757325097
+    locked: 0
+  - name: Enemy
+    uniqueID: 4220587291
+    locked: 0
+  - name: Character
+    uniqueID: 4245650497
+    locked: 0
