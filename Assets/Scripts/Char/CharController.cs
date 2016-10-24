@@ -218,7 +218,8 @@ public class CharController : MonoBehaviour{
 				PlusJump = false;
 			print (PlusJump);
 			GroundCols.isTrigger = true;
-			m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity [0], m_JumpForce);
+			//força adaptada a gravidade negativa
+			m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity [0], m_JumpForce*(m_Rigidbody2D.gravityScale/Mathf.Abs(m_Rigidbody2D.gravityScale)));
 		}else {//se não simplesmeste zera pulo
 			jump = false;
 		}
