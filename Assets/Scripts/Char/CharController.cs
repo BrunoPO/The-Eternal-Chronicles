@@ -38,8 +38,7 @@ public class CharController : MonoBehaviour{
 		atack_Point_1 = atack_Point_0.Find("1");
 		m_Anim = GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
-		m_JumpForce = (float) Mathf.Sqrt (Mathf.Abs( 2f * m_JumpHeight * Physics2D.gravity.y * m_Rigidbody2D.gravityScale));
-		print(m_JumpForce+" "+m_Rigidbody2D.angularVelocity);
+		m_JumpForce = (float) Mathf.Sqrt (Mathf.Abs( 2.075f * m_JumpHeight * Physics2D.gravity.y * m_Rigidbody2D.gravityScale))*m_Rigidbody2D.mass;
 		k_GroundedRadius = GroundCols.radius;
 		if (Flying) {
 			m_Rigidbody2D.gravityScale = 0f;
@@ -51,8 +50,10 @@ public class CharController : MonoBehaviour{
 			myEnemy_layer = LayerMask.GetMask("Enemy");
 	}
 	//Maybe use FixedUpdate(faster) have a precision between execution
-	private void Update(){	
-		print(Time.deltaTime);
+	private void FixedUpdate(){	
+		if(transform.position.y>1.9f)
+			print(m_JumpForce+" "+transform.position);
+		//print(Time.deltaTime);
 		if (life <= 0 || transform.position.y <= -10)
 			GameObject.Find("GM").GetComponent<Global>().Died (gameObject);
 		if (!noAtacking) 
@@ -220,7 +221,7 @@ public class CharController : MonoBehaviour{
 			print (PlusJump);
 			GroundCols.isTrigger = true;
 			//força adaptada a gravidade negativa
-			m_Rigidbody2D.AddForce(new Vector2(0,-1*m_Rigidbody2D.velocity.y+(m_JumpForce*1.03f)),ForceMode2D.Impulse);
+			m_Rigidbody2D.AddForce(new Vector2(0,-1*m_Rigidbody2D.velocity.y+(m_JumpForce)),ForceMode2D.Impulse);
 			//m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity [0], m_JumpForce*(m_Rigidbody2D.gravityScale/Mathf.Abs(m_Rigidbody2D.gravityScale)));
 		}else {//se não simplesmeste zera pulo
 			jump = false;
