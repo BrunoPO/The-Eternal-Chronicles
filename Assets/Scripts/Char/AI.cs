@@ -5,6 +5,8 @@ using UnityStandardAssets._2D;
 
 public class AI : MonoBehaviour {
 	[SerializeField] private bool killkill = false,enemy=true;
+	public bool Comment=false;
+
 	private int waitforPath = 0;
 	private float LimitX, LimitY, Dist;
 	private int VeloX,CountBFPath=0;
@@ -50,9 +52,9 @@ public class AI : MonoBehaviour {
 		n_Golpe [2] = 1;
 		n_EfectGolpe [2] = 6;
 		Path = new float[4][];
-		//print (Path.Length);
+		//if(Comment) print (Path.Length);
 		Path [0] = new float[2];
-		//print (Path.Length + " "+ Path[0].Length);
+		//if(Comment) print (Path.Length + " "+ Path[0].Length);
 		Path [0] [0] = float.NaN;
 		posiPath = Path.Length+1;
 		boolX=false;
@@ -97,7 +99,7 @@ public class AI : MonoBehaviour {
 		if ( target_GO == null || !target_GO.activeSelf || (!enemy && (target_GO.name == "Char1" || target_GO.name == "Char2"))) {
 			target_GO = GameObject.Find ("GM").GetComponent<Global> ().chooseTarget (transform.gameObject);
 			if (target_GO == null) {
-				//print (this.gameObject.name);
+				//if(Comment) print (this.gameObject.name);
 				if (this.gameObject.name == "Char1")
 					target_GO = GameObject.Find ("Char2");
 				else if (this.gameObject.name == "Char2")
@@ -109,7 +111,7 @@ public class AI : MonoBehaviour {
 	}
 
 	public void atack(){
-		print ("Golpe " + Golpe [0] + Golpe [1] + Golpe [2] + " Efetivo " + EfectGolpe [0] + EfectGolpe [1] + EfectGolpe [2]);
+		if(Comment) print ("Golpe " + Golpe [0] + Golpe [1] + Golpe [2] + " Efetivo " + EfectGolpe [0] + EfectGolpe [1] + EfectGolpe [2]);
 		if (noAtacking && !zerado) {
 			for(int i=0;i<3;i++){
 				Golpe[i] = n_Golpe[i];
@@ -142,7 +144,7 @@ public class AI : MonoBehaviour {
 		if (killkill) {
 			Atk = 1;
 		} else if (EfectGolpe [round] > 5 && timedefence<60) {
-			print (timedefence+" "+Golpe [round]);
+			if(Comment) print (timedefence+" "+Golpe [round]);
 			if (Golpe [round] == 0) {//quando sai do modo de defesa
 				Atk = 1;
 				timedefence++;
@@ -196,7 +198,7 @@ public class AI : MonoBehaviour {
 					if (jump && defense && percent > 0.4f) {
 						defense = false;
 					}
-					//print ("print Here" + defense);
+					//if(Comment) print ("print Here" + defense);
 				}
 			} else {
 				jump = false;
@@ -234,17 +236,17 @@ public class AI : MonoBehaviour {
 					}
 				}
 			}*/
-			//print (posiPath + " ");
+			//if(Comment) print (posiPath + " ");
 			/*if (posiPath < Path.Length - 1) {
-				print ("Teste " + Path [posiPath]);
-				print ("Teste "+ (null == Path [posiPath]));
+				if(Comment) print ("Teste " + Path [posiPath]);
+				if(Comment) print ("Teste "+ (null == Path [posiPath]));
 			}*/
 			if (posiPath < 0 && !(posiPath < Path.Length && float.IsNaN (Path [0] [0]))) {//Voltou a posição demais pegue sua ultima posição
-				//print ("Voltando impedido no curso normal" + posiPath);
+				//if(Comment) print ("Voltando impedido no curso normal" + posiPath);
 				target = lastTarget;
 			} else if (CountBFPath<=10 && (difX < m_JumpDist / 3 && difY < m_JumpHeight / 3 || posiPath < Path.Length-1 && null != Path [posiPath] && float.IsNaN (Path [posiPath] [0]))) {//Está proximo o suficiente para ir só
 				CountBFPath++;
-				//print ("(Caminho incompleto) Proximo ");
+				//if(Comment) print ("(Caminho incompleto) Proximo ");
 				Path = new float[4][];
 				Path [0] = new float[2];
 				Path [0] [0] = float.NaN;
@@ -253,7 +255,7 @@ public class AI : MonoBehaviour {
 				//posiPath = -1;//em toda rodada é incremetado um para o valor ficar zero é preciso q valor esteja -1(começar da posição 0 do Path)
 				finded = true;
 			} else if ((posiPath >= Path.Length) || finded) {//O caminho chegou ao fim,mas o inimigo não foi encontrado então recalculo
-				//print ("Recalculo para chegar em: " + target_GO.name);
+				//if(Comment) print ("Recalculo para chegar em: " + target_GO.name);
 				//if(CountBFPath>=waitforPath){
 					finded = false;
 					posiPath = -1;
@@ -270,8 +272,8 @@ public class AI : MonoBehaviour {
 				}*/
 
 			} else if (posiPath < Path.Length - 1 && !float.IsNaN (Path [posiPath] [0])) {//ainda não chegou siga o caminho
-				//print ("Tentando se aproximar através do caminho");
-				//print("Apenas seguindo");
+				//if(Comment) print ("Tentando se aproximar através do caminho");
+				//if(Comment) print("Apenas seguindo");
 				finded = false;
 				target = Path [posiPath];
 			}
@@ -283,11 +285,11 @@ public class AI : MonoBehaviour {
 				//float distanc = (transform.position.y > target_GO.transform.position.y + Dist) ? transform.position.y - target_GO.transform.position.y + Dist : target_GO.transform.position.y + Dist - transform.position.y;
 
 				if (Flying || (difY < m_JumpHeight || target_GO.transform.position.y < transform.position.y)) {
-					//print ("Taking him");
+					//if(Comment) print ("Taking him");
 					target [0] = target_GO.transform.position.x;
 					target [1] = target_GO.transform.position.y + Dist;
 				} else {
-					//print ("Can't taking him");
+					//if(Comment) print ("Can't taking him");
 					target [0] = float.NaN;
 				}
 			}
@@ -297,12 +299,12 @@ public class AI : MonoBehaviour {
 		
 	public void Golpe_Detec(int Efective){
 		if (!noAtacking) {//se estiver atacando então o dano(qual animação=valor padrão para dano) e efetividade do ataque são calculados
-			//print("Dentro");
+			//if(Comment) print("Dentro");
 			//int Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;
 			//bool Gdamaged = transform.GetComponent<CharController> ().Gdamaged;
 			altArvCombo = transform.GetComponent<CharController> ().altArvCombo;
 			//int Efective = transform.GetComponent<CharController> ().Efective;
-			//print (Efective);
+			//if(Comment) print (Efective);
 			//Até o fim dessa funcao será identificado em q estágio dos ataques o personagem está e será guardado o golpe e quanto o ataque atual(animação) é efetiva.
 
 			int val=m_Anim.GetInteger ("Atk_1");//guarda valor de atk_1 

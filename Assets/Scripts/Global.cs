@@ -13,7 +13,7 @@ public class Global : MonoBehaviour {
 
 	public static LayerMask WhatIsGround,WhatIsPlayer,WhatIsPlat;
 	public static float LimitY, LimitX;
-
+	public bool Comment = false;
 	private int counter = 0;
 	private GameObject Char1,Char2;
 	private CircleCollider2D tarCollider;
@@ -56,7 +56,9 @@ public class Global : MonoBehaviour {
 			}
 		}
 		if(Input.inputString == "z"){
-			toggle_target();
+			toggle_target(true);
+		}else if(Input.inputString == "a"){
+			toggle_target(false);
 		}
 		if (Input.inputString == "1") {
 			SceneManager.LoadScene ("scene_0");
@@ -106,14 +108,16 @@ public class Global : MonoBehaviour {
 
 	public bool Died(GameObject who){
 		//GameObject Send = Char2;
-		if (Char1.activeSelf) {
+		if(Comment) print(Char1);
+		if(Comment) print(Char2);
+		if (Char1 != null && Char1.activeSelf) {
 			if(Char1.GetInstanceID() == who.GetInstanceID ())
 				Char1_List.Clear ();
 			else if(Char1.GetComponent<AI> ().enabled && Char1.GetComponent<AI> ().target_GO.GetInstanceID () == who.GetInstanceID ())
 				Char1.GetComponent<AI> ().target_GO = null;
 			
 		}
-		if (Char2.activeSelf) {
+		if (Char2 != null && Char2.activeSelf) {
 			if(Char2.GetInstanceID() == who.GetInstanceID ())
 				Char2_List.Clear ();
 			else if(Char2.GetComponent<AI> ().enabled && !Char2.GetComponent<AI> ().target_GO && Char2.GetComponent<AI> ().target_GO.GetInstanceID () ==  who.GetInstanceID ())
@@ -156,9 +160,11 @@ public class Global : MonoBehaviour {
 	}
 
 
-	void toggle_target(){//Altera os personagens,alterando o foco da camera e ativando a ai e ativando o controle no outro personagem 
+	void toggle_target(bool bool_AI){//Altera os personagens,alterando o foco da camera e ativando a ai e ativando o controle no outro personagem 
 		target.GetComponent<SpriteRenderer> ().sortingOrder = 0;
-		target.GetComponent<AI> ().enabled = true;
+		if(bool_AI)
+			target.GetComponent<AI> ().enabled = true;
+		
 		if (target == Char1) {
 			target = Char2;
 		} else {
@@ -179,7 +185,7 @@ public class Global : MonoBehaviour {
 		if(bolean){//Debug
 			Ini = Bot.transform.position;
 			Fim = Target;
-			//print ("Heeeeeey "+Ini+Fim);
+			//if(Comment) print ("Pathfind do personagem para o alvo "+Ini+Fim);
 			bolean = false;
 		}
 
@@ -211,7 +217,7 @@ public class Global : MonoBehaviour {
 				j = l - 1;
 					//|| j == colliders.Length
 				if (dif >= m_JumpHeight ) {
-					//print (i + " " + j);
+						//if(Comment) print (i + " " + j);
 					dif = 0;
 					if (j > 0)
 						j--;
@@ -244,9 +250,10 @@ public class Global : MonoBehaviour {
 			}
 		}
 
-		/*for (int i = 0; i < vectorPaths.Length; i++) {
-			print (i + " " + vectorPaths [i] [0] + " " + vectorPaths [i] [1] + " " + Bot.name);
-		}*/
+		/*if(Comment)
+			for (int i = 0; i < vectorPaths.Length; i++) {
+				print (i + " " + vectorPaths [i] [0] + " " + vectorPaths [i] [1] + " " + Bot.name);
+			}*/
 		return vectorPaths;
 	}
 

@@ -6,6 +6,9 @@ public class CharController : MonoBehaviour{
 	[SerializeField] public bool m_AirControl = false,Flying=false;
 	[SerializeField] private int Timetowait=0;
 	[SerializeField] public float m_MaxSpeed = 10f,m_JumpHeight,life;//Alter
+	public bool Comment = false;
+
+
 	private Animator m_Anim; 
 	private Rigidbody2D m_Rigidbody2D;
 	private CircleCollider2D GroundCols;
@@ -52,7 +55,7 @@ public class CharController : MonoBehaviour{
 	//Maybe use FixedUpdate(faster) have a precision between execution
 	private void FixedUpdate(){	
 		if(transform.position.y>1.9f)
-			print(m_JumpForce+" "+transform.position);
+			if(Comment) print(m_JumpForce+" "+transform.position);
 		//print(Time.deltaTime);
 		if (life <= 0 || transform.position.y <= -10)
 			GameObject.Find("GM").GetComponent<Global>().Died (gameObject);
@@ -145,7 +148,7 @@ public class CharController : MonoBehaviour{
 		if (!Habilidades [0]) {
 			sprint = false;
 		}
-		//print(move+" "+defense+" "+jump+" "+atk);
+		//if(Comment) print(move+" "+defense+" "+jump+" "+atk);
 		Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;//guarda hash em int da animação atual para possiveis verificações futuras.
 		if (waitTime < Timetowait) {//tempo de pausa entre ataques(evitar combos infinitos)
 			atk = 0;
@@ -218,7 +221,7 @@ public class CharController : MonoBehaviour{
 		} else if ((m_Grounded && m_Anim.GetBool ("Ground") || PlusJump) && jump && !Flying) {//verifica se no chao, e pulando "envia" movimento para o corpo e desativa colisão
 			if (!m_Grounded)
 				PlusJump = false;
-			print (PlusJump);
+			if(Comment) print ("Pulo extra é vdd : "+PlusJump);
 			GroundCols.isTrigger = true;
 			//força adaptada a gravidade negativa
 			m_Rigidbody2D.AddForce(new Vector2(0,-1*m_Rigidbody2D.velocity.y+(m_JumpForce)),ForceMode2D.Impulse);
