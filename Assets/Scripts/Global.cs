@@ -34,6 +34,7 @@ public class Global : MonoBehaviour {
 		Char1 = GameObject.Find("Char1");
 		Char2 = GameObject.Find("Char2");
 		target = Char1;
+		print ("Char Atual" + target);
 	}
 	private void Update () {
 		counter++;
@@ -55,9 +56,9 @@ public class Global : MonoBehaviour {
 				Graveyard_List.RemoveAt(0);
 			}
 		}
-		if(Input.inputString == "z"){
+		if(Input.inputString == "h"){
 			toggle_target(true);
-		}else if(Input.inputString == "a"){
+		}else if(Input.inputString == "g"){
 			toggle_target(false);
 		}
 		if (Input.inputString == "1") {
@@ -65,7 +66,7 @@ public class Global : MonoBehaviour {
 		} else if (Input.inputString == "2") {
 			SceneManager.LoadScene ("scene_1");
 		}
-		if (target.transform.position.y <= 0 || Input.inputString == "r"){//se o personagem cair no infinito ou apertar R será reiniciando a partida
+		if (target.transform.position.y < 0 || Input.inputString == "r"){//se o personagem cair no infinito ou apertar R será reiniciando a partida
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name) ;
 		}
 		if (Input.GetKey ("p") && counter >= 10) {
@@ -89,8 +90,8 @@ public class Global : MonoBehaviour {
 		}
 		jump = Input.GetKeyDown("up");
 		defense = Input.GetKey("down");
-		atk1 = Input.GetKey("c");
-		atk2 = Input.GetKey("x");
+		atk1 = Input.GetKey("f");
+		atk2 = Input.GetKey("t");
 		sprint = Input.GetKey("left shift");
 		h = Input.GetAxis ("Horizontal");
 		if(h != 0 || defense || jump || ((atk1|| atk2)?2:0) != 0 )
@@ -136,11 +137,12 @@ public class Global : MonoBehaviour {
 
 	public GameObject chooseTarget(GameObject who){
 		//GameObject Send = Char2;
+		print(who);
 		if (!(who.name == "Char1" || who.name == "Char2")) {
-			if (Char2_List.Count < Char1_List.Count && Char2.activeSelf) {
+			if (Char2_List.Count < Char1_List.Count && Char2 != null && Char2.activeSelf) {
 				Char2_List.Add (who);
 				return Char2;
-			} else if (Char1.activeSelf) {
+			} else if (Char1 != null && Char1.activeSelf) {
 				Char1_List.Add (who);
 				return Char1;
 			} else {
@@ -165,9 +167,9 @@ public class Global : MonoBehaviour {
 		if(bool_AI)
 			target.GetComponent<AI> ().enabled = true;
 		
-		if (target == Char1) {
+		if (Char1 != null && target == Char1 && Char2 != null && Char2.activeSelf) {
 			target = Char2;
-		} else {
+		} else if (Char1 != null && Char1.activeSelf) {
 			target = Char1;
 		}
 		target.GetComponent<SpriteRenderer> ().sortingOrder = 1;

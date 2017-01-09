@@ -1,0 +1,1374 @@
+fileFormatVersion: 2
+guid: 32cf771e75b96c445af937a256731f3c
+timeCreated: 1483842803
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: healthy_0_turn2-2
+    21300002: healthy_0_turn1-2
+    21300004: Enemy_2
+    21300006: Enemy_3
+    21300008: Enemy_4
+    21300010: healthy_0_idle
+    21300012: healthy_0_walk
+    21300014: healthy_0_atack4-4
+    21300016: healthy_0_atack3-4
+    21300018: healthy_0_atack2-4
+    21300020: healthy_0_atack1-4
+    21300022: Enemy_11
+    21300024: Enemy_12
+    21300026: damaged_0_idle
+    21300028: damaged_0_walk
+    21300030: damaged_0_atack4-4
+    21300032: damaged_0_atack3-4
+    21300034: damaged_0_atack2-4
+    21300036: damaged_0_atack1-4
+    21300038: damaged_0_turn2-2
+    21300040: damaged_0_turn1-2
+    21300042: Enemy_21
+    21300044: explode_0_1-8
+    21300046: explode_0_2-8
+    21300048: explode_0_3-8
+    21300050: explode_0_4-8
+    21300052: explode_0_5-8
+    21300054: Enemy_50
+    21300056: healthy_1_turn1-3
+    21300058: healthy_1_idle
+    21300060: healthy_1_walk
+    21300062: Enemy_54
+    21300064: healthy_1_turn3-3
+    21300066: healthy_1_turn2-3
+    21300068: healthy_1_atack1-5
+    21300070: healthy_1_atack2-5
+    21300072: healthy_1_atack3-5
+    21300074: healthy_1_atack5-5
+    21300076: healthy_1_atack4-5
+    21300078: Enemy_99
+    21300080: damaged_1_turn2-4
+    21300082: damaged_1_turn3-4
+    21300084: damaged_1_turn4-4
+    21300086: damaged_1_idle
+    21300088: damaged_1_walk
+    21300090: damaged_1_turn1-4
+    21300092: damaged_1_atack1-5
+    21300094: damaged_1_atack2-5
+    21300096: damaged_1_atack3-5
+    21300098: damaged_1_atack4-5
+    21300100: damaged_1_atack5-5
+    21300102: explode_1_1-8
+    21300104: explode_1_2-8
+    21300106: explode_1_3-8
+    21300108: explode_1_4-8
+    21300110: explode_1_5-8
+    21300112: healthy_2_walk_12-12
+    21300114: healthy_2_walk_11-12
+    21300116: healthy_2_walk_10-12
+    21300118: healthy_2_walk_9-12
+    21300120: healthy_2_walk_8-12
+    21300122: healthy_2_walk_7-12
+    21300124: healthy_2_walk_6-12
+    21300126: healthy_2_walk_5-12
+    21300128: healthy_2_walk_4-12
+    21300130: Enemy_167
+    21300132: healthy_2_walk_3-12
+    21300134: healthy_2_walk_2-12
+    21300136: healthy_2_walk_1-12
+    21300138: healthy_2_turn_3-3
+    21300140: healthy_2_turn_2-3
+    21300142: healthy_2_turn_1-3
+    21300144: Enemy_175
+    21300146: damaged_2_walk_12-12
+    21300148: damaged_2_walk_11-12
+    21300150: damaged_2_walk_10-12
+    21300152: damaged_2_walk_9-12
+    21300154: damaged_2_walk_8-12
+    21300156: damaged_2_walk_7-12
+    21300158: damaged_2_walk_6-12
+    21300160: damaged_2_walk_5-12
+    21300162: damaged_2_walk_4-12
+    21300164: Enemy_185
+    21300166: damaged_2_walk_3-12
+    21300168: Enemy_187
+    21300170: damaged_2_turn_2-3
+    21300172: damaged_2_turn_1-3
+    21300174: Enemy_190
+    21300176: damaged_2_walk_2-12
+    21300178: damaged_2_walk_1-12
+    21300180: damaged_2_turn_3-3
+    21300182: explode_2_3-8
+    21300184: explode_2_1-8
+    21300186: explode_2_2-8
+    21300188: explode_2_4-8
+    21300190: explode_2_5-8
+    21300192: Enemy_218
+    21300194: explode_0_6-8
+    21300196: explode_0_7-8
+    21300198: explode_0_8-8
+    21300200: explode_1_6-8
+    21300202: explode_1_7-8
+    21300204: explode_1_8-8
+    21300206: explode_2_6-8
+    21300208: explode_2_7-8
+    21300210: explode_2_8-8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: healthy_0_turn2-2
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 5833
+        width: 242
+        height: 331
+      alignment: 9
+      pivot: {x: 0.37732628, y: 0.7101956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_0_turn1-2
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 5837
+        width: 385
+        height: 335
+      alignment: 9
+      pivot: {x: 0.45427594, y: 0.7327163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_0_idle
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 5833
+        width: 165
+        height: 328
+      alignment: 9
+      pivot: {x: 0.48620477, y: 0.7290173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_0_walk
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 5833
+        width: 158
+        height: 331
+      alignment: 9
+      pivot: {x: 0.44237316, y: 0.7290173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_0_atack4-4
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 5833
+        width: 215
+        height: 328
+      alignment: 9
+      pivot: {x: 0.648224, y: 0.7290173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_0_atack3-4
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 5837
+        width: 257
+        height: 327
+      alignment: 9
+      pivot: {x: 0.68600047, y: 0.7290173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_0_atack2-4
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 5837
+        width: 215
+        height: 327
+      alignment: 9
+      pivot: {x: 0.6058741, y: 0.7290173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_0_atack1-4
+      rect:
+        serializedVersion: 2
+        x: 2468
+        y: 5832
+        width: 166
+        height: 328
+      alignment: 9
+      pivot: {x: 0.51371306, y: 0.7290173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_0_idle
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 5392
+        width: 381
+        height: 359
+      alignment: 9
+      pivot: {x: 0.49402633, y: 0.6782934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_0_walk
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 5400
+        width: 384
+        height: 345
+      alignment: 9
+      pivot: {x: 0.46443352, y: 0.6782934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_0_atack4-4
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 5393
+        width: 387
+        height: 368
+      alignment: 9
+      pivot: {x: 0.4764729, y: 0.6360832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_0_atack3-4
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 5393
+        width: 392
+        height: 334
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.7112723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_0_atack2-4
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 5400
+        width: 386
+        height: 369
+      alignment: 9
+      pivot: {x: 0.47051528, y: 0.65978706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_0_atack1-4
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 5400
+        width: 380
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_0_turn2-2
+      rect:
+        serializedVersion: 2
+        x: 3152
+        y: 5388
+        width: 408
+        height: 387
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_0_turn1-2
+      rect:
+        serializedVersion: 2
+        x: 3686
+        y: 5403
+        width: 406
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_0_1-8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 4787
+        width: 165
+        height: 330
+      alignment: 9
+      pivot: {x: 0.44481775, y: 0.7414255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_0_2-8
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 4788
+        width: 321
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_0_3-8
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 4619
+        width: 742
+        height: 697
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_0_4-8
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 4815
+        width: 359
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_0_5-8
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 4829
+        width: 331
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_turn1-3
+      rect:
+        serializedVersion: 2
+        x: 4540
+        y: 4107
+        width: 423
+        height: 415
+      alignment: 9
+      pivot: {x: 0.50760937, y: 0.57755905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_idle
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 4107
+        width: 246
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_walk
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 4110
+        width: 250
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_turn3-3
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 4128
+        width: 278
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_turn2-3
+      rect:
+        serializedVersion: 2
+        x: 4121
+        y: 4114
+        width: 282
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_atack1-5
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 4110
+        width: 278
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_atack2-5
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 4114
+        width: 295
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_atack3-5
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 4128
+        width: 359
+        height: 299
+      alignment: 9
+      pivot: {x: 0.6193623, y: 0.6612275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_atack5-5
+      rect:
+        serializedVersion: 2
+        x: 3170
+        y: 4128
+        width: 359
+        height: 299
+      alignment: 9
+      pivot: {x: 0.61936164, y: 0.7149711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_1_atack4-5
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 4128
+        width: 370
+        height: 274
+      alignment: 9
+      pivot: {x: 0.63029057, y: 0.69548714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy_99
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 4189
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_turn2-4
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 3575
+        width: 372
+        height: 398
+      alignment: 9
+      pivot: {x: 0.4307809, y: 0.5727846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_turn3-4
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 3585
+        width: 386
+        height: 391
+      alignment: 9
+      pivot: {x: 0.4749838, y: 0.549392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_turn4-4
+      rect:
+        serializedVersion: 2
+        x: 5633
+        y: 3571
+        width: 425
+        height: 402
+      alignment: 9
+      pivot: {x: 0.50757235, y: 0.6120939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_idle
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 3546
+        width: 397
+        height: 402
+      alignment: 9
+      pivot: {x: 0.4270318, y: 0.56405354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_walk
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 3550
+        width: 374
+        height: 401
+      alignment: 9
+      pivot: {x: 0.45696923, y: 0.54816025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_turn1-4
+      rect:
+        serializedVersion: 2
+        x: 4131
+        y: 3568
+        width: 373
+        height: 390
+      alignment: 9
+      pivot: {x: 0.46548256, y: 0.615543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_atack1-5
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 3550
+        width: 369
+        height: 390
+      alignment: 9
+      pivot: {x: 0.44766328, y: 0.5742776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_atack2-5
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 3553
+        width: 389
+        height: 363
+      alignment: 9
+      pivot: {x: 0.4586285, y: 0.6241371}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_atack3-5
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 3568
+        width: 471
+        height: 330
+      alignment: 9
+      pivot: {x: 0.5341688, y: 0.685319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_atack4-5
+      rect:
+        serializedVersion: 2
+        x: 2930
+        y: 3571
+        width: 482
+        height: 333
+      alignment: 9
+      pivot: {x: 0.5267111, y: 0.6739836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_1_atack5-5
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 3571
+        width: 472
+        height: 331
+      alignment: 9
+      pivot: {x: 0.52727705, y: 0.69448346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_1_1-8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 2906
+        width: 246
+        height: 404
+      alignment: 9
+      pivot: {x: 0.4999995, y: 0.5865563}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_1_2-8
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2909
+        width: 320
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_1_3-8
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 2735
+        width: 726
+        height: 716
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_1_4-8
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 2937
+        width: 359
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_1_5-8
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 2958
+        width: 332
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_12-12
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 2293
+        width: 426
+        height: 355
+      alignment: 9
+      pivot: {x: 0.41820502, y: 0.64723057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_11-12
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 2293
+        width: 429
+        height: 355
+      alignment: 9
+      pivot: {x: 0.43908292, y: 0.6595002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_10-12
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 2292
+        width: 432
+        height: 356
+      alignment: 9
+      pivot: {x: 0.42942357, y: 0.68352103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_9-12
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 2293
+        width: 422
+        height: 355
+      alignment: 9
+      pivot: {x: 0.42775115, y: 0.6595002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_8-12
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 2292
+        width: 426
+        height: 356
+      alignment: 9
+      pivot: {x: 0.44887832, y: 0.64681697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_7-12
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 2292
+        width: 429
+        height: 356
+      alignment: 9
+      pivot: {x: 0.43908265, y: 0.65905213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_6-12
+      rect:
+        serializedVersion: 2
+        x: 3670
+        y: 2293
+        width: 440
+        height: 355
+      alignment: 9
+      pivot: {x: 0.420808, y: 0.6349616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_5-12
+      rect:
+        serializedVersion: 2
+        x: 4234
+        y: 2293
+        width: 443
+        height: 355
+      alignment: 9
+      pivot: {x: 0.411512, y: 0.64723057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_4-12
+      rect:
+        serializedVersion: 2
+        x: 4801
+        y: 2292
+        width: 429
+        height: 356
+      alignment: 9
+      pivot: {x: 0.42892948, y: 0.6712866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_3-12
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1845
+        width: 422
+        height: 355
+      alignment: 9
+      pivot: {x: 0.427751, y: 0.6840387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_2-12
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1845
+        width: 419
+        height: 355
+      alignment: 9
+      pivot: {x: 0.43762907, y: 0.6717691}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_walk_1-12
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1845
+        width: 427
+        height: 355
+      alignment: 9
+      pivot: {x: 0.43879732, y: 0.6717691}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_turn_3-3
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 1834
+        width: 408
+        height: 384
+      alignment: 9
+      pivot: {x: 0.5, y: 0.60208386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_turn_2-3
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 1823
+        width: 411
+        height: 391
+      alignment: 9
+      pivot: {x: 0.46820766, y: 0.60025626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healthy_2_turn_1-3
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1749
+        width: 257
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5338957, y: 0.57493436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_12-12
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1325
+        width: 472
+        height: 357
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.6708071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_11-12
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1325
+        width: 468
+        height: 357
+      alignment: 9
+      pivot: {x: 0.51861364, y: 0.6708071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_10-12
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1325
+        width: 520
+        height: 357
+      alignment: 9
+      pivot: {x: 0.55863297, y: 0.64640605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_9-12
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1313
+        width: 520
+        height: 369
+      alignment: 9
+      pivot: {x: 0.5670091, y: 0.68885964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_8-12
+      rect:
+        serializedVersion: 2
+        x: 2979
+        y: 1325
+        width: 525
+        height: 357
+      alignment: 9
+      pivot: {x: 0.5580743, y: 0.64640605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_7-12
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 1324
+        width: 528
+        height: 369
+      alignment: 9
+      pivot: {x: 0.5577443, y: 0.6770562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_6-12
+      rect:
+        serializedVersion: 2
+        x: 4359
+        y: 1320
+        width: 542
+        height: 369
+      alignment: 9
+      pivot: {x: 0.52410865, y: 0.68885964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_5-12
+      rect:
+        serializedVersion: 2
+        x: 5051
+        y: 1336
+        width: 482
+        height: 417
+      alignment: 9
+      pivot: {x: 0.4819265, y: 0.5731149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_4-12
+      rect:
+        serializedVersion: 2
+        x: 5692
+        y: 1324
+        width: 532
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_3-12
+      rect:
+        serializedVersion: 2
+        x: 6394
+        y: 1336
+        width: 536
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_turn_2-3
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 904
+        width: 499
+        height: 405
+      alignment: 9
+      pivot: {x: 0.5960148, y: 0.5860361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_turn_1-3
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 851
+        width: 478
+        height: 469
+      alignment: 9
+      pivot: {x: 0.4726639, y: 0.64859104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_2-12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 914
+        width: 518
+        height: 353
+      alignment: 9
+      pivot: {x: 0.5420424, y: 0.6727423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_walk_1-12
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 899
+        width: 523
+        height: 369
+      alignment: 9
+      pivot: {x: 0.54164046, y: 0.6770559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: damaged_2_turn_3-3
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 899
+        width: 498
+        height: 389
+      alignment: 9
+      pivot: {x: 0.5787155, y: 0.63436204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_2_3-8
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 103
+        width: 738
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_2_1-8
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 257
+        width: 428
+        height: 354
+      alignment: 9
+      pivot: {x: 0.44911706, y: 0.6722544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_2_2-8
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 254
+        width: 429
+        height: 357
+      alignment: 9
+      pivot: {x: 0.44923583, y: 0.5366014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_2_4-8
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 294
+        width: 363
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_2_5-8
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 319
+        width: 331
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy_218
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 257
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_0_6-8
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 4809
+        width: 368
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_0_7-8
+      rect:
+        serializedVersion: 2
+        x: 3585
+        y: 4799
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_0_8-8
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 4802
+        width: 350
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_1_6-8
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 2942
+        width: 363
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_1_7-8
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 2970
+        width: 360
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_1_8-8
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 2958
+        width: 344
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_2_6-8
+      rect:
+        serializedVersion: 2
+        x: 2995
+        y: 290
+        width: 353
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_2_7-8
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 319
+        width: 356
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explode_2_8-8
+      rect:
+        serializedVersion: 2
+        x: 3817
+        y: 313
+        width: 385
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

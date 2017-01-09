@@ -7,8 +7,11 @@ public class CharController : MonoBehaviour{
 	[SerializeField] private int Timetowait=0;
 	[SerializeField] public float m_MaxSpeed = 10f,m_JumpHeight,life;//Alter
 	public bool Comment = false;
+	public bool animToRight;
 
-
+	private float lastMove = 0; 
+	private bool killkill;
+	private int intecSprint = 2;
 	private Animator m_Anim; 
 	private Rigidbody2D m_Rigidbody2D;
 	private CircleCollider2D GroundCols;
@@ -30,6 +33,9 @@ public class CharController : MonoBehaviour{
 	[NonSerialized] public bool noAtacking,Gdamaged=false;
 
 	private void Start(){
+		//if (!animToRight) m_FacingRight = false;
+		if(Flying) intecSprint = 5 ;
+		killkill = GetComponent<AI> ().killkill;
 		//Physics.IgnoreCollision(GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().GetComponent<CircleCollider2D>().collider2D , GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().GetComponent<CircleCollider2D>().collider2D );
 		comboTree[0]=true;
 		noAtacking = true;
@@ -53,46 +59,52 @@ public class CharController : MonoBehaviour{
 			myEnemy_layer = LayerMask.GetMask("Enemy");
 	}
 	//Maybe use FixedUpdate(faster) have a precision between execution
-	private void FixedUpdate(){	
+	private void Update(){	
+		//if(Comment) print ("VeloX"+m_Rigidbody2D.velocity.x);
+
 		if(transform.position.y>1.9f)
 			if(Comment) print(m_JumpForce+" "+transform.position);
 		//print(Time.deltaTime);
-		if (life <= 0 || transform.position.y <= -10)
+
+		if ( transform.position.y <= -10)
 			GameObject.Find("GM").GetComponent<Global>().Died (gameObject);
-		if (!noAtacking) 
+		else if(life <= 0)
+			m_Anim.SetBool ("Death", true);
+		
+		if (!noAtacking || Flying) 
 			Calc_Efect ();
 		
 		if (!Flying) {
 			m_Grounded = false;
 			//abaixo é verificado se colidindo enquando intagivel se não torna tangivel(só é tangivel se não estiver batendo em nada)
-				on_Ground= Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsGround);
-				on_Plat= Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
-				m_Grounded = (on_Ground || on_Plat);
-			    if (m_Rigidbody2D.velocity.y <= 0) {//estiver apenas cainda verificar se encostou no chão
-					if (m_Grounded) {
-						if (!GroundCols.isTrigger) {
-							m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x,0);
-							//m_Rigidbody2D.Sleep ();
-						}
-						m_lastPlat = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
-						if (Habilidades [1]) {
-							PlusJump = true;
-						}
-					}else if (GroundCols.isTrigger && m_Rigidbody2D.velocity.y < 3) {
-						//m_WhatIsGround == UnityEngine.LayerMask.NameToLayer ("Platform")
-						GroundCols.isTrigger = false;
+			on_Ground = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsGround);
+			on_Plat = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
+			m_Grounded = (on_Ground || on_Plat);
+			if (m_Rigidbody2D.velocity.y <= 0) {//estiver apenas cainda verificar se encostou no chão
+				if (m_Grounded) {
+					if (!GroundCols.isTrigger) {
+						m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, 0);
+						//m_Rigidbody2D.Sleep ();
 					}
+					m_lastPlat = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
+					if (Habilidades [1]) {
+						PlusJump = true;
+					}
+				} else if (GroundCols.isTrigger && m_Rigidbody2D.velocity.y < 3) {
+					//m_WhatIsGround == UnityEngine.LayerMask.NameToLayer ("Platform")
+					GroundCols.isTrigger = false;
 				}
+			}
 
 			m_Anim.SetFloat ("vSpeed", m_Rigidbody2D.velocity.y);
 			m_Anim.SetBool ("Ground", m_Grounded);
-			if (count_Without_move >= 5) {
+			if (count_Without_move >= 20) {
 				m_Anim.SetBool ("Defense", false);
-				m_Rigidbody2D.velocity = new Vector2 (0,m_Rigidbody2D.velocity.y);
+				m_Rigidbody2D.velocity = new Vector2 (0, m_Rigidbody2D.velocity.y);
 				m_Anim.SetBool ("Jump_Bot", false);
 			} else
 				count_Without_move++;
-			m_Anim.SetFloat ("Speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
+			m_Anim.SetFloat ("Speed", Mathf.Abs (m_Rigidbody2D.velocity.x));
 
 		}
 		m_Anim.SetBool ("Damaged", damaged);
@@ -144,6 +156,9 @@ public class CharController : MonoBehaviour{
 	}
 
 	public void Move(float move, bool defense, bool jump,int atk,bool sprint){//procedimento acessado externamente que altera o corpo de acordo com as vars
+		//print("Last Move"+lastMove);
+		if (move != 0)
+			lastMove = move;
 		count_Without_move = 0;
 		if (!Habilidades [0]) {
 			sprint = false;
@@ -158,7 +173,6 @@ public class CharController : MonoBehaviour{
 		if (m_Anim.GetInteger ("Atk_1") != 0) {//caso iniciar ataque a var é avisada
 			if (Flying) 
 				sprint = true;
-			
 			noAtacking = false;
 		}	
 		
@@ -189,19 +203,32 @@ public class CharController : MonoBehaviour{
 			move = (defense||atk != 0 ? move/100: move);//caso esteja em modo de defesa ou atacando ele não pode se mover horinzontalmente
 			float veloX = 0;
 			if (sprint && sprint_velo == 0)
-				sprint_velo = 2 * m_MaxSpeed;
+				sprint_velo = intecSprint * m_MaxSpeed;
 			else if (sprint_velo > 0)
 				sprint_velo = sprint_velo - 0.1f;
 			else
 				sprint_velo = 0;
-			veloX = (move * m_MaxSpeed) + ((m_FacingRight)?sprint_velo:-sprint_velo);
+			
+			//if (Flying && move == 0) move = lastMove / Math.Abs(lastMove);
+			veloX = (move * m_MaxSpeed) + ((m_FacingRight)?sprint_velo:-sprint_velo);//lastMove*			
 			float veloY = (m_Rigidbody2D.velocity.y>-8)?m_Rigidbody2D.velocity.y:-9;
 			m_Rigidbody2D.velocity = new Vector2 (veloX, veloY);
 			m_Anim.SetFloat ("Speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
-			if (move > 0 && !m_FacingRight) 
-				Flip ();
-			else if (move < 0 && m_FacingRight)
-				Flip ();
+
+			//if (Comment) print ("Movendo" + move);
+			if (Comment) print(animToRight);
+			//if(Comment) if (animToRight) print ("Direito"); else print ("Esquerdo");
+			if (animToRight == true) {
+				if (move < 0 && m_FacingRight)
+					Flip ();
+				else if (move > 0 && !m_FacingRight)
+					Flip ();
+			} else if (animToRight != true) {
+				if (move < 0 && !m_FacingRight)
+					Flip ();
+				else if (move > 0 && m_FacingRight)
+					Flip ();
+			}
 		}
 		if (!m_Grounded && m_Rigidbody2D.velocity.y >= 4)
 			jump = false;
@@ -236,6 +263,7 @@ public class CharController : MonoBehaviour{
 
 	//girar personagem no ambiente(sem suavização),as sprites são unidirecionais
 	private void Flip(){//vira a escala (muda de lado) e altera a var responsavel
+		//if(Comment) print("Virou de Lado");
 		m_FacingRight = !m_FacingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;

@@ -4,8 +4,8 @@ using System.Collections;
 using UnityStandardAssets._2D;
 
 public class AI : MonoBehaviour {
-	[SerializeField] private bool killkill = false,enemy=true;
-	public bool Comment=false;
+	[SerializeField] private bool enemy=true;
+	public bool killkill = false,Comment=false;
 
 	private int waitforPath = 0;
 	private float LimitX, LimitY, Dist;
@@ -43,8 +43,8 @@ public class AI : MonoBehaviour {
 	public void ini(){
 		GetComponent<AI> ().enabled = (GetComponent<Transform> ().name != Global.target.name);
 		//Possibilidade de não ser utilizado essa var LimitX ou LimitY(consumo de men por duplicação)
-		LimitX =(Flying)?Global.LimitX*7:Global.LimitX;
-		LimitY = /*(Flying)?0.3f:*/Global.LimitY;
+		LimitX =(Flying)?2:Global.LimitX;
+		LimitY = (Flying)?0.2f:1 * Global.LimitY;
 		n_Golpe [0] = 1;
 		n_EfectGolpe [0] = 6;
 		n_Golpe [1] = 1;
@@ -62,6 +62,8 @@ public class AI : MonoBehaviour {
 	}
 
 	void Update () {//É calculado a distancia entre o personagem atual e seu alvo
+		//print ("Bools" + boolX + boolY);
+		if(target_GO != null) Debug.DrawLine (gameObject.transform.position,new Vector2(target [0],target [1]));
 		if(null != Path [0] && this.name == "Char2")//Debug
 			for (int i = 0; null != Path [i+1] && i<Path.Length-2; i++)
 				Debug.DrawLine (new Vector2(Path[i][0],Path[i][1]),new Vector2(Path[i+1][0],Path[i+1][1]));
@@ -75,7 +77,7 @@ public class AI : MonoBehaviour {
 		difX = (transform.position.x > target_GO.transform.position.x) ? transform.position.x - target_GO.transform.position.x : target_GO.transform.position.x - transform.position.x;
 		difY = (transform.position.y > target_GO.transform.position.y) ? transform.position.y - target_GO.transform.position.y : target_GO.transform.position.y - transform.position.y;
 
-		if (((!enemy && target_GO.name != Global.target.name) || enemy) && difX < m_JumpDist / 8 && difY < m_JumpDist / 8 ) {
+		if (!Flying && ((!enemy && target_GO.name != Global.target.name) || enemy) && difX < m_JumpDist / 8 && difY < m_JumpDist / 8 ) {
 			atack();
 		}
 		//vá para o proximo ponto
@@ -84,7 +86,7 @@ public class AI : MonoBehaviour {
 				lastTarget = target;
 				boolX = false;
 				boolY = false;
-		} else{
+		}else {
 			chooseYourPath ();
 			moviment ();
 		}
@@ -111,7 +113,7 @@ public class AI : MonoBehaviour {
 	}
 
 	public void atack(){
-		if(Comment) print ("Golpe " + Golpe [0] + Golpe [1] + Golpe [2] + " Efetivo " + EfectGolpe [0] + EfectGolpe [1] + EfectGolpe [2]);
+		//if(Comment) print ("Golpe " + Golpe [0] + Golpe [1] + Golpe [2] + " Efetivo " + EfectGolpe [0] + EfectGolpe [1] + EfectGolpe [2]);
 		if (noAtacking && !zerado) {
 			for(int i=0;i<3;i++){
 				Golpe[i] = n_Golpe[i];
@@ -216,7 +218,6 @@ public class AI : MonoBehaviour {
 	void chooseYourPath(){
 		target [0] = float.NaN;
 		target [1] = float.NaN;
-
 		if (difX > m_JumpDist / 8 || difY > m_JumpHeight / 5) {
 			if (posiPath < 0)
 				posiPath = 0;
@@ -242,11 +243,11 @@ public class AI : MonoBehaviour {
 				if(Comment) print ("Teste "+ (null == Path [posiPath]));
 			}*/
 			if (posiPath < 0 && !(posiPath < Path.Length && float.IsNaN (Path [0] [0]))) {//Voltou a posição demais pegue sua ultima posição
-				//if(Comment) print ("Voltando impedido no curso normal" + posiPath);
+				if(Comment) print ("Voltando impedido no curso normal" + posiPath);
 				target = lastTarget;
 			} else if (CountBFPath<=10 && (difX < m_JumpDist / 3 && difY < m_JumpHeight / 3 || posiPath < Path.Length-1 && null != Path [posiPath] && float.IsNaN (Path [posiPath] [0]))) {//Está proximo o suficiente para ir só
 				CountBFPath++;
-				//if(Comment) print ("(Caminho incompleto) Proximo ");
+				if(Comment) print ("(Caminho incompleto) Proximo ");
 				Path = new float[4][];
 				Path [0] = new float[2];
 				Path [0] [0] = float.NaN;
@@ -255,7 +256,7 @@ public class AI : MonoBehaviour {
 				//posiPath = -1;//em toda rodada é incremetado um para o valor ficar zero é preciso q valor esteja -1(começar da posição 0 do Path)
 				finded = true;
 			} else if ((posiPath >= Path.Length) || finded) {//O caminho chegou ao fim,mas o inimigo não foi encontrado então recalculo
-				//if(Comment) print ("Recalculo para chegar em: " + target_GO.name);
+				if(Comment) print ("Recalculo para chegar em: " + target_GO.name);
 				//if(CountBFPath>=waitforPath){
 					finded = false;
 					posiPath = -1;
@@ -273,7 +274,7 @@ public class AI : MonoBehaviour {
 
 			} else if (posiPath < Path.Length - 1 && !float.IsNaN (Path [posiPath] [0])) {//ainda não chegou siga o caminho
 				//if(Comment) print ("Tentando se aproximar através do caminho");
-				//if(Comment) print("Apenas seguindo");
+				if(Comment) print("Apenas seguindo");
 				finded = false;
 				target = Path [posiPath];
 			}
@@ -285,16 +286,17 @@ public class AI : MonoBehaviour {
 				//float distanc = (transform.position.y > target_GO.transform.position.y + Dist) ? transform.position.y - target_GO.transform.position.y + Dist : target_GO.transform.position.y + Dist - transform.position.y;
 
 				if (Flying || (difY < m_JumpHeight || target_GO.transform.position.y < transform.position.y)) {
-					//if(Comment) print ("Taking him");
-					target [0] = target_GO.transform.position.x;
-					target [1] = target_GO.transform.position.y + Dist;
+					if(Comment) print ("Taking him");
+						target [0] = target_GO.transform.position.x;
+						target [1] = target_GO.transform.position.y + Dist;
 				} else {
-					//if(Comment) print ("Can't taking him");
+					if(Comment) print ("Can't taking him");
 					target [0] = float.NaN;
 				}
 			}
 
 		}
+
 	}
 		
 	public void Golpe_Detec(int Efective){
