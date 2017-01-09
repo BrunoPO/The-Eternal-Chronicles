@@ -20,10 +20,12 @@ public class CharController : MonoBehaviour{
 	private Vector3 ini,fim;
 	private int Atk1_Hash=Animator.StringToHash("Atk1"),Atk0_Hash=Animator.StringToHash("Atk0"),Atk01_Hash=Animator.StringToHash("Atk01"),Atk00_Hash=Animator.StringToHash("Atk00"),Air_Atk0_Hash=Animator.StringToHash("Air_Atk0"),Atk0x0_Hash=Animator.StringToHash("Atk0x0"),Atk0x1_Hash=Animator.StringToHash("Atk0x1");
 	private float damage,m_JumpForce,k_GroundedRadius;
-	private bool m_Grounded,m_FacingRight = true,damaged=false,on_Ground=false,on_Plat=false;
+	private bool m_FacingRight = true,damaged=false;
 	private int ID_Target,Anim_Hash,Efective,Efective_Aux,count_Without_move;
 
+	private Collider2D on_Ground, m_Grounded, on_Plat,platatual;
 	private bool PlusJump=false;
+	
 	private LayerMask myEnemy_layer;
 	private float sprint_velo = 0;
 	public bool[] comboTree=new bool[14];
@@ -49,6 +51,7 @@ public class CharController : MonoBehaviour{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		m_JumpForce = (float) Mathf.Sqrt (Mathf.Abs( 2.075f * m_JumpHeight * Physics2D.gravity.y * m_Rigidbody2D.gravityScale))*m_Rigidbody2D.mass;
 		k_GroundedRadius = GroundCols.radius;
+		print (k_GroundedRadius);
 		if (Flying) {
 			m_Rigidbody2D.gravityScale = 0f;
 			GroundCols.isTrigger = true;
@@ -60,10 +63,10 @@ public class CharController : MonoBehaviour{
 	}
 	//Maybe use FixedUpdate(faster) have a precision between execution
 	private void Update(){	
+		//print ("Aqui" + m_lastPlat);
 		//if(Comment) print ("VeloX"+m_Rigidbody2D.velocity.x);
 
-		if(transform.position.y>1.9f)
-			if(Comment) print(m_JumpForce+" "+transform.position);
+		//if(transform.position.y>1.9f) if(Comment) print(m_JumpForce+" "+transform.position);
 		//print(Time.deltaTime);
 
 		if ( transform.position.y <= -10)
@@ -75,18 +78,20 @@ public class CharController : MonoBehaviour{
 			Calc_Efect ();
 		
 		if (!Flying) {
-			m_Grounded = false;
+			m_Grounded = null;on_Ground = null;on_Plat=null;
 			//abaixo é verificado se colidindo enquando intagivel se não torna tangivel(só é tangivel se não estiver batendo em nada)
 			on_Ground = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsGround);
 			on_Plat = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
-			m_Grounded = (on_Ground || on_Plat);
+			m_Grounded = (on_Ground)?on_Ground:on_Plat;
+			if (m_Grounded) m_lastPlat = m_Grounded;
+			//print ("está no chão?" + m_Grounded);
 			if (m_Rigidbody2D.velocity.y <= 0) {//estiver apenas cainda verificar se encostou no chão
 				if (m_Grounded) {
 					if (!GroundCols.isTrigger) {
 						m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, 0);
 						//m_Rigidbody2D.Sleep ();
 					}
-					m_lastPlat = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
+					//m_lastPlat = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
 					if (Habilidades [1]) {
 						PlusJump = true;
 					}
@@ -200,7 +205,7 @@ public class CharController : MonoBehaviour{
 		}
 		m_Anim.SetBool ("Defense", defense);//seta defesa
 		if ((m_Grounded || m_AirControl)) {//verifica se ele está no chão ou pode se mover no ar.
-			move = (defense||atk != 0 ? move/100: move);//caso esteja em modo de defesa ou atacando ele não pode se mover horinzontalmente
+			move = (defense||atk != 0 ? move/1000: move);//caso esteja em modo de defesa ou atacando ele não pode se mover horinzontalmente
 			float veloX = 0;
 			if (sprint && sprint_velo == 0)
 				sprint_velo = intecSprint * m_MaxSpeed;

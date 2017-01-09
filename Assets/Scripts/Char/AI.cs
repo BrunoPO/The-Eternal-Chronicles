@@ -28,13 +28,13 @@ public class AI : MonoBehaviour {
 	[NonSerialized] public static int[] n_Golpe=new int[3],n_EfectGolpe=new int[3];
 	private Animator m_Anim;
 	private bool noAtacking,zerado=false,Flying;
-
+	private Collider2D lastPlat;
 	void Start () {
 		Flying = GetComponent<CharController> ().Flying;
 		waitforPath = GameObject.Find ("GM").GetComponent<Global> ().waitForPath;
 		waitforPath = UnityEngine.Random.Range(waitforPath,2*waitforPath);
 		m_Anim = GetComponent<Animator>();
-		m_JumpHeight = GetComponent<CharController> ().m_JumpHeight/2;
+		m_JumpHeight = GetComponent<CharController> ().m_JumpHeight;
 		m_JumpDist = GetComponent<CharController> ().m_MaxSpeed;
 		Dist = (this.GetComponent<CircleCollider2D> ().offset.y -  this.GetComponent<CircleCollider2D> ().radius) * this.GetComponent<Transform> ().localScale.y;
 		altArvCombo = transform.GetComponent<CharController> ().altArvCombo;
@@ -63,6 +63,8 @@ public class AI : MonoBehaviour {
 
 	void Update () {//É calculado a distancia entre o personagem atual e seu alvo
 		//print ("Bools" + boolX + boolY);
+		lastPlat = GetComponent<CharController>().m_lastPlat; 
+
 		if(target_GO != null) Debug.DrawLine (gameObject.transform.position,new Vector2(target [0],target [1]));
 		if(null != Path [0] && this.name == "Char2")//Debug
 			for (int i = 0; null != Path [i+1] && i<Path.Length-2; i++)
@@ -167,7 +169,10 @@ public class AI : MonoBehaviour {
 	}
 
 	void moviment(){
+		bool on_air = false;
+		float posiLimit,dif;
 		if (!float.IsNaN (target [0])) {//Ande em direção ao alvo
+			//print("Há um alvo");
 			if (this.transform.position.x < target [0] - LimitX) {
 				VeloX = 1;
 			} else if (this.transform.position.x > target [0] + LimitX) {
@@ -176,6 +181,8 @@ public class AI : MonoBehaviour {
 				VeloX = 0;
 				boolX = true;
 			}
+
+
 			//Suba e/ou desça em direção ao alvo
 			if (this.GetComponent<Animator> ().GetFloat ("vSpeed") == 0) {
 				if (this.transform.position.y + Dist > target [1] + LimitY) {
@@ -200,11 +207,25 @@ public class AI : MonoBehaviour {
 					if (jump && defense && percent > 0.4f) {
 						defense = false;
 					}
-					//if(Comment) print ("print Here" + defense);
+					//if(Comment) print ("Defesa?" + defense);
 				}
+
 			} else {
 				jump = false;
 				defense = false;
+			}
+			if (VeloX != 0 && !(jump || m_Anim.GetBool("Grounded"))) {
+				print ("Trying to move");
+				if (VeloX > 0) {
+					posiLimit = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;
+					dif = posiLimit - transform.position.x;
+				} else {
+					posiLimit = lastPlat.bounds.center.x - lastPlat.bounds.extents.x;
+					dif = transform.position.x-posiLimit;
+				}
+				if (dif <= 0.8) {
+					VeloX = 0;
+				}
 			}
 		} else {
 			VeloX = 0;
@@ -219,10 +240,12 @@ public class AI : MonoBehaviour {
 		target [0] = float.NaN;
 		target [1] = float.NaN;
 		if (difX > m_JumpDist / 8 || difY > m_JumpHeight / 5) {
+			
 			if (posiPath < 0)
 				posiPath = 0;
 			else if (posiPath > Path.Length)
 				posiPath = Path.Length;
+			//print ("Escolhendo caminho"+posiPath);
 			/*try to do not sucide
 			if (this.GetComponent<Animator> ().GetBool ("Ground") == false && this.GetComponent<Animator> ().GetFloat ("vSpeed")<1) {
 				Collider2D lastPlat = this.GetComponent<PlatformerCharacter2D>().m_lastPlat; 
@@ -242,6 +265,11 @@ public class AI : MonoBehaviour {
 				if(Comment) print ("Teste " + Path [posiPath]);
 				if(Comment) print ("Teste "+ (null == Path [posiPath]));
 			}*/
+
+
+
+
+
 			if (posiPath < 0 && !(posiPath < Path.Length && float.IsNaN (Path [0] [0]))) {//Voltou a posição demais pegue sua ultima posição
 				if(Comment) print ("Voltando impedido no curso normal" + posiPath);
 				target = lastTarget;
@@ -290,7 +318,7 @@ public class AI : MonoBehaviour {
 						target [0] = target_GO.transform.position.x;
 						target [1] = target_GO.transform.position.y + Dist;
 				} else {
-					if(Comment) print ("Can't taking him");
+					if(Comment) print ("Can't taking him"+difX+" "+m_JumpHeight);
 					target [0] = float.NaN;
 				}
 			}

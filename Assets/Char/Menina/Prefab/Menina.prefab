@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -30,7 +30,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 114: {fileID: 114000013840903542}
   - 114: {fileID: 114000013349591410}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Menina
   m_TagString: Alive
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400004}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -72,8 +72,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.73, y: 0.37, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 10.088, y: 4.99, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 400000}
@@ -122,9 +122,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.2}
+  m_Offset: {x: 0, y: -5.5}
   serializedVersion: 2
-  m_Radius: 0.0823545
+  m_Radius: 0.7579565
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -136,9 +136,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -0.0048526763, y: -0.08167038}
+  m_Offset: {x: 0.09166241, y: -2.6875663}
   serializedVersion: 2
-  m_Size: {x: 0.17049515, y: 0.40971938}
+  m_Size: {x: 1.4251895, y: 5.621512}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -208,7 +208,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012724633140}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013866312728}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Point_Atack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
