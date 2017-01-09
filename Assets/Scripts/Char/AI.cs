@@ -214,7 +214,7 @@ public class AI : MonoBehaviour {
 				jump = false;
 				defense = false;
 			}
-			if (VeloX != 0 && !(jump || m_Anim.GetBool("Grounded"))) {
+			if (VeloX != 0 && !(jump || m_Anim.GetBool("Ground"))) {
 				print ("Trying to move");
 				if (VeloX > 0) {
 					posiLimit = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;

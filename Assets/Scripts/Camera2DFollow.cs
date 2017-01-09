@@ -6,6 +6,7 @@ namespace UnityStandardAssets._2D
     public class Camera2DFollow : MonoBehaviour
     {
         private Transform target;
+		public float minimumHeight=0;
         public float damping = 1;
         public float lookAheadFactor = 3;
         public float lookAheadReturnSpeed = 0.5f;
@@ -46,7 +47,7 @@ namespace UnityStandardAssets._2D
 
             Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward*m_OffsetZ;
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
-			if (newPos.y <= 5.66)
+			if (newPos.y <= minimumHeight)
 				newPos.y = transform.position.y;
             transform.position = newPos;
 

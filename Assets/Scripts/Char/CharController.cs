@@ -127,6 +127,7 @@ public class CharController : MonoBehaviour{
 		damage = (Anim_Hash == Atk0_Hash || Anim_Hash == Air_Atk0_Hash || Anim_Hash == Atk00_Hash || Anim_Hash == Atk0x0_Hash) ? 1.5f : 0;
 		damage = (damage != 0) ? damage : ((Anim_Hash == Atk1_Hash || Anim_Hash == Atk01_Hash) ? 2.5f : damage);
 		damage = (damage != 0) ? damage : (((Anim_Hash == Atk0x1_Hash) ? 3.5f : damage));
+		damage = (damage != 0) ? damage : 2;
 
 		Efective_Aux = 0;
 		Efective=0;
@@ -145,9 +146,11 @@ public class CharController : MonoBehaviour{
 	}
 
 	public int Damaged(float dano,int ID){//aqui é setado que foi recebido dano e possui um retorno 2 se acertou o inimigo certo 1 se ele estiver em defesa 0 se não formos o alvo.
+		
 		if (!m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense")) {
 			life -= dano;
 			damaged = true;
+			print("Recebeu dano"+life+" "+dano);
 			return (this.gameObject.GetInstanceID()==ID)?2:0;
 		}else if(m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense") && dano > 2) {
 			life -= dano;
@@ -155,6 +158,8 @@ public class CharController : MonoBehaviour{
 		} else {
 			life -= dano/5;
 		}
+
+		print("Recebeu dano"+life+" "+dano);
 		//EfectGolpe [0] = 6;
 		//EfectGolpe [2] = 6;
 		return (this.gameObject.GetInstanceID()==ID)?((damaged)?2:1):0;
