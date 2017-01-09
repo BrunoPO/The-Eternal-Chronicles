@@ -63,8 +63,9 @@ public class AI : MonoBehaviour {
 
 	void Update () {//É calculado a distancia entre o personagem atual e seu alvo
 		//print ("Bools" + boolX + boolY);
-		lastPlat = GetComponent<CharController>().m_lastPlat; 
 
+		lastPlat = GetComponent<CharController>().m_lastPlat; 
+		print (lastPlat);
 		if(target_GO != null) Debug.DrawLine (gameObject.transform.position,new Vector2(target [0],target [1]));
 		if(null != Path [0] && this.name == "Char2")//Debug
 			for (int i = 0; null != Path [i+1] && i<Path.Length-2; i++)
@@ -214,7 +215,7 @@ public class AI : MonoBehaviour {
 				jump = false;
 				defense = false;
 			}
-			if (VeloX != 0 && !(jump || m_Anim.GetBool("Ground"))) {
+			if (VeloX != 0 && !(jump || !m_Anim.GetBool("Ground"))) {
 				print ("Trying to move");
 				if (VeloX > 0) {
 					posiLimit = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;
@@ -223,7 +224,7 @@ public class AI : MonoBehaviour {
 					posiLimit = lastPlat.bounds.center.x - lastPlat.bounds.extents.x;
 					dif = transform.position.x-posiLimit;
 				}
-				if (dif <= 0.8) {
+				if (dif <= 1) {
 					VeloX = 0;
 				}
 			}
