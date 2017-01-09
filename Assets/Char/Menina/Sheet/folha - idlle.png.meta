@@ -1,0 +1,899 @@
+fileFormatVersion: 2
+guid: 8c4af836b9761844693f7f4715f81e29
+timeCreated: 1483970486
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: folha - idlle_0
+    21300002: folha - idlle_1
+    21300004: folha - idlle_2
+    21300006: folha - idlle_3
+    21300008: folha - idlle_4
+    21300010: folha - idlle_5
+    21300012: folha - idlle_6
+    21300014: folha - idlle_7
+    21300016: folha - idlle_8
+    21300018: folha - idlle_9
+    21300020: folha - idlle_10
+    21300022: folha - idlle_11
+    21300024: folha - idlle_12
+    21300026: folha - idlle_13
+    21300028: folha - idlle_14
+    21300030: folha - idlle_15
+    21300032: folha - idlle_16
+    21300034: folha - idlle_17
+    21300036: folha - idlle_18
+    21300038: folha - idlle_19
+    21300040: folha - idlle_20
+    21300042: folha - idlle_21
+    21300044: folha - idlle_22
+    21300046: folha - idlle_23
+    21300048: folha - idlle_24
+    21300050: folha - idlle_25
+    21300052: folha - idlle_26
+    21300054: folha - idlle_27
+    21300056: folha - idlle_28
+    21300058: folha - idlle_29
+    21300060: folha - idlle_30
+    21300062: folha - idlle_31
+    21300064: folha - idlle_32
+    21300066: folha - idlle_33
+    21300068: folha - idlle_34
+    21300070: folha - idlle_35
+    21300072: folha - idlle_36
+    21300074: folha - idlle_37
+    21300076: folha - idlle_38
+    21300078: folha - idlle_39
+    21300080: folha - idlle_40
+    21300082: folha - idlle_41
+    21300084: folha - idlle_42
+    21300086: folha - idlle_43
+    21300088: folha - idlle_44
+    21300090: folha - idlle_45
+    21300092: folha - idlle_46
+    21300094: folha - idlle_47
+    21300096: folha - idlle_48
+    21300098: folha - idlle_49
+    21300100: folha - idlle_50
+    21300102: folha - idlle_51
+    21300104: folha - idlle_52
+    21300106: folha - idlle_53
+    21300108: folha - idlle_54
+    21300110: folha - idlle_55
+    21300112: folha - idlle_56
+    21300114: folha - idlle_57
+    21300116: folha - idlle_58
+    21300118: folha - idlle_59
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: folha - idlle_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4680
+        width: 291
+        height: 914
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_1
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 4680
+        width: 289
+        height: 913
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 4680
+        width: 286
+        height: 913
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4680
+        width: 283
+        height: 911
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_4
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 4680
+        width: 280
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_5
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 4680
+        width: 280
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_6
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 4680
+        width: 277
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_7
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 4680
+        width: 274
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_8
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 4680
+        width: 272
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_9
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 4680
+        width: 269
+        height: 907
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3763
+        width: 268
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_11
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 3763
+        width: 266
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_12
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 3762
+        width: 265
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_13
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 3762
+        width: 262
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_14
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 3763
+        width: 260
+        height: 911
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_15
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 3762
+        width: 259
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_16
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 3762
+        width: 258
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_17
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 3762
+        width: 260
+        height: 913
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_18
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 3763
+        width: 258
+        height: 913
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_19
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 3765
+        width: 257
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_20
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2839
+        width: 255
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_21
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 2839
+        width: 255
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_22
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 2839
+        width: 257
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_23
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 2839
+        width: 258
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_24
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 2839
+        width: 260
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_25
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 2839
+        width: 261
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_26
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2839
+        width: 261
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_27
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 2841
+        width: 261
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_28
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 2839
+        width: 263
+        height: 907
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_29
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 2839
+        width: 264
+        height: 906
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_30
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1915
+        width: 263
+        height: 907
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_31
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1913
+        width: 264
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_32
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1915
+        width: 262
+        height: 908
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_33
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1915
+        width: 261
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_34
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1915
+        width: 261
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_35
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1915
+        width: 260
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_36
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1915
+        width: 258
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_37
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 1915
+        width: 258
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_38
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 1915
+        width: 258
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_39
+      rect:
+        serializedVersion: 2
+        x: 2488
+        y: 1915
+        width: 257
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_40
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 964
+        width: 255
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_41
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 964
+        width: 255
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_42
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 964
+        width: 257
+        height: 911
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_43
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 964
+        width: 258
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_44
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 964
+        width: 259
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_45
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 964
+        width: 260
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_46
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 964
+        width: 261
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_47
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 964
+        width: 261
+        height: 907
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_48
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 964
+        width: 264
+        height: 907
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_49
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 964
+        width: 267
+        height: 907
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_50
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 269
+        height: 907
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_51
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 15
+        width: 272
+        height: 909
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_52
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 15
+        width: 274
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_53
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 15
+        width: 278
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_54
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 15
+        width: 280
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_55
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 15
+        width: 280
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_56
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 15
+        width: 283
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_57
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 18
+        width: 285
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_58
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 15
+        width: 288
+        height: 913
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - idlle_59
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 18
+        width: 291
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

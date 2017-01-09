@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: c810656b067252e409ce50f7ea8315f4
+timeCreated: 1483928550
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: folha - jump_0
+    21300002: folha - jump_1
+    21300004: folha - jump_2
+    21300006: folha - jump_3
+    21300008: folha - jump_4
+    21300010: folha - jump_5
+    21300012: folha - jump_6
+    21300014: folha - jump_7
+    21300016: folha - jump_8
+    21300018: folha - jump_9
+    21300020: folha - jump_10
+    21300022: folha - jump_11
+    21300024: folha - jump_12
+    21300026: folha - jump_13
+    21300028: folha - jump_14
+    21300030: folha - jump_15
+    21300032: folha - jump_16
+    21300034: folha - jump_17
+    21300036: folha - jump_18
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: folha - jump_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1890
+        width: 277
+        height: 900
+      alignment: 9
+      pivot: {x: 0.51548445, y: 0.7192269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1890
+        width: 367
+        height: 891
+      alignment: 9
+      pivot: {x: 0.5175308, y: 0.7142204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_2
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1890
+        width: 411
+        height: 874
+      alignment: 9
+      pivot: {x: 0.5782704, y: 0.71347946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_3
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1890
+        width: 385
+        height: 859
+      alignment: 9
+      pivot: {x: 0.56127423, y: 0.7097174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_4
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 1890
+        width: 422
+        height: 845
+      alignment: 9
+      pivot: {x: 0.5813121, y: 0.70050186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_5
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 1892
+        width: 262
+        height: 931
+      alignment: 9
+      pivot: {x: 0.5900404, y: 0.72114134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_6
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 1892
+        width: 339
+        height: 933
+      alignment: 9
+      pivot: {x: 0.44938943, y: 0.72296584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_7
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 1892
+        width: 398
+        height: 929
+      alignment: 9
+      pivot: {x: 0.38145378, y: 0.7239258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_8
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 1894
+        width: 437
+        height: 931
+      alignment: 9
+      pivot: {x: 0.37240273, y: 0.71883786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 476
+        height: 924
+      alignment: 9
+      pivot: {x: 0.40087926, y: 0.71585363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_10
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 931
+        width: 533
+        height: 916
+      alignment: 9
+      pivot: {x: 0.4879289, y: 0.7177388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_11
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 931
+        width: 592
+        height: 916
+      alignment: 9
+      pivot: {x: 0.5289812, y: 0.7177388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_12
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 927
+        width: 499
+        height: 889
+      alignment: 9
+      pivot: {x: 0.5859561, y: 0.7098776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_13
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 931
+        width: 625
+        height: 856
+      alignment: 9
+      pivot: {x: 0.55490196, y: 0.7154632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_14
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 932
+        width: 513
+        height: 834
+      alignment: 9
+      pivot: {x: 0.5710687, y: 0.70571804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 357
+        height: 833
+      alignment: 9
+      pivot: {x: 0.5180218, y: 0.700816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_16
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 0
+        width: 307
+        height: 851
+      alignment: 9
+      pivot: {x: 0.43712863, y: 0.7041287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_17
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 0
+        width: 267
+        height: 875
+      alignment: 9
+      pivot: {x: 0.4919676, y: 0.70343155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - jump_18
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 897
+      alignment: 9
+      pivot: {x: 0.531081, y: 0.71756923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

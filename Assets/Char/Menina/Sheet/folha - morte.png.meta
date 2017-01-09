@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: 916e643247e6e2941a13e12225a24128
+timeCreated: 1483928672
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: folha - morte_0
+    21300002: folha - morte_1
+    21300004: folha - morte_2
+    21300006: folha - morte_3
+    21300008: folha - morte_4
+    21300010: folha - morte_5
+    21300012: folha - morte_6
+    21300014: folha - morte_7
+    21300016: folha - morte_8
+    21300018: folha - morte_9
+    21300020: folha - morte_10
+    21300022: folha - morte_11
+    21300024: folha - morte_12
+    21300026: folha - morte_13
+    21300028: folha - morte_14
+    21300030: folha - morte_15
+    21300032: folha - morte_16
+    21300034: folha - morte_17
+    21300036: folha - morte_18
+    21300038: folha - morte_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: folha - morte_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 961
+        width: 279
+        height: 896
+      alignment: 9
+      pivot: {x: 0.5644206, y: 0.73569936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 961
+        width: 279
+        height: 896
+      alignment: 9
+      pivot: {x: 0.5644205, y: 0.7306846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_2
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 961
+        width: 304
+        height: 900
+      alignment: 9
+      pivot: {x: 0.39653498, y: 0.71967405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_3
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 961
+        width: 303
+        height: 899
+      alignment: 9
+      pivot: {x: 0.42585257, y: 0.71492034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_4
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 960
+        width: 358
+        height: 845
+      alignment: 9
+      pivot: {x: 0.46234608, y: 0.73929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_5
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 960
+        width: 358
+        height: 845
+      alignment: 9
+      pivot: {x: 0.47489715, y: 0.73929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_6
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 961
+        width: 469
+        height: 806
+      alignment: 9
+      pivot: {x: 0.5862264, y: 0.73971885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_7
+      rect:
+        serializedVersion: 2
+        x: 2823
+        y: 961
+        width: 468
+        height: 806
+      alignment: 9
+      pivot: {x: 0.6248148, y: 0.7285691}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_8
+      rect:
+        serializedVersion: 2
+        x: 3353
+        y: 961
+        width: 770
+        height: 486
+      alignment: 9
+      pivot: {x: 0.7217488, y: 0.6386832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_9
+      rect:
+        serializedVersion: 2
+        x: 4185
+        y: 961
+        width: 768
+        height: 486
+      alignment: 9
+      pivot: {x: 0.7223263, y: 0.6109466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 594
+        width: 904
+        height: 229
+      alignment: 9
+      pivot: {x: 0.7187021, y: 0.46075705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_11
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 595
+        width: 906
+        height: 228
+      alignment: 9
+      pivot: {x: 0.7132598, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_12
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 595
+        width: 906
+        height: 228
+      alignment: 9
+      pivot: {x: 0.7132598, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_13
+      rect:
+        serializedVersion: 2
+        x: 2914
+        y: 594
+        width: 906
+        height: 229
+      alignment: 9
+      pivot: {x: 0.72317874, y: 0.4803784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_14
+      rect:
+        serializedVersion: 2
+        x: 3884
+        y: 594
+        width: 908
+        height: 229
+      alignment: 9
+      pivot: {x: 0.7127901, y: 0.4803784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 904
+        height: 230
+      alignment: 9
+      pivot: {x: 0.7187021, y: 0.46092755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_16
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 95
+        width: 906
+        height: 230
+      alignment: 9
+      pivot: {x: 0.7182193, y: 0.48046377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_17
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 95
+        width: 906
+        height: 230
+      alignment: 9
+      pivot: {x: 0.7132598, y: 0.48046377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_18
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 95
+        width: 906
+        height: 230
+      alignment: 9
+      pivot: {x: 0.71821916, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - morte_19
+      rect:
+        serializedVersion: 2
+        x: 3921
+        y: 95
+        width: 906
+        height: 230
+      alignment: 9
+      pivot: {x: 0.7083005, y: 0.4218551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

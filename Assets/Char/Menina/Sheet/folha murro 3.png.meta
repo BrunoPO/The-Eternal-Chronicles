@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: 84ceec6628064d445b6ecb513e0caa84
+timeCreated: 1483971253
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: folha murro 3_0
+    21300002: folha murro 3_1
+    21300004: folha murro 3_2
+    21300006: folha murro 3_3
+    21300008: folha murro 3_4
+    21300010: folha murro 3_5
+    21300012: folha murro 3_6
+    21300014: folha murro 3_7
+    21300016: folha murro 3_8
+    21300018: folha murro 3_9
+    21300020: folha murro 3_10
+    21300022: folha murro 3_11
+    21300024: folha murro 3_12
+    21300026: folha murro 3_13
+    21300028: folha murro 3_14
+    21300030: folha murro 3_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: folha murro 3_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 961
+        width: 301
+        height: 891
+      alignment: 9
+      pivot: {x: 0.58, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 961
+        width: 301
+        height: 891
+      alignment: 9
+      pivot: {x: 0.58, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_2
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 962
+        width: 260
+        height: 890
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_3
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 962
+        width: 259
+        height: 890
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_4
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 965
+        width: 351
+        height: 887
+      alignment: 9
+      pivot: {x: 0.49, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_5
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 965
+        width: 349
+        height: 887
+      alignment: 9
+      pivot: {x: 0.48, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_6
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 967
+        width: 473
+        height: 867
+      alignment: 9
+      pivot: {x: 0.38, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_7
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 967
+        width: 472
+        height: 867
+      alignment: 9
+      pivot: {x: 0.37, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 30
+        width: 473
+        height: 868
+      alignment: 9
+      pivot: {x: 0.38, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_9
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 30
+        width: 472
+        height: 868
+      alignment: 9
+      pivot: {x: 0.38, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_10
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 32
+        width: 350
+        height: 888
+      alignment: 9
+      pivot: {x: 0.48, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_11
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 32
+        width: 351
+        height: 888
+      alignment: 9
+      pivot: {x: 0.48, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_12
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 30
+        width: 258
+        height: 890
+      alignment: 9
+      pivot: {x: 0.48, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_13
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 30
+        width: 259
+        height: 890
+      alignment: 9
+      pivot: {x: 0.48, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_14
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 32
+        width: 301
+        height: 892
+      alignment: 9
+      pivot: {x: 0.58, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha murro 3_15
+      rect:
+        serializedVersion: 2
+        x: 2775
+        y: 32
+        width: 301
+        height: 892
+      alignment: 9
+      pivot: {x: 0.58, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

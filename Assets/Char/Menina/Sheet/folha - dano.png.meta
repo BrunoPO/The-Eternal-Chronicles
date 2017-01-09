@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: e1e89bd9a48d09c4b818d7c891fa47a4
+timeCreated: 1483928095
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: folha - dano_0
+    21300002: folha - dano_1
+    21300004: folha - dano_2
+    21300006: folha - dano_3
+    21300008: folha - dano_4
+    21300010: folha - dano_5
+    21300012: folha - dano_6
+    21300014: folha - dano_7
+    21300016: folha - dano_8
+    21300018: folha - dano_9
+    21300020: folha - dano_10
+    21300022: folha - dano_11
+    21300024: folha - dano_12
+    21300026: folha - dano_13
+    21300028: folha - dano_14
+    21300030: folha - dano_15
+    21300032: folha - dano_16
+    21300034: folha - dano_17
+    21300036: folha - dano_18
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: folha - dano_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1072
+        width: 278
+        height: 899
+      alignment: 9
+      pivot: {x: 0.543825, y: 0.72022176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1072
+        width: 278
+        height: 899
+      alignment: 9
+      pivot: {x: 0.538347, y: 0.71852773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_2
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1074
+        width: 279
+        height: 895
+      alignment: 9
+      pivot: {x: 0.5163756, y: 0.71269804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_3
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1074
+        width: 279
+        height: 895
+      alignment: 9
+      pivot: {x: 0.52183396, y: 0.71099645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_4
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1074
+        width: 303
+        height: 899
+      alignment: 9
+      pivot: {x: 0.41455603, y: 0.7066696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_5
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1073
+        width: 303
+        height: 900
+      alignment: 9
+      pivot: {x: 0.4447126, y: 0.70474786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_6
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1072
+        width: 438
+        height: 886
+      alignment: 9
+      pivot: {x: 0.43393767, y: 0.7045453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_7
+      rect:
+        serializedVersion: 2
+        x: 2527
+        y: 1072
+        width: 436
+        height: 886
+      alignment: 9
+      pivot: {x: 0.44411308, y: 0.7045453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_8
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 1074
+        width: 637
+        height: 882
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7227397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_9
+      rect:
+        serializedVersion: 2
+        x: 3695
+        y: 1074
+        width: 636
+        height: 882
+      alignment: 9
+      pivot: {x: 0.49521086, y: 0.72791964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 59
+        width: 637
+        height: 885
+      alignment: 9
+      pivot: {x: 0.47206593, y: 0.7332321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_11
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 59
+        width: 634
+        height: 885
+      alignment: 9
+      pivot: {x: 0.47754687, y: 0.7332321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_12
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 59
+        width: 436
+        height: 885
+      alignment: 9
+      pivot: {x: 0.45918792, y: 0.70910466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_13
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 59
+        width: 438
+        height: 885
+      alignment: 9
+      pivot: {x: 0.45513943, y: 0.7087001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_14
+      rect:
+        serializedVersion: 2
+        x: 2369
+        y: 541
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_15
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 57
+        width: 278
+        height: 896
+      alignment: 9
+      pivot: {x: 0.6272227, y: 0.7105238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_16
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 57
+        width: 278
+        height: 896
+      alignment: 9
+      pivot: {x: 0.52335846, y: 0.7101671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_17
+      rect:
+        serializedVersion: 2
+        x: 3054
+        y: 59
+        width: 277
+        height: 900
+      alignment: 9
+      pivot: {x: 0.54147744, y: 0.72020936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: folha - dano_18
+      rect:
+        serializedVersion: 2
+        x: 3423
+        y: 57
+        width: 277
+        height: 899
+      alignment: 9
+      pivot: {x: 0.52915764, y: 0.719007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
