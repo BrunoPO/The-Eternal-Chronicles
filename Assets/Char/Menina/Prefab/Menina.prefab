@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -30,7 +30,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 114: {fileID: 114000013840903542}
   - 114: {fileID: 114000013349591410}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Menina
   m_TagString: Alive
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400004}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -59,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.291, z: 0}
+  m_LocalPosition: {x: 0.18, y: -5.25, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.088, y: 4.99, z: 0}
+  m_LocalPosition: {x: 10.94, y: 5.1, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -124,7 +124,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -5.5}
   serializedVersion: 2
-  m_Radius: 0.7579565
+  m_Radius: 0.3
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -184,7 +184,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -49316799
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 8c4af836b9761844693f7f4715f81e29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -208,7 +208,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012724633140}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013866312728}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Point_Atack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,11 +285,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AirControl: 1
   Flying: 0
-  Timetowait: 5
+  Timetowait: 10
   m_MaxSpeed: 4
   m_JumpHeight: 2
-  life: 500
-  Comment: 1
+  life: 100
+  Comment: 0
   animToRight: 1
+  m_FacingRight: 1
   comboTree: 0101010101010101010101010101
-  Habilidades: 01010000
+  Habilidades: 00010000
+  damageTree:
+  - 1.5
+  - 2.5
+  - 1.5
+  - 2.5
+  - 1.5
+  - 2.5
+  - 1.5
+  - 2.5
+  - 1.5
+  - 2.5
+  - 1.5
+  - 2.5
+  - 3
+  - 4

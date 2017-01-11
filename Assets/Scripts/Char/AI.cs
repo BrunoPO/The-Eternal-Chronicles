@@ -18,7 +18,7 @@ public class AI : MonoBehaviour {
 	private float[] lastTarget= new float[2],target = new float[2];
 	private float difX,difY,m_JumpHeight,m_JumpDist;
 	private Vector3 pointAdap;
-
+	private bool animToRight = false;
 	private int timedefence = 0;
 
 	public GameObject target_GO;
@@ -29,7 +29,8 @@ public class AI : MonoBehaviour {
 	private Animator m_Anim;
 	private bool noAtacking,zerado=false,Flying;
 	private Collider2D lastPlat;
-	void Start () {
+	void Start() {
+		animToRight = GetComponent<CharController> ().animToRight;
 		Flying = GetComponent<CharController> ().Flying;
 		waitforPath = GameObject.Find ("GM").GetComponent<Global> ().waitForPath;
 		waitforPath = UnityEngine.Random.Range(waitforPath,2*waitforPath);
@@ -43,7 +44,7 @@ public class AI : MonoBehaviour {
 	public void ini(){
 		GetComponent<AI> ().enabled = (GetComponent<Transform> ().name != Global.target.name);
 		//Possibilidade de não ser utilizado essa var LimitX ou LimitY(consumo de men por duplicação)
-		LimitX =(Flying)?2:Global.LimitX;
+		LimitX = (Flying)?2:Global.LimitX;
 		LimitY = (Flying)?0.2f:1 * Global.LimitY;
 		n_Golpe [0] = 1;
 		n_EfectGolpe [0] = 6;
@@ -65,7 +66,6 @@ public class AI : MonoBehaviour {
 		//print ("Bools" + boolX + boolY);
 
 		lastPlat = GetComponent<CharController>().m_lastPlat; 
-		print (lastPlat);
 		if(target_GO != null) Debug.DrawLine (gameObject.transform.position,new Vector2(target [0],target [1]));
 		if(null != Path [0] && this.name == "Char2")//Debug
 			for (int i = 0; null != Path [i+1] && i<Path.Length-2; i++)
@@ -117,7 +117,24 @@ public class AI : MonoBehaviour {
 
 	public void atack(){
 		//if(Comment) print ("Golpe " + Golpe [0] + Golpe [1] + Golpe [2] + " Efetivo " + EfectGolpe [0] + EfectGolpe [1] + EfectGolpe [2]);
+
 		if (noAtacking && !zerado) {
+			bool m_FacingRight = GetComponent<CharController> ().m_FacingRight;
+			bool direita = (transform.position.x >= target_GO.transform.position.x);
+			if (animToRight == true) {
+				if (!direita && !m_FacingRight)
+					GetComponent<CharController> ().Flip ();
+				else if (direita && m_FacingRight)
+					GetComponent<CharController> ().Flip ();
+			} else if (animToRight != true) {
+				//print ("Tentou Girar"+direita+" "+m_FacingRight);
+				if (!direita && m_FacingRight)
+					GetComponent<CharController> ().Flip ();
+				else if (direita && !m_FacingRight)
+					GetComponent<CharController> ().Flip ();
+			}
+
+
 			for(int i=0;i<3;i++){
 				Golpe[i] = n_Golpe[i];
 				EfectGolpe[i] = n_EfectGolpe[i];

@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5479634, y: 1.2780304, z: 0}
+  m_LocalPosition: {x: 20.138857, y: 6.6561627, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -122,7 +122,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.3, y: -1.5}
+  m_Offset: {x: 0.3, y: -1.9}
   serializedVersion: 2
   m_Radius: 0.3
 --- !u!61 &6100000
@@ -285,11 +285,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AirControl: 1
   Flying: 0
-  Timetowait: 20
+  Timetowait: 200
   m_MaxSpeed: 4
   m_JumpHeight: 2
   life: 100
-  Comment: 0
+  Comment: 1
   animToRight: 0
-  comboTree: 0101010101010101010101010101
+  m_FacingRight: 1
+  comboTree: 01
   Habilidades: 00000000
+  damageTree:
+  - 1.5

@@ -6,8 +6,7 @@ public class CharController : MonoBehaviour{
 	[SerializeField] public bool m_AirControl = false,Flying=false;
 	[SerializeField] private int Timetowait=0;
 	[SerializeField] public float m_MaxSpeed = 10f,m_JumpHeight,life;//Alter
-	public bool Comment = false;
-	public bool animToRight;
+	public bool Comment = false,animToRight,m_FacingRight = true;
 
 	private float lastMove = 0; 
 	private bool killkill;
@@ -20,7 +19,7 @@ public class CharController : MonoBehaviour{
 	private Vector3 ini,fim;
 	private int Atk1_Hash=Animator.StringToHash("Atk1"),Atk0_Hash=Animator.StringToHash("Atk0"),Atk01_Hash=Animator.StringToHash("Atk01"),Atk00_Hash=Animator.StringToHash("Atk00"),Air_Atk0_Hash=Animator.StringToHash("Air_Atk0"),Atk0x0_Hash=Animator.StringToHash("Atk0x0"),Atk0x1_Hash=Animator.StringToHash("Atk0x1");
 	private float damage,m_JumpForce,k_GroundedRadius;
-	private bool m_FacingRight = true,damaged=false;
+	private bool damaged=false;
 	private int ID_Target,Anim_Hash,Efective,Efective_Aux,count_Without_move;
 
 	private Collider2D on_Ground, m_Grounded, on_Plat,platatual;
@@ -30,6 +29,7 @@ public class CharController : MonoBehaviour{
 	private float sprint_velo = 0;
 	public bool[] comboTree=new bool[14];
 	public bool[] Habilidades=new bool[4];//Dash,Pulo duplo,ataques em defesa
+	public float[] damageTree=new float[14];
 	[NonSerialized] public Collider2D m_lastPlat;
 	[NonSerialized] public int waitTime,altArvCombo=0;
 	[NonSerialized] public bool noAtacking,Gdamaged=false;
@@ -124,11 +124,30 @@ public class CharController : MonoBehaviour{
 		RaycastHit2D[] col1 = Physics2D.LinecastAll (transform.position, atack_Point_0.position, myEnemy_layer);
 		RaycastHit2D[] col2 = Physics2D.LinecastAll (atack_Point_0.position, atack_Point_1.position, myEnemy_layer);
 		//calculo de quanto dano será infligido(ainda vai ser alterado)
-		damage = (Anim_Hash == Atk0_Hash || Anim_Hash == Air_Atk0_Hash || Anim_Hash == Atk00_Hash || Anim_Hash == Atk0x0_Hash) ? 1.5f : 0;
+		/*damage = (Anim_Hash == Atk0_Hash || Anim_Hash == Air_Atk0_Hash || Anim_Hash == Atk00_Hash || Anim_Hash == Atk0x0_Hash) ? 1.5f : 0;
 		damage = (damage != 0) ? damage : ((Anim_Hash == Atk1_Hash || Anim_Hash == Atk01_Hash) ? 2.5f : damage);
-		damage = (damage != 0) ? damage : (((Anim_Hash == Atk0x1_Hash) ? 3.5f : damage));
-		damage = (damage != 0) ? damage : 2;
+		damage = (damage != 0) ? damage : (((Anim_Hash == Atk0x1_Hash) ? 3.5f : damage));*/
+		//int galho;
+		//galho += 2*m_Anim.GetInteger ("Atk_1"); galho += 2*m_Anim.GetInteger ("Atk_2");galho += 2*m_Anim.GetInteger ("Atk_3");
+		int damage_posi = 0;
+		if (m_Anim.GetInteger ("Atk_3") != 0) {
+			damage_posi = ((2*(2*(m_Anim.GetInteger ("Atk_1"))+m_Anim.GetInteger ("Atk_2")))+m_Anim.GetInteger ("Atk_3"))-1;
+		} else if (m_Anim.GetInteger ("Atk_2") != 0) {
+			damage_posi = (2 * (m_Anim.GetInteger ("Atk_1")) + m_Anim.GetInteger ("Atk_2")) - 1;
+		} else {
+			damage_posi = m_Anim.GetInteger ("Atk_1")-1;
+		}
+		if (Flying) {
+			damage_posi = 0;
+		}
+		if (damage_posi >= 0) 
+			damage = damageTree[damage_posi];
+		print ("Damage inflict"+ damage_posi);
+		print ("Damage inflict"+ damageTree[damage_posi]);
 
+		if (Comment) print (" Posição do golpe "+damage_posi);
+
+		//damage = damageTree [galho - 1];
 		Efective_Aux = 0;
 		Efective=0;
 		for (int i = (col1.Length > col2.Length) ? col1.Length : col2.Length; i >= 0; --i) {//for que verifica os 2 colisores e chamam funcao de dano em cada personagem
@@ -150,7 +169,6 @@ public class CharController : MonoBehaviour{
 		if (!m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense")) {
 			life -= dano;
 			damaged = true;
-			print("Recebeu dano"+life+" "+dano);
 			return (this.gameObject.GetInstanceID()==ID)?2:0;
 		}else if(m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense") && dano > 2) {
 			life -= dano;
@@ -159,7 +177,6 @@ public class CharController : MonoBehaviour{
 			life -= dano/5;
 		}
 
-		print("Recebeu dano"+life+" "+dano);
 		//EfectGolpe [0] = 6;
 		//EfectGolpe [2] = 6;
 		return (this.gameObject.GetInstanceID()==ID)?((damaged)?2:1):0;
@@ -167,6 +184,8 @@ public class CharController : MonoBehaviour{
 
 	public void Move(float move, bool defense, bool jump,int atk,bool sprint){//procedimento acessado externamente que altera o corpo de acordo com as vars
 		//print("Last Move"+lastMove);
+		if (m_Anim.GetBool ("Death"))
+			return;
 		if (move != 0)
 			lastMove = move;
 		count_Without_move = 0;
@@ -272,7 +291,7 @@ public class CharController : MonoBehaviour{
 
 
 	//girar personagem no ambiente(sem suavização),as sprites são unidirecionais
-	private void Flip(){//vira a escala (muda de lado) e altera a var responsavel
+	public void Flip(){//vira a escala (muda de lado) e altera a var responsavel
 		//if(Comment) print("Virou de Lado");
 		m_FacingRight = !m_FacingRight;
 		Vector3 theScale = transform.localScale;
