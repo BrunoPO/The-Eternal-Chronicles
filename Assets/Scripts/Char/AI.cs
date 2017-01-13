@@ -5,7 +5,7 @@ using UnityStandardAssets._2D;
 
 public class AI : MonoBehaviour {
 	[SerializeField] private bool enemy=true;
-	public bool killkill = false,Comment=false;
+	public bool minion = false,Comment=false;
 
 	private int waitforPath = 0;
 	private float LimitX, LimitY, Dist;
@@ -13,7 +13,7 @@ public class AI : MonoBehaviour {
 	private bool jump, defense;
 	private float[][] Path;
 	private int posiPath = 0,altArvCombo;
-
+	private Vector2 Boxsize;
 	private bool boolX = false,boolY= false;
 	private float[] lastTarget= new float[2],target = new float[2];
 	private float difX,difY,m_JumpHeight,m_JumpDist;
@@ -32,6 +32,7 @@ public class AI : MonoBehaviour {
 	void Start() {
 		animToRight = GetComponent<CharController> ().animToRight;
 		Flying = GetComponent<CharController> ().Flying;
+
 		waitforPath = GameObject.Find ("GM").GetComponent<Global> ().waitForPath;
 		waitforPath = UnityEngine.Random.Range(waitforPath,2*waitforPath);
 		m_Anim = GetComponent<Animator>();
@@ -43,6 +44,8 @@ public class AI : MonoBehaviour {
 	}
 	public void ini(){
 		GetComponent<AI> ().enabled = (GetComponent<Transform> ().name != Global.target.name);
+		Boxsize.x = GetComponent<BoxCollider2D> ().size.x * transform.localScale.x;
+		Boxsize.y = GetComponent<BoxCollider2D> ().size.y * transform.localScale.y;
 		//Possibilidade de não ser utilizado essa var LimitX ou LimitY(consumo de men por duplicação)
 		LimitX = (Flying)?2:Global.LimitX;
 		LimitY = (Flying)?0.2f:1 * Global.LimitY;
@@ -116,7 +119,7 @@ public class AI : MonoBehaviour {
 	}
 
 	public void atack(){
-		//if(Comment) print ("Golpe " + Golpe [0] + Golpe [1] + Golpe [2] + " Efetivo " + EfectGolpe [0] + EfectGolpe [1] + EfectGolpe [2]);
+		//if(Comment) print ("Golpe " + Golpe [0] + Golpe [1] + Golpe [2] + " Efetividade " + EfectGolpe [0] + EfectGolpe [1] + EfectGolpe [2]);
 
 		if (noAtacking && !zerado) {
 			bool m_FacingRight = GetComponent<CharController> ().m_FacingRight;
@@ -133,18 +136,12 @@ public class AI : MonoBehaviour {
 				else if (direita && !m_FacingRight)
 					GetComponent<CharController> ().Flip ();
 			}
-
-
 			for(int i=0;i<3;i++){
 				Golpe[i] = n_Golpe[i];
 				EfectGolpe[i] = n_EfectGolpe[i];
+				n_Golpe [i] = 0;
+				n_EfectGolpe [i] = 0;
 			}
-			n_Golpe [0] = 0;
-			n_EfectGolpe [0] = 0;
-			n_Golpe [1] = 0;
-			n_EfectGolpe [1] = 0;
-			n_Golpe [2] = 0;
-			n_EfectGolpe [2] = 0;	
 			zerado = true;
 
 		}
@@ -163,7 +160,7 @@ public class AI : MonoBehaviour {
 			zerado = false;
 		}
 
-		if (killkill) {
+		if (minion) {
 			Atk = 1;
 		} else if (EfectGolpe [round] > 5 && timedefence<60) {
 			if(Comment) print (timedefence+" "+Golpe [round]);
@@ -187,7 +184,6 @@ public class AI : MonoBehaviour {
 	}
 
 	void moviment(){
-		bool on_air = false;
 		float posiLimit,dif;
 		if (!float.IsNaN (target [0])) {//Ande em direção ao alvo
 			//print("Há um alvo");
@@ -232,7 +228,7 @@ public class AI : MonoBehaviour {
 				jump = false;
 				defense = false;
 			}
-			if (VeloX != 0 && !(jump || !m_Anim.GetBool("Ground"))) {
+			if (!Flying && VeloX != 0 && !(jump || !m_Anim.GetBool("Ground"))) {
 				print ("Trying to move");
 				if (VeloX > 0) {
 					posiLimit = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;
@@ -257,7 +253,10 @@ public class AI : MonoBehaviour {
 	void chooseYourPath(){
 		target [0] = float.NaN;
 		target [1] = float.NaN;
-		if (difX > m_JumpDist / 8 || difY > m_JumpHeight / 5) {
+		if(Flying){
+			target [0] = target_GO.transform.position.x;
+			target [1] = target_GO.transform.position.y-Boxsize.y;
+		}else if (difX > m_JumpDist / 8 || difY > m_JumpHeight / 5) {
 			
 			if (posiPath < 0)
 				posiPath = 0;
@@ -277,11 +276,6 @@ public class AI : MonoBehaviour {
 							posiPath--;
 					}
 				}
-			}*/
-			//if(Comment) print (posiPath + " ");
-			/*if (posiPath < Path.Length - 1) {
-				if(Comment) print ("Teste " + Path [posiPath]);
-				if(Comment) print ("Teste "+ (null == Path [posiPath]));
 			}*/
 
 
@@ -347,14 +341,10 @@ public class AI : MonoBehaviour {
 		
 	public void Golpe_Detec(int Efective){
 		if (!noAtacking) {//se estiver atacando então o dano(qual animação=valor padrão para dano) e efetividade do ataque são calculados
-			//if(Comment) print("Dentro");
-			//int Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;
-			//bool Gdamaged = transform.GetComponent<CharController> ().Gdamaged;
-			altArvCombo = transform.GetComponent<CharController> ().altArvCombo;
-			//int Efective = transform.GetComponent<CharController> ().Efective;
-			//if(Comment) print (Efective);
 			//Até o fim dessa funcao será identificado em q estágio dos ataques o personagem está e será guardado o golpe e quanto o ataque atual(animação) é efetiva.
 
+
+			altArvCombo = transform.GetComponent<CharController> ().altArvCombo;
 			int val=m_Anim.GetInteger ("Atk_1");//guarda valor de atk_1 
 			//val != 0 && m_Anim.GetInteger ("Atk_2") == 0
 			if (altArvCombo == 1) {

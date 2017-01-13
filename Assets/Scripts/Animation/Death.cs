@@ -16,11 +16,20 @@ public class Death : StateMachineBehaviour {
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		//Debug.Log (animator.gameObject);
-		animator.SetInteger ("Atk_1", 0);animator.SetInteger ("Atk_2", 0);animator.SetInteger ("Atk_3", 0);
-		animator.GetComponent<CharController> ().noAtacking = true;
-		animator.GetComponent<CharController> ().altArvCombo = 0;
-		animator.GetComponent<CharController> ().waitTime = 0;
-		GameObject.Find("GM").GetComponent<Global>().Died (animator.gameObject);
+		if (!animator.GetComponent<CharController> ().itsItem) {
+			animator.SetInteger ("Atk_1", 0);
+			if (!animator.GetComponent<AI> ().minion) {
+				animator.SetInteger ("Atk_2", 0);
+				animator.SetInteger ("Atk_3", 0);
+				animator.GetComponent<CharController> ().altArvCombo = 0;
+				animator.GetComponent<CharController> ().waitTime = 0;
+			}
+			animator.GetComponent<CharController> ().noAtacking = true;
+			GameObject.Find ("GM").GetComponent<Global> ().Died (animator.gameObject);
+		} else {
+			Destroy (animator.gameObject);
+		}
+
 	}
 
 	// OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here

@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.05, y: 5.42, z: 0}
+  m_LocalPosition: {x: 17.300035, y: 5.26, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -269,8 +269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: 1
-  killkill: 1
-  Comment: 1
+  minion: 1
+  Comment: 0
   target_GO: {fileID: 0}
 --- !u!114 &114000013840903542
 MonoBehaviour:
@@ -292,7 +292,8 @@ MonoBehaviour:
   Comment: 0
   animToRight: 0
   m_FacingRight: 1
+  itsItem: 0
   comboTree: 01
-  Habilidades: 01000000
+  Habilidades: 01
   damageTree:
   - 2

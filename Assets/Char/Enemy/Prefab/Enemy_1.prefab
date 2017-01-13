@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: 1
-  killkill: 1
+  minion: 1
   Comment: 0
   target_GO: {fileID: 0}
 --- !u!114 &114000013840903542
@@ -289,9 +289,10 @@ MonoBehaviour:
   m_MaxSpeed: 4
   m_JumpHeight: 2
   life: 100
-  Comment: 1
+  Comment: 0
   animToRight: 0
   m_FacingRight: 1
+  itsItem: 0
   comboTree: 01
   Habilidades: 00000000
   damageTree:

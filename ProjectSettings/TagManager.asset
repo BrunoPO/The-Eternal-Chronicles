@@ -21,7 +21,7 @@ TagManager:
   - DeadOnes
   - Background
   - Ground
-  - 
+  - InteractiveItens
   - 
   - 
   - 
@@ -60,4 +60,7 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 4245650497
+    locked: 0
+  - name: InteractiveItens
+    uniqueID: 2267382995
     locked: 0

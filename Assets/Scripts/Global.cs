@@ -20,7 +20,7 @@ public class Global : MonoBehaviour {
 	private float h,currentslow;
 	private bool defense, jump,atk1,atk2,sprint,bolean=true;
 	private Vector3 Ini = new Vector3(0,0,0), Fim = new Vector3(0,0,0);
-	float[][] distan=new float[3][];
+	//float[][] distan=new float[3][];
 	//public GameObject[] Char1_List = new GameObject[5];
 	//public GameObject[] Char2_List = new GameObject[5];
 	public List<GameObject> Char1_List = new List<GameObject>();
@@ -137,7 +137,6 @@ public class Global : MonoBehaviour {
 
 	public GameObject chooseTarget(GameObject who){
 		//GameObject Send = Char2;
-		print(who);
 		if (!(who.name == "Char1" || who.name == "Char2")) {
 			if (Char2_List.Count < Char1_List.Count && Char2 != null && Char2.activeSelf) {
 				Char2_List.Add (who);
@@ -194,7 +193,7 @@ public class Global : MonoBehaviour {
 		bool cima = (Bot.transform.position.y<=Target.y);
 
 		float m_JumpHeight = Bot.GetComponent<CharController> ().m_JumpHeight/2;
-		float m_JumpDist = Bot.GetComponent<CharController> ().m_MaxSpeed;
+		//float m_JumpDist = Bot.GetComponent<CharController> ().m_MaxSpeed;
 		float[][] vectorPaths=new float[4][];
 		int j= 0;
 		float dif = 0;
