@@ -1,36 +1,39 @@
 fileFormatVersion: 2
-guid: 81664801bd5954e45af11976b89ef6f9
-timeCreated: 1483972034
+guid: a4083ea3c932443c9b9891c145d1fff6
+timeCreated: 1485306364
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: folha - murro 1_0
-    21300002: folha - murro 1_1
-    21300004: folha - murro 1_2
-    21300006: folha - murro 1_3
-    21300008: folha - murro 1_4
-    21300010: folha - murro 1_5
-    21300012: folha - murro 1_6
-    21300014: folha - murro 1_7
-    21300016: folha - murro 1_8
-    21300018: folha - murro 1_9
-    21300020: folha - murro 1_10
-    21300022: folha - murro 1_11
-    21300024: folha - murro 1_12
-    21300026: folha - murro 1_13
-    21300028: folha - murro 1_14
-    21300030: folha - murro 1_15
-    21300032: folha - murro 1_16
-    21300034: folha - murro 1_17
-    21300036: folha - murro 1_18
-    21300038: folha - murro 1_19
-    21300040: folha - murro 1_20
-    21300042: folha - murro 1_21
-    21300044: folha - murro 1_22
-    21300046: folha - murro 1_23
-    21300048: folha - murro 1_24
-    21300050: folha - murro 1_25
-    21300052: folha - murro 1_26
+    21300000: Menino_idlle_0
+    21300002: Menino_idlle_1
+    21300004: Menino_idlle_2
+    21300006: Menino_idlle_3
+    21300008: Menino_idlle_4
+    21300010: Menino_idlle_5
+    21300012: Menino_idlle_6
+    21300014: Menino_idlle_7
+    21300016: Menino_idlle_8
+    21300018: Menino_idlle_9
+    21300020: Menino_idlle_10
+    21300022: Menino_idlle_11
+    21300024: Menino_idlle_12
+    21300026: Menino_idlle_13
+    21300028: Menino_idlle_14
+    21300030: Menino_idlle_15
+    21300032: Menino_idlle_16
+    21300034: Menino_idlle_17
+    21300036: Menino_idlle_18
+    21300038: Menino_idlle_19
+    21300040: Menino_idlle_20
+    21300042: Menino_idlle_21
+    21300044: Menino_idlle_22
+    21300046: Menino_idlle_23
+    21300048: Menino_idlle_24
+    21300050: Menino_idlle_25
+    21300052: Menino_idlle_26
+    21300054: Menino_idlle_27
+    21300056: Menino_idlle_28
+    21300058: Menino_idlle_29
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -51,11 +54,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -137,353 +140,392 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: folha - murro 1_0
+      name: Menino_idlle_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 1893
-        width: 281
-        height: 881
+        x: 0
+        y: 1354
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.7294899, y: 0.7036902}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_1
+      name: Menino_idlle_1
       rect:
         serializedVersion: 2
-        x: 379
-        y: 1893
-        width: 281
-        height: 881
+        x: 300
+        y: 1355.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.7110549, y: 0.7005318}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_2
+      name: Menino_idlle_2
       rect:
         serializedVersion: 2
-        x: 693
-        y: 1891
-        width: 279
-        height: 882
+        x: 602
+        y: 1353
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6889375, y: 0.6926502}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_3
+      name: Menino_idlle_3
       rect:
         serializedVersion: 2
-        x: 1004
-        y: 1893
-        width: 303
-        height: 896
+        x: 901
+        y: 1354
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6797911, y: 0.6955765}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_4
+      name: Menino_idlle_4
       rect:
         serializedVersion: 2
-        x: 1340
-        y: 1893
-        width: 303
-        height: 896
+        x: 1202
+        y: 1355
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.65894353, y: 0.6895374}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_5
+      name: Menino_idlle_5
       rect:
         serializedVersion: 2
-        x: 1675
-        y: 1893
-        width: 303
-        height: 894
+        x: 1502
+        y: 1355
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6460727, y: 0.68693376}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_6
+      name: Menino_idlle_6
       rect:
         serializedVersion: 2
-        x: 2013
-        y: 1893
-        width: 354
-        height: 891
+        x: 1800
+        y: 1355.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6393737, y: 0.6840377}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_7
+      name: Menino_idlle_7
       rect:
         serializedVersion: 2
-        x: 2401
-        y: 1893
-        width: 352
-        height: 886
+        x: 2103
+        y: 1352
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.61847556, y: 0.68954605}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_8
+      name: Menino_idlle_8
       rect:
         serializedVersion: 2
-        x: 2788
-        y: 1893
-        width: 353
-        height: 893
+        x: 2400
+        y: 1355.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.61242783, y: 0.68115306}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_9
+      name: Menino_idlle_9
       rect:
         serializedVersion: 2
-        x: 3175
-        y: 1893
-        width: 354
-        height: 893
+        x: 2700
+        y: 1355
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.59646755, y: 0.674587}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_10
+      name: Menino_idlle_10
       rect:
         serializedVersion: 2
-        x: 66
-        y: 992
-        width: 356
-        height: 847
+        x: 0
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.7380001, y: 0.7194682}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_11
+      name: Menino_idlle_11
       rect:
         serializedVersion: 2
-        x: 456
-        y: 992
-        width: 356
-        height: 847
+        x: 300
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.71473986, y: 0.71473414}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_12
+      name: Menino_idlle_12
       rect:
         serializedVersion: 2
-        x: 846
-        y: 992
-        width: 394
-        height: 843
+        x: 600
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.70000005, y: 0.7115782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_13
+      name: Menino_idlle_13
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 992
-        width: 396
-        height: 846
+        x: 900
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.68157506, y: 0.7115782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_14
+      name: Menino_idlle_14
       rect:
         serializedVersion: 2
-        x: 1705
-        y: 992
-        width: 395
-        height: 840
+        x: 1200
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.67063713, y: 0.7102715}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_15
+      name: Menino_idlle_15
       rect:
         serializedVersion: 2
-        x: 2133
-        y: 992
-        width: 586
-        height: 843
+        x: 1500
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.65284604, y: 0.7013459}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_16
+      name: Menino_idlle_16
       rect:
         serializedVersion: 2
-        x: 2752
-        y: 992
-        width: 587
-        height: 846
+        x: 1802
+        y: 678
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6412341, y: 0.7073881}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_17
+      name: Menino_idlle_17
       rect:
         serializedVersion: 2
-        x: 3372
-        y: 992
-        width: 586
-        height: 843
+        x: 2100
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.625901, y: 0.7115782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_18
+      name: Menino_idlle_18
       rect:
         serializedVersion: 2
-        x: 68
-        y: 75
-        width: 546
-        height: 878
+        x: 2400
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.61242783, y: 0.7157695}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_19
+      name: Menino_idlle_19
       rect:
         serializedVersion: 2
-        x: 654
-        y: 75
-        width: 546
-        height: 872
+        x: 2700
+        y: 678.3333
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.60695946, y: 0.7163123}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_20
+      name: Menino_idlle_20
       rect:
         serializedVersion: 2
-        x: 1239
-        y: 75
-        width: 545
-        height: 869
+        x: 0
+        y: 1.333313
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.7324139, y: 0.6866511}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_21
+      name: Menino_idlle_21
       rect:
         serializedVersion: 2
-        x: 1825
-        y: 74
-        width: 398
-        height: 870
+        x: 300
+        y: 1.333313
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.7122053, y: 0.68953586}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_22
+      name: Menino_idlle_22
       rect:
         serializedVersion: 2
-        x: 2264
-        y: 74
-        width: 398
-        height: 873
+        x: 600
+        y: 1.333313
+        width: 290.2
+        height: 677.6667
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.7030513, y: 0.6900786}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_23
+      name: Menino_idlle_23
       rect:
         serializedVersion: 2
-        x: 2704
-        y: 74
-        width: 399
-        height: 865
+        x: 902
+        y: 1
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6804115, y: 0.6961262}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_24
+      name: Menino_idlle_24
       rect:
         serializedVersion: 2
-        x: 3144
-        y: 74
-        width: 283
-        height: 861
+        x: 1201
+        y: 1
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.66872853, y: 0.69661427}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_25
+      name: Menino_idlle_25
       rect:
         serializedVersion: 2
-        x: 3469
-        y: 74
-        width: 283
-        height: 861
+        x: 1504
+        y: 2
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.63996625, y: 0.6931927}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_26
+      name: Menino_idlle_26
       rect:
         serializedVersion: 2
-        x: 3795
-        y: 74
-        width: 282
-        height: 861
+        x: 1801
+        y: 2
+        width: 290
+        height: 678
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6332759, y: 0.70107627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_idlle_27
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1.333313
+        width: 290.2
+        height: 677.6667
+      alignment: 9
+      pivot: {x: 0.6271688, y: 0.7021099}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_idlle_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1.333313
+        width: 290.2
+        height: 677.6667
+      alignment: 9
+      pivot: {x: 0.6106443, y: 0.7073868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_idlle_29
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1.333313
+        width: 290.2
+        height: 677.6667
+      alignment: 9
+      pivot: {x: 0.59717196, y: 0.70711535}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

@@ -1,24 +1,27 @@
 fileFormatVersion: 2
-guid: 34a10c65818421d40b5d8192566a0745
-timeCreated: 1483971751
+guid: 1b4c96b69701f477e96ee0745d6d8b6f
+timeCreated: 1485276291
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: folha - punch 4_0
-    21300002: folha - punch 4_1
-    21300004: folha - punch 4_2
-    21300006: folha - punch 4_3
-    21300008: folha - punch 4_4
-    21300010: folha - punch 4_5
-    21300012: folha - punch 4_6
-    21300014: folha - punch 4_7
-    21300016: folha - punch 4_8
-    21300018: folha - punch 4_9
-    21300020: folha - punch 4_10
-    21300022: folha - punch 4_11
-    21300024: folha - punch 4_12
-    21300026: folha - punch 4_13
-    21300028: folha - punch 4_14
+    21300000: Menino_golpe 4_0
+    21300002: Menino_golpe 4_1
+    21300004: Menino_golpe 4_2
+    21300006: Menino_golpe 4_3
+    21300008: Menino_golpe 4_4
+    21300010: Menino_golpe 4_5
+    21300012: Menino_golpe 4_6
+    21300014: Menino_golpe 4_7
+    21300016: Menino_golpe 4_8
+    21300018: Menino_golpe 4_9
+    21300020: Menino_golpe 4_10
+    21300022: Menino_golpe 4_12
+    21300024: Menino_golpe 4_14
+    21300026: Menino_golpe 4_15
+    21300028: Menino_golpe 4_16
+    21300030: Menino_golpe 4_17
+    21300032: Menino_golpe 4_18
+    21300034: Menino_golpe 4_19
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,11 +42,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -125,197 +128,236 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: folha - punch 4_0
+      name: Menino_golpe 4_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1010
-        width: 301
-        height: 892
+        x: 0
+        y: 0
+        width: 261
+        height: 571
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.61, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_1
+      name: Menino_golpe 4_1
       rect:
         serializedVersion: 2
-        x: 369
-        y: 1010
-        width: 302
-        height: 892
+        x: 300
+        y: 0
+        width: 264
+        height: 571
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.61, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_2
+      name: Menino_golpe 4_2
       rect:
         serializedVersion: 2
-        x: 700
-        y: 1008
-        width: 260
-        height: 892
+        x: 646
+        y: 0
+        width: 226
+        height: 584
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.61, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_3
+      name: Menino_golpe 4_3
       rect:
         serializedVersion: 2
-        x: 989
-        y: 1008
-        width: 260
-        height: 892
+        x: 944
+        y: 0
+        width: 235
+        height: 584
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.61, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_4
+      name: Menino_golpe 4_4
       rect:
         serializedVersion: 2
-        x: 1279
-        y: 1008
-        width: 345
-        height: 889
+        x: 1260
+        y: 0
+        width: 718
+        height: 556
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_5
+      name: Menino_golpe 4_5
       rect:
         serializedVersion: 2
-        x: 1654
-        y: 1008
-        width: 344
-        height: 889
+        x: 2056
+        y: 0
+        width: 719
+        height: 560
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_6
+      name: Menino_golpe 4_6
       rect:
         serializedVersion: 2
-        x: 2028
-        y: 1007
-        width: 353
-        height: 894
+        x: 2858
+        y: 3
+        width: 709
+        height: 553
       alignment: 9
-      pivot: {x: 0.4, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_7
+      name: Menino_golpe 4_7
       rect:
         serializedVersion: 2
-        x: 2410
-        y: 1007
-        width: 354
-        height: 894
+        x: 3653
+        y: 0
+        width: 709
+        height: 564
       alignment: 9
-      pivot: {x: 0.4, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_8
+      name: Menino_golpe 4_8
       rect:
         serializedVersion: 2
-        x: 33
-        y: 57
-        width: 444
-        height: 869
+        x: 4447
+        y: 0
+        width: 713
+        height: 551
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_9
+      name: Menino_golpe 4_9
       rect:
         serializedVersion: 2
-        x: 517
-        y: 57
-        width: 444
-        height: 869
+        x: 5242
+        y: 3
+        width: 713
+        height: 548
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_10
+      name: Menino_golpe 4_10
       rect:
         serializedVersion: 2
-        x: 1001
-        y: 56
-        width: 378
-        height: 882
+        x: 6031
+        y: 8
+        width: 719
+        height: 557
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_11
+      name: Menino_golpe 4_12
       rect:
         serializedVersion: 2
-        x: 1419
-        y: 56
-        width: 379
-        height: 882
+        x: 6825
+        y: 0
+        width: 725
+        height: 566
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_12
+      name: Menino_golpe 4_14
       rect:
         serializedVersion: 2
-        x: 1839
-        y: 56
-        width: 344
-        height: 868
+        x: 7630
+        y: 13
+        width: 648
+        height: 553
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_13
+      name: Menino_golpe 4_15
       rect:
         serializedVersion: 2
-        x: 2222
-        y: 56
-        width: 344
-        height: 868
+        x: 8364
+        y: 13
+        width: 647
+        height: 553
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.2282302, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_14
+      name: Menino_golpe 4_16
       rect:
         serializedVersion: 2
-        x: 2605
-        y: 58
-        width: 302
-        height: 893
+        x: 9089
+        y: 3
+        width: 229
+        height: 581
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.61, y: 0.7276475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 4_17
+      rect:
+        serializedVersion: 2
+        x: 9392
+        y: 0
+        width: 234
+        height: 584
+      alignment: 9
+      pivot: {x: 0.61, y: 0.7276475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 4_18
+      rect:
+        serializedVersion: 2
+        x: 9671
+        y: 3
+        width: 264
+        height: 568
+      alignment: 9
+      pivot: {x: 0.61, y: 0.7276475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 4_19
+      rect:
+        serializedVersion: 2
+        x: 9974
+        y: 3
+        width: 265
+        height: 568
+      alignment: 9
+      pivot: {x: 0.61, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

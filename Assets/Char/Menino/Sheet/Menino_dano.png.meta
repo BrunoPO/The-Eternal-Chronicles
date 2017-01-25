@@ -1,24 +1,19 @@
 fileFormatVersion: 2
-guid: 34a10c65818421d40b5d8192566a0745
-timeCreated: 1483971751
+guid: fcb7c66e21599415794268029e953d38
+timeCreated: 1485274989
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: folha - punch 4_0
-    21300002: folha - punch 4_1
-    21300004: folha - punch 4_2
-    21300006: folha - punch 4_3
-    21300008: folha - punch 4_4
-    21300010: folha - punch 4_5
-    21300012: folha - punch 4_6
-    21300014: folha - punch 4_7
-    21300016: folha - punch 4_8
-    21300018: folha - punch 4_9
-    21300020: folha - punch 4_10
-    21300022: folha - punch 4_11
-    21300024: folha - punch 4_12
-    21300026: folha - punch 4_13
-    21300028: folha - punch 4_14
+    21300000: Menino_dano_0
+    21300002: Menino_dano_1
+    21300004: Menino_dano_2
+    21300006: Menino_dano_3
+    21300008: Menino_dano_4
+    21300010: Menino_dano_5
+    21300012: Menino_dano_6
+    21300014: Menino_dano_7
+    21300016: Menino_dano_8
+    21300018: Menino_dano_9
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,11 +34,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -125,197 +120,132 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: folha - punch 4_0
+      name: Menino_dano_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1010
-        width: 301
-        height: 892
+        x: 0
+        y: 0
+        width: 271.8
+        height: 554
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.64, y: 0.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_1
+      name: Menino_dano_1
       rect:
         serializedVersion: 2
-        x: 369
-        y: 1010
-        width: 302
-        height: 892
+        x: 301
+        y: 0
+        width: 341
+        height: 554
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.59, y: 0.7153688}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_2
+      name: Menino_dano_2
       rect:
         serializedVersion: 2
-        x: 700
-        y: 1008
-        width: 260
-        height: 892
+        x: 667
+        y: 0
+        width: 357
+        height: 554
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.58, y: 0.7126844}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_3
+      name: Menino_dano_3
       rect:
         serializedVersion: 2
-        x: 989
-        y: 1008
-        width: 260
-        height: 892
-      alignment: 9
-      pivot: {x: 0.5, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - punch 4_4
-      rect:
-        serializedVersion: 2
-        x: 1279
-        y: 1008
+        x: 1052
+        y: 0
         width: 345
-        height: 889
+        height: 554
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.58, y: 0.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_5
+      name: Menino_dano_4
       rect:
         serializedVersion: 2
-        x: 1654
-        y: 1008
-        width: 344
-        height: 889
+        x: 1437
+        y: 0
+        width: 333
+        height: 554
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.58, y: 0.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_6
+      name: Menino_dano_5
       rect:
         serializedVersion: 2
-        x: 2028
-        y: 1007
-        width: 353
-        height: 894
+        x: 1802
+        y: 0
+        width: 345
+        height: 554
       alignment: 9
-      pivot: {x: 0.4, y: 0.72}
+      pivot: {x: 0.58, y: 0.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_7
+      name: Menino_dano_6
       rect:
         serializedVersion: 2
-        x: 2410
-        y: 1007
-        width: 354
-        height: 894
+        x: 2188
+        y: 0
+        width: 336
+        height: 554
       alignment: 9
-      pivot: {x: 0.4, y: 0.72}
+      pivot: {x: 0.56, y: 0.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_8
+      name: Menino_dano_7
       rect:
         serializedVersion: 2
-        x: 33
-        y: 57
-        width: 444
-        height: 869
+        x: 2563
+        y: 0
+        width: 334
+        height: 554
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.57, y: 0.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_9
+      name: Menino_dano_8
       rect:
         serializedVersion: 2
-        x: 517
-        y: 57
-        width: 444
-        height: 869
+        x: 2935
+        y: 0
+        width: 334
+        height: 554
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.57, y: 0.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_10
+      name: Menino_dano_9
       rect:
         serializedVersion: 2
-        x: 1001
-        y: 56
-        width: 378
-        height: 882
+        x: 3313
+        y: 0
+        width: 329
+        height: 554
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - punch 4_11
-      rect:
-        serializedVersion: 2
-        x: 1419
-        y: 56
-        width: 379
-        height: 882
-      alignment: 9
-      pivot: {x: 0.43, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - punch 4_12
-      rect:
-        serializedVersion: 2
-        x: 1839
-        y: 56
-        width: 344
-        height: 868
-      alignment: 9
-      pivot: {x: 0.5, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - punch 4_13
-      rect:
-        serializedVersion: 2
-        x: 2222
-        y: 56
-        width: 344
-        height: 868
-      alignment: 9
-      pivot: {x: 0.5, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - punch 4_14
-      rect:
-        serializedVersion: 2
-        x: 2605
-        y: 58
-        width: 302
-        height: 893
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.57, y: 0.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

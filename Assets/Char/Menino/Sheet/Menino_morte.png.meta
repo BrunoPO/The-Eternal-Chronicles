@@ -1,36 +1,33 @@
 fileFormatVersion: 2
-guid: 81664801bd5954e45af11976b89ef6f9
-timeCreated: 1483972034
+guid: c67eb261e42d545c8a5a547183da3044
+timeCreated: 1485276788
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: folha - murro 1_0
-    21300002: folha - murro 1_1
-    21300004: folha - murro 1_2
-    21300006: folha - murro 1_3
-    21300008: folha - murro 1_4
-    21300010: folha - murro 1_5
-    21300012: folha - murro 1_6
-    21300014: folha - murro 1_7
-    21300016: folha - murro 1_8
-    21300018: folha - murro 1_9
-    21300020: folha - murro 1_10
-    21300022: folha - murro 1_11
-    21300024: folha - murro 1_12
-    21300026: folha - murro 1_13
-    21300028: folha - murro 1_14
-    21300030: folha - murro 1_15
-    21300032: folha - murro 1_16
-    21300034: folha - murro 1_17
-    21300036: folha - murro 1_18
-    21300038: folha - murro 1_19
-    21300040: folha - murro 1_20
-    21300042: folha - murro 1_21
-    21300044: folha - murro 1_22
-    21300046: folha - murro 1_23
-    21300048: folha - murro 1_24
-    21300050: folha - murro 1_25
-    21300052: folha - murro 1_26
+    21300000: Menino_morte_1
+    21300002: Menino_morte_3
+    21300004: Menino_morte_5
+    21300006: Menino_morte_7
+    21300008: Menino_morte_9
+    21300010: Menino_morte_11
+    21300012: Menino_morte_12
+    21300014: Menino_morte_13
+    21300016: Menino_morte_14
+    21300018: Menino_morte_15
+    21300020: Menino_morte_16
+    21300022: Menino_morte_17
+    21300024: Menino_morte_18
+    21300026: Menino_morte_19
+    21300028: Menino_morte_20
+    21300030: Menino_morte_21
+    21300032: Menino_morte_22
+    21300034: Menino_morte_23
+    21300036: Menino_morte_24
+    21300038: Menino_morte_25
+    21300040: Menino_morte_26
+    21300042: Menino_morte_27
+    21300044: Menino_morte_28
+    21300046: Menino_morte_29
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -51,11 +48,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -86,13 +83,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
+    maxTextureSize: 4096
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
   - buildTarget: iPhone
     maxTextureSize: 2048
     textureFormat: -1
@@ -137,353 +134,314 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: folha - murro 1_0
+      name: Menino_morte_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 1893
-        width: 281
-        height: 881
+        x: 0
+        y: 371
+        width: 270
+        height: 563
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6536007, y: 0.7231439}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_1
+      name: Menino_morte_3
       rect:
         serializedVersion: 2
-        x: 379
-        y: 1893
-        width: 281
-        height: 881
+        x: 296
+        y: 371
+        width: 271
+        height: 561
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6522961, y: 0.7272004}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_2
+      name: Menino_morte_5
       rect:
         serializedVersion: 2
-        x: 693
-        y: 1891
-        width: 279
-        height: 882
+        x: 690
+        y: 381
+        width: 359
+        height: 542
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.5765768, y: 0.7302398}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_3
+      name: Menino_morte_7
       rect:
         serializedVersion: 2
-        x: 1004
-        y: 1893
-        width: 303
-        height: 896
+        x: 1178
+        y: 383
+        width: 340
+        height: 540
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.3, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_4
+      name: Menino_morte_9
       rect:
         serializedVersion: 2
-        x: 1340
-        y: 1893
-        width: 303
-        height: 896
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_5
-      rect:
-        serializedVersion: 2
-        x: 1675
-        y: 1893
-        width: 303
-        height: 894
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_6
-      rect:
-        serializedVersion: 2
-        x: 2013
-        y: 1893
-        width: 354
-        height: 891
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_7
-      rect:
-        serializedVersion: 2
-        x: 2401
-        y: 1893
-        width: 352
-        height: 886
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_8
-      rect:
-        serializedVersion: 2
-        x: 2788
-        y: 1893
-        width: 353
-        height: 893
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_9
-      rect:
-        serializedVersion: 2
-        x: 3175
-        y: 1893
-        width: 354
-        height: 893
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_10
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 992
-        width: 356
-        height: 847
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_11
-      rect:
-        serializedVersion: 2
-        x: 456
-        y: 992
-        width: 356
-        height: 847
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_12
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 992
-        width: 394
-        height: 843
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_13
-      rect:
-        serializedVersion: 2
-        x: 1275
-        y: 992
-        width: 396
-        height: 846
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_14
-      rect:
-        serializedVersion: 2
-        x: 1705
-        y: 992
-        width: 395
-        height: 840
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_15
-      rect:
-        serializedVersion: 2
-        x: 2133
-        y: 992
-        width: 586
-        height: 843
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_16
-      rect:
-        serializedVersion: 2
-        x: 2752
-        y: 992
-        width: 587
-        height: 846
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_17
-      rect:
-        serializedVersion: 2
-        x: 3372
-        y: 992
-        width: 586
-        height: 843
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_18
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 75
-        width: 546
-        height: 878
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_19
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 75
-        width: 546
-        height: 872
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_20
-      rect:
-        serializedVersion: 2
-        x: 1239
-        y: 75
-        width: 545
-        height: 869
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_21
-      rect:
-        serializedVersion: 2
-        x: 1825
-        y: 74
-        width: 398
-        height: 870
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_22
-      rect:
-        serializedVersion: 2
-        x: 2264
-        y: 74
-        width: 398
-        height: 873
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_23
-      rect:
-        serializedVersion: 2
-        x: 2704
-        y: 74
+        x: 1590
+        y: 383
         width: 399
-        height: 865
+        height: 543
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.46270952, y: 0.68769187}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_24
+      name: Menino_morte_11
       rect:
         serializedVersion: 2
-        x: 3144
-        y: 74
-        width: 283
-        height: 861
+        x: 2045
+        y: 383
+        width: 395
+        height: 543
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.3, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_25
+      name: Menino_morte_12
       rect:
         serializedVersion: 2
-        x: 3469
-        y: 74
-        width: 283
-        height: 861
+        x: 2469
+        y: 365
+        width: 493
+        height: 392
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.31936514, y: 0.6130654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_26
+      name: Menino_morte_13
       rect:
         serializedVersion: 2
-        x: 3795
-        y: 74
-        width: 282
-        height: 861
+        x: 2990
+        y: 366
+        width: 493
+        height: 393
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.31936565, y: 0.61287963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_14
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 362
+        width: 563
+        height: 214
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_15
+      rect:
+        serializedVersion: 2
+        x: 4191
+        y: 363
+        width: 524
+        height: 213
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_16
+      rect:
+        serializedVersion: 2
+        x: 4777
+        y: 363
+        width: 529
+        height: 213
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_17
+      rect:
+        serializedVersion: 2
+        x: 5370
+        y: 363
+        width: 498
+        height: 213
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_18
+      rect:
+        serializedVersion: 2
+        x: 5950
+        y: 363
+        width: 496
+        height: 218
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_19
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 496
+        height: 216
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_20
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 36
+        width: 506
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_21
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 36
+        width: 537
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_22
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 36
+        width: 545
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_23
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 36
+        width: 543
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_24
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 36
+        width: 496
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_25
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 36
+        width: 496
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_26
+      rect:
+        serializedVersion: 2
+        x: 4071
+        y: 36
+        width: 496
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_27
+      rect:
+        serializedVersion: 2
+        x: 4611
+        y: 36
+        width: 496
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_28
+      rect:
+        serializedVersion: 2
+        x: 5151
+        y: 36
+        width: 498
+        height: 212
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_morte_29
+      rect:
+        serializedVersion: 2
+        x: 5723
+        y: 36
+        width: 496
+        height: 216
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

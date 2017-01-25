@@ -1,36 +1,29 @@
 fileFormatVersion: 2
-guid: 81664801bd5954e45af11976b89ef6f9
-timeCreated: 1483972034
+guid: cd9abd32751d544cea76095ccd8619c4
+timeCreated: 1485275610
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: folha - murro 1_0
-    21300002: folha - murro 1_1
-    21300004: folha - murro 1_2
-    21300006: folha - murro 1_3
-    21300008: folha - murro 1_4
-    21300010: folha - murro 1_5
-    21300012: folha - murro 1_6
-    21300014: folha - murro 1_7
-    21300016: folha - murro 1_8
-    21300018: folha - murro 1_9
-    21300020: folha - murro 1_10
-    21300022: folha - murro 1_11
-    21300024: folha - murro 1_12
-    21300026: folha - murro 1_13
-    21300028: folha - murro 1_14
-    21300030: folha - murro 1_15
-    21300032: folha - murro 1_16
-    21300034: folha - murro 1_17
-    21300036: folha - murro 1_18
-    21300038: folha - murro 1_19
-    21300040: folha - murro 1_20
-    21300042: folha - murro 1_21
-    21300044: folha - murro 1_22
-    21300046: folha - murro 1_23
-    21300048: folha - murro 1_24
-    21300050: folha - murro 1_25
-    21300052: folha - murro 1_26
+    21300000: Menino_golpe 1_0
+    21300002: Menino_golpe 1_1
+    21300004: Menino_golpe 1_2
+    21300006: Menino_golpe 1_3
+    21300008: Menino_golpe 1_4
+    21300010: Menino_golpe 1_5
+    21300012: Menino_golpe 1_6
+    21300014: Menino_golpe 1_7
+    21300016: Menino_golpe 1_8
+    21300018: Menino_golpe 1_9
+    21300020: Menino_golpe 1_10
+    21300022: Menino_golpe 1_11
+    21300024: Menino_golpe 1_12
+    21300026: Menino_golpe 1_13
+    21300028: Menino_golpe 1_14
+    21300030: Menino_golpe 1_15
+    21300032: Menino_golpe 1_16
+    21300034: Menino_golpe 1_17
+    21300036: Menino_golpe 1_18
+    21300038: Menino_golpe 1_19
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -51,11 +44,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -137,353 +130,262 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: folha - murro 1_0
+      name: Menino_golpe 1_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 1893
-        width: 281
-        height: 881
+        x: 0
+        y: 754.5
+        width: 528.5455
+        height: 754.5
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.47, y: 0.77}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_1
+      name: Menino_golpe 1_1
       rect:
         serializedVersion: 2
-        x: 379
-        y: 1893
-        width: 281
-        height: 881
+        x: 568
+        y: 754.5
+        width: 528.5455
+        height: 754.5
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.47, y: 0.77}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - murro 1_2
+      name: Menino_golpe 1_2
       rect:
         serializedVersion: 2
-        x: 693
-        y: 1891
+        x: 1136
+        y: 754.5
+        width: 528.5455
+        height: 754.5
+      alignment: 9
+      pivot: {x: 0.42, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_3
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 754.5
+        width: 528.5455
+        height: 754.5
+      alignment: 9
+      pivot: {x: 0.42, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_4
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 754
+        width: 538
+        height: 754
+      alignment: 9
+      pivot: {x: 0.4, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_5
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 849
+        width: 549
+        height: 659
+      alignment: 9
+      pivot: {x: 0.39, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_6
+      rect:
+        serializedVersion: 2
+        x: 3374
+        y: 851
+        width: 530
+        height: 657
+      alignment: 9
+      pivot: {x: 0.4, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_7
+      rect:
+        serializedVersion: 2
+        x: 3918
+        y: 755
+        width: 538
+        height: 754
+      alignment: 9
+      pivot: {x: 0.41, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_8
+      rect:
+        serializedVersion: 2
+        x: 4483
+        y: 751
+        width: 529
+        height: 754
+      alignment: 9
+      pivot: {x: 0.4, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_9
+      rect:
+        serializedVersion: 2
+        x: 5037
+        y: 755
+        width: 529
+        height: 754
+      alignment: 9
+      pivot: {x: 0.4, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_10
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 755
+        width: 415
+        height: 754
+      alignment: 9
+      pivot: {x: 0.25, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_11
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 406
+        height: 754
+      alignment: 9
+      pivot: {x: 0.22, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_12
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 0
+        width: 415
+        height: 754
+      alignment: 9
+      pivot: {x: 0.21, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_13
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 0
+        width: 407
+        height: 754
+      alignment: 9
+      pivot: {x: 0.24, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_14
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 0
+        width: 403
+        height: 754
+      alignment: 9
+      pivot: {x: 0.25, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_15
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 0
+        width: 397
+        height: 754
+      alignment: 9
+      pivot: {x: 0.22, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_16
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 2
+        width: 529
+        height: 843
+      alignment: 9
+      pivot: {x: 0.4, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_17
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 1
+        width: 529
+        height: 850
+      alignment: 9
+      pivot: {x: 0.3, y: 0.69}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_18
+      rect:
+        serializedVersion: 2
+        x: 3914
+        y: 0
+        width: 285
+        height: 754
+      alignment: 9
+      pivot: {x: 0.62, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_golpe 1_19
+      rect:
+        serializedVersion: 2
+        x: 4476
+        y: 0
         width: 279
-        height: 882
+        height: 754
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_3
-      rect:
-        serializedVersion: 2
-        x: 1004
-        y: 1893
-        width: 303
-        height: 896
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_4
-      rect:
-        serializedVersion: 2
-        x: 1340
-        y: 1893
-        width: 303
-        height: 896
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_5
-      rect:
-        serializedVersion: 2
-        x: 1675
-        y: 1893
-        width: 303
-        height: 894
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_6
-      rect:
-        serializedVersion: 2
-        x: 2013
-        y: 1893
-        width: 354
-        height: 891
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_7
-      rect:
-        serializedVersion: 2
-        x: 2401
-        y: 1893
-        width: 352
-        height: 886
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_8
-      rect:
-        serializedVersion: 2
-        x: 2788
-        y: 1893
-        width: 353
-        height: 893
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_9
-      rect:
-        serializedVersion: 2
-        x: 3175
-        y: 1893
-        width: 354
-        height: 893
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_10
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 992
-        width: 356
-        height: 847
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_11
-      rect:
-        serializedVersion: 2
-        x: 456
-        y: 992
-        width: 356
-        height: 847
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_12
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 992
-        width: 394
-        height: 843
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_13
-      rect:
-        serializedVersion: 2
-        x: 1275
-        y: 992
-        width: 396
-        height: 846
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_14
-      rect:
-        serializedVersion: 2
-        x: 1705
-        y: 992
-        width: 395
-        height: 840
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_15
-      rect:
-        serializedVersion: 2
-        x: 2133
-        y: 992
-        width: 586
-        height: 843
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_16
-      rect:
-        serializedVersion: 2
-        x: 2752
-        y: 992
-        width: 587
-        height: 846
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_17
-      rect:
-        serializedVersion: 2
-        x: 3372
-        y: 992
-        width: 586
-        height: 843
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_18
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 75
-        width: 546
-        height: 878
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_19
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 75
-        width: 546
-        height: 872
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_20
-      rect:
-        serializedVersion: 2
-        x: 1239
-        y: 75
-        width: 545
-        height: 869
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_21
-      rect:
-        serializedVersion: 2
-        x: 1825
-        y: 74
-        width: 398
-        height: 870
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_22
-      rect:
-        serializedVersion: 2
-        x: 2264
-        y: 74
-        width: 398
-        height: 873
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_23
-      rect:
-        serializedVersion: 2
-        x: 2704
-        y: 74
-        width: 399
-        height: 865
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_24
-      rect:
-        serializedVersion: 2
-        x: 3144
-        y: 74
-        width: 283
-        height: 861
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_25
-      rect:
-        serializedVersion: 2
-        x: 3469
-        y: 74
-        width: 283
-        height: 861
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: folha - murro 1_26
-      rect:
-        serializedVersion: 2
-        x: 3795
-        y: 74
-        width: 282
-        height: 861
-      alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6, y: 0.77}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

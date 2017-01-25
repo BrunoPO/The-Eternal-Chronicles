@@ -1,24 +1,25 @@
 fileFormatVersion: 2
-guid: 34a10c65818421d40b5d8192566a0745
-timeCreated: 1483971751
+guid: ea63af15bd36949b580bb46655c87b5c
+timeCreated: 1485276638
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: folha - punch 4_0
-    21300002: folha - punch 4_1
-    21300004: folha - punch 4_2
-    21300006: folha - punch 4_3
-    21300008: folha - punch 4_4
-    21300010: folha - punch 4_5
-    21300012: folha - punch 4_6
-    21300014: folha - punch 4_7
-    21300016: folha - punch 4_8
-    21300018: folha - punch 4_9
-    21300020: folha - punch 4_10
-    21300022: folha - punch 4_11
-    21300024: folha - punch 4_12
-    21300026: folha - punch 4_13
-    21300028: folha - punch 4_14
+    21300000: Menino_jump_1
+    21300002: Menino_jump_3
+    21300004: Menino_jump_5
+    21300006: Menino_jump_6
+    21300008: Menino_jump_7
+    21300010: Menino_jump_8
+    21300012: Menino_jump_9
+    21300014: Menino_jump_10
+    21300016: Menino_jump_11
+    21300018: Menino_jump_13
+    21300020: Menino_jump_14
+    21300022: Menino_jump_15
+    21300024: Menino_jump_16
+    21300026: Menino_jump_17
+    21300028: Menino_jump_19
+    21300030: Menino_jump_21
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,11 +40,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -125,197 +126,210 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: folha - punch 4_0
+      name: Menino_jump_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1010
-        width: 301
-        height: 892
+        x: 0
+        y: 36
+        width: 270
+        height: 557
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.644061, y: 0.7249359}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_1
+      name: Menino_jump_3
       rect:
         serializedVersion: 2
-        x: 369
-        y: 1010
-        width: 302
-        height: 892
+        x: 306
+        y: 43
+        width: 286
+        height: 550
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.6, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_2
+      name: Menino_jump_5
       rect:
         serializedVersion: 2
-        x: 700
-        y: 1008
-        width: 260
-        height: 892
+        x: 633
+        y: 41
+        width: 291
+        height: 545
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.65, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_3
+      name: Menino_jump_6
       rect:
         serializedVersion: 2
-        x: 989
-        y: 1008
-        width: 260
-        height: 892
+        x: 968
+        y: 41
+        width: 299
+        height: 545
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.65, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_4
+      name: Menino_jump_7
       rect:
         serializedVersion: 2
-        x: 1279
-        y: 1008
-        width: 345
-        height: 889
+        x: 1309
+        y: 46
+        width: 303
+        height: 532
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.65, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_5
+      name: Menino_jump_8
       rect:
         serializedVersion: 2
         x: 1654
-        y: 1008
-        width: 344
-        height: 889
+        y: 9
+        width: 246
+        height: 605
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.7, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_6
+      name: Menino_jump_9
       rect:
         serializedVersion: 2
-        x: 2028
-        y: 1007
-        width: 353
-        height: 894
+        x: 1945
+        y: 9
+        width: 244
+        height: 605
       alignment: 9
-      pivot: {x: 0.4, y: 0.72}
+      pivot: {x: 0.7, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_7
+      name: Menino_jump_10
       rect:
         serializedVersion: 2
-        x: 2410
-        y: 1007
-        width: 354
-        height: 894
+        x: 2235
+        y: 13
+        width: 266
+        height: 601
       alignment: 9
-      pivot: {x: 0.4, y: 0.72}
+      pivot: {x: 0.7, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_8
+      name: Menino_jump_11
       rect:
         serializedVersion: 2
-        x: 33
-        y: 57
-        width: 444
-        height: 869
+        x: 2543
+        y: 38
+        width: 280
+        height: 576
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.7, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_9
+      name: Menino_jump_13
       rect:
         serializedVersion: 2
-        x: 517
-        y: 57
-        width: 444
-        height: 869
+        x: 2863
+        y: 44
+        width: 297
+        height: 563
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.6, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_10
+      name: Menino_jump_14
       rect:
         serializedVersion: 2
-        x: 1001
-        y: 56
-        width: 378
-        height: 882
+        x: 3203
+        y: 39
+        width: 305
+        height: 558
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.57, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_11
+      name: Menino_jump_15
       rect:
         serializedVersion: 2
-        x: 1419
-        y: 56
-        width: 379
-        height: 882
+        x: 3550
+        y: 33
+        width: 319
+        height: 564
       alignment: 9
-      pivot: {x: 0.43, y: 0.72}
+      pivot: {x: 0.55, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_12
+      name: Menino_jump_16
       rect:
         serializedVersion: 2
-        x: 1839
-        y: 56
-        width: 344
-        height: 868
+        x: 3911
+        y: 39
+        width: 319
+        height: 558
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.55, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_13
+      name: Menino_jump_17
       rect:
         serializedVersion: 2
-        x: 2222
-        y: 56
-        width: 344
-        height: 868
+        x: 4272
+        y: 36
+        width: 298
+        height: 560
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.58, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: folha - punch 4_14
+      name: Menino_jump_19
       rect:
         serializedVersion: 2
-        x: 2605
-        y: 58
-        width: 302
-        height: 893
+        x: 4612
+        y: 46
+        width: 288
+        height: 547
       alignment: 9
-      pivot: {x: 0.58, y: 0.72}
+      pivot: {x: 0.62, y: 0.7276475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Menino_jump_21
+      rect:
+        serializedVersion: 2
+        x: 4956
+        y: 25
+        width: 270
+        height: 568
+      alignment: 9
+      pivot: {x: 0.65, y: 0.7276475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
