@@ -1717,7 +1717,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: 4.619
+=======
+      value: 4.862
+>>>>>>> 6881fd3c080e5e0efdc13eda7938394e11f2e3a0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2257,10 +2261,19 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 621335887}
   - component: {fileID: 621335888}
   m_Layer: 13
   m_Name: t4-4 (6)
+=======
+  - component: {fileID: 1128708843}
+  - component: {fileID: 1128708842}
+  - component: {fileID: 1128708844}
+  - component: {fileID: 1128708845}
+  m_Layer: 8
+  m_Name: platform1
+>>>>>>> 6881fd3c080e5e0efdc13eda7938394e11f2e3a0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2364,9 +2377,30 @@ BoxCollider2D:
   m_Offset: {x: -4.935685, y: 0.91628426}
   m_AutoTiling: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 12.371372, y: 0.32535875}
 --- !u!212 &633606907
 SpriteRenderer:
+=======
+  m_Size: {x: 4.084686, y: 0.41024294}
+--- !u!114 &1128708845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128708841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e85dc0ef09147fab9ba32a76c84f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  end: {x: 0, y: -2, z: 0}
+  time: 3
+  relative: 1
+  evil: 1
+--- !u!1 &1150828240
+GameObject:
+>>>>>>> 6881fd3c080e5e0efdc13eda7938394e11f2e3a0
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
