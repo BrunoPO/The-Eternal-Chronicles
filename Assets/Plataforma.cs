@@ -7,11 +7,13 @@ public class Plataforma : MonoBehaviour {
 	public float time = 1.0f;
 	public bool relative = false;
 	public bool evil = false;
+	public float distBFRGetOut;
 
 	protected Vector3 start;
 	protected Vector3 speed;
 	protected float travelTime = 0.0f;
 	private bool temPassageiros=false;
+
 	protected List<GameObject> ignoreList = new List<GameObject>();
 
 	// Use this for initialization
@@ -36,7 +38,7 @@ public class Plataforma : MonoBehaviour {
 			if (child.gameObject.CompareTag ("Alive") || child.gameObject.CompareTag ("Dead")) {
 				temPassageiros = true;
 
-				if(Mathf.Abs(transform.position.y-child.GetChild(0).transform.position.y)>=1){
+				if(Mathf.Abs(transform.position.y-child.GetChild(0).transform.position.y)>=distBFRGetOut){
 				print ("Out: " + child.gameObject);
 				if( child.transform.parent != null )
 					child.transform.SetParent ( null );
