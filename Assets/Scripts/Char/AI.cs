@@ -26,6 +26,8 @@ public class AI : MonoBehaviour {
 	[NonSerialized] public int Atk=0,round=0,ID_Target;
 	[NonSerialized] public static int[] Golpe=new int[3],EfectGolpe=new int[3];
 	[NonSerialized] public static int[] n_Golpe=new int[3],n_EfectGolpe=new int[3];
+	private bool reloadTarget = false;
+
 	private Animator m_Anim;
 	private bool noAtacking,zerado=false,Flying;
 	private Collider2D lastPlat;
@@ -94,7 +96,6 @@ public class AI : MonoBehaviour {
 				boolY = false;
 		}else {
 			chooseYourPath ();
-			moviment ();
 		}
 
 		if(  defense || jump || (Atk+VeloX) != 0 )
@@ -184,7 +185,7 @@ public class AI : MonoBehaviour {
 	}
 
 	void moviment(){
-		float posiLimit,dif;
+		float posiLimit,dif=0;
 		if (!float.IsNaN (target [0])) {//Ande em direção ao alvo
 			//print("Há um alvo");
 			if (this.transform.position.x < target [0] - LimitX) {
@@ -230,12 +231,14 @@ public class AI : MonoBehaviour {
 			}
 			if (!Flying && VeloX != 0 && !(jump || !m_Anim.GetBool("Ground"))) {
 				print ("Trying to move");
-				if (VeloX > 0) {
-					posiLimit = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;
-					dif = posiLimit - transform.position.x;
-				} else {
-					posiLimit = lastPlat.bounds.center.x - lastPlat.bounds.extents.x;
-					dif = transform.position.x-posiLimit;
+				if (lastPlat != null) {
+					if (VeloX > 0) {
+						posiLimit = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;
+						dif = posiLimit - transform.position.x;
+					} else {
+						posiLimit = lastPlat.bounds.center.x - lastPlat.bounds.extents.x;
+						dif = transform.position.x - posiLimit;
+					}
 				}
 				if (dif <= 1) {
 					VeloX = 0;
@@ -253,41 +256,25 @@ public class AI : MonoBehaviour {
 	void chooseYourPath(){
 		target [0] = float.NaN;
 		target [1] = float.NaN;
-		if(Flying){
+		if (Flying) {
 			target [0] = target_GO.transform.position.x;
-			target [1] = target_GO.transform.position.y-Boxsize.y;
-		}else if (difX > m_JumpDist / 8 || difY > m_JumpHeight / 5) {
+			target [1] = target_GO.transform.position.y - Boxsize.y;
+		} else if (difX > m_JumpDist / 8 || difY > m_JumpHeight / 5) {
 			
 			if (posiPath < 0)
 				posiPath = 0;
 			else if (posiPath > Path.Length)
 				posiPath = Path.Length;
 			//print ("Escolhendo caminho"+posiPath);
-			/*try to do not sucide
-			if (this.GetComponent<Animator> ().GetBool ("Ground") == false && this.GetComponent<Animator> ().GetFloat ("vSpeed")<1) {
-				Collider2D lastPlat = this.GetComponent<PlatformerCharacter2D>().m_lastPlat; 
-				if (lastPlat) {
-					float DistancX = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;
-					float DistancY = lastPlat.bounds.center.y + lastPlat.bounds.extents.y;
-					DistancX = (transform.position.x > DistancX) ? transform.position.x - DistancX : DistancX - transform.position.x;
-					DistancY = (transform.position.y > DistancY) ? transform.position.y - DistancY : DistancY - transform.position.y;
-					if ((Global.target.transform.position.x - this.transform.position.x) > DistancX && (Global.target.transform.position.y >= this.transform.position.y)) {
-						if (posiPath > 0)
-							posiPath--;
-					}
-				}
-			}*/
-
-
-
-
 
 			if (posiPath < 0 && !(posiPath < Path.Length && float.IsNaN (Path [0] [0]))) {//Voltou a posição demais pegue sua ultima posição
-				if(Comment) print ("Voltando impedido no curso normal" + posiPath);
+				if (Comment)
+					print ("Voltando impedido no curso normal" + posiPath);
 				target = lastTarget;
-			} else if (CountBFPath<=10 && (difX < m_JumpDist / 3 && difY < m_JumpHeight / 3 || posiPath < Path.Length-1 && null != Path [posiPath] && float.IsNaN (Path [posiPath] [0]))) {//Está proximo o suficiente para ir só
+			} else if (CountBFPath <= 10 && (difX < m_JumpDist / 3 && difY < m_JumpHeight / 3 || posiPath < Path.Length - 1 && null != Path [posiPath] && float.IsNaN (Path [posiPath] [0]))) {//Está proximo o suficiente para ir só
 				CountBFPath++;
-				if(Comment) print ("(Caminho incompleto) Proximo ");
+				if (Comment)
+					print ("(Caminho incompleto) Proximo ");
 				Path = new float[4][];
 				Path [0] = new float[2];
 				Path [0] [0] = float.NaN;
@@ -296,25 +283,27 @@ public class AI : MonoBehaviour {
 				//posiPath = -1;//em toda rodada é incremetado um para o valor ficar zero é preciso q valor esteja -1(começar da posição 0 do Path)
 				finded = true;
 			} else if ((posiPath >= Path.Length) || finded) {//O caminho chegou ao fim,mas o inimigo não foi encontrado então recalculo
-				if(Comment) print ("Recalculo para chegar em: " + target_GO.name);
+				if (Comment)
+					print ("Recalculo para chegar em: " + target_GO.name);
 				//if(CountBFPath>=waitforPath){
-					finded = false;
-					posiPath = -1;
-					boolX = false;
-					boolY = false;
-					Dist = (this.GetComponent<CircleCollider2D> ().offset.y - this.GetComponent<CircleCollider2D> ().radius) * this.GetComponent<Transform> ().localScale.y / 2;
-					pointAdap = target_GO.transform.position;
-					pointAdap.y = pointAdap.y + Dist;
-					CountBFPath = 0;
+				finded = false;
+				posiPath = -1;
+				boolX = false;
+				boolY = false;
+				Dist = (this.GetComponent<CircleCollider2D> ().offset.y - this.GetComponent<CircleCollider2D> ().radius) * this.GetComponent<Transform> ().localScale.y / 2;
+				pointAdap = target_GO.transform.position;
+				pointAdap.y = pointAdap.y + Dist;
+				CountBFPath = 0;
 
-					Path = GameObject.Find ("GM").GetComponent<Global> ().Pathfind (this.gameObject, pointAdap);
+				Path = GameObject.Find ("GM").GetComponent<Global> ().Pathfind (this.gameObject, pointAdap);
 				/*}else{
 					CountBFPath++;
 				}*/
 
 			} else if (posiPath < Path.Length - 1 && !float.IsNaN (Path [posiPath] [0])) {//ainda não chegou siga o caminho
 				//if(Comment) print ("Tentando se aproximar através do caminho");
-				if(Comment) print("Apenas seguindo");
+				if (Comment)
+					print ("Apenas seguindo");
 				finded = false;
 				target = Path [posiPath];
 			}
@@ -326,17 +315,42 @@ public class AI : MonoBehaviour {
 				//float distanc = (transform.position.y > target_GO.transform.position.y + Dist) ? transform.position.y - target_GO.transform.position.y + Dist : target_GO.transform.position.y + Dist - transform.position.y;
 
 				if (Flying || (difY < m_JumpHeight || target_GO.transform.position.y < transform.position.y)) {
-					if(Comment) print ("Taking him");
-						target [0] = target_GO.transform.position.x;
-						target [1] = target_GO.transform.position.y + Dist;
+					if (Comment)
+						print ("Taking him");
+					target [0] = target_GO.transform.position.x;
+					target [1] = target_GO.transform.position.y + Dist;
 				} else {
-					if(Comment) print ("Can't taking him"+difX+" "+m_JumpHeight);
+					if (Comment)
+						print ("Can't taking him" + difX + " " + m_JumpHeight);
 					target [0] = float.NaN;
 				}
 			}
 
-		}
+			//try to do not sucide
+			if (!minion) {
+				if (this.GetComponent<Animator> ().GetBool ("Ground") == false && this.GetComponent<Animator> ().GetFloat ("vSpeed") < 0 && target [0] != float.NaN) {
+					Collider2D lastPlat = this.GetComponent<CharController> ().m_lastPlat; 
 
+					float DistancX = (transform.position.x > target [0]) ? transform.position.x - target [0] : target [0] - transform.position.x;
+					float DistancY = (transform.position.y > target [1]) ? transform.position.y - target [1] : target [1] - transform.position.y;
+					if (this.GetComponent<CharController> ().m_MaxSpeed < DistancX || (Global.target.transform.position.y >= this.transform.position.y)) {
+						print ("Tentou Salvar");
+						reloadTarget = true;
+						lastTarget = target;
+						target [0] = lastPlat.bounds.center.x;
+						target [1] = lastPlat.bounds.center.y;
+					}
+			
+
+			
+				}
+			}
+			moviment ();
+			if (reloadTarget) {
+				reloadTarget = false;
+				target = lastTarget;
+			}
+		}
 	}
 		
 	public void Golpe_Detec(int Efective){
