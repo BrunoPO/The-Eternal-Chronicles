@@ -17,12 +17,23 @@ namespace UnityStandardAssets._2D
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
 
+        //Limites do background
+        public SpriteRenderer spriteBG;
+        private float rightBound;
+        private float leftBound;
+        private float topBound;
+        private float bottomBound;
+
+
         // Use this for initialization
         private void Start() {
 			target = Global.target.transform;
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
+            
+            float vertExtent = Camera.main.GetComponent<Camera>().orthographicSize;  
+
         }
 
 		public void Change(){
