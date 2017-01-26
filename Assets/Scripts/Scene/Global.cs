@@ -56,46 +56,56 @@ public class Global : MonoBehaviour {
 				Graveyard_List.RemoveAt(0);
 			}
 		}
-		if(Input.inputString == "h"){
-			toggle_target(true);
-		}else if(Input.inputString == "g"){
-			toggle_target(false);
-		}
-		if (Input.inputString == "1") {
-			SceneManager.LoadScene ("scene_0");
-		} else if (Input.inputString == "2") {
-			SceneManager.LoadScene ("scene_1");
-		}
-		if (target.transform.position.y < 0 || Input.inputString == "r"){//se o personagem cair no infinito ou apertar R será reiniciando a partida
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name) ;
-		}
-		if (Input.GetKey ("p") && counter >= 10) {
-			counter = 0;
-			if (Time.timeScale != 0f)
-				Time.timeScale = 0f;
-			else
-				Time.timeScale = 1.0f;
-		}
-		
-		if (Input.GetKey ("\\")) 
+			if (Input.inputString == "h") {
+				toggle_target (true);
+			} else if (Input.inputString == "g") {
+				toggle_target (false);
+			}
+			if (Input.inputString == "1") {
+				SceneManager.LoadScene ("fase_0");
+			} else if (Input.inputString == "2") {
+				SceneManager.LoadScene ("scene_2_caverna_baixo");
+			}else if (Input.inputString == "3") {
+				SceneManager.LoadScene ("scene_3_caverna_direita");
+			}else if (Input.inputString == "3") {
+				SceneManager.LoadScene ("scene_4_caverna_direita_baixo");
+			}
+			if (target.transform.position.y < 0 || Input.inputString == "r") {//se o personagem cair no infinito ou apertar R será reiniciando a partida
+				if(target.transform.position.x > 36 && target.transform.position.x<39)
+					SceneManager.LoadScene ("scene_2_caverna_baixo");
+				else
+					SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+				
+			}
+			if (Input.GetKey ("p") && counter >= 10) {
+				counter = 0;
+				if (Time.timeScale != 0f)
+					Time.timeScale = 0f;
+				else
+					Time.timeScale = 1.0f;
+			}
+			
+			if (Input.GetKey ("\\"))
 			if (Time.timeScale == 1.0)
 				Time.timeScale = 0.3f;
 			else
-				Time.timeScale=1.0f;
-		if(Time.timeScale==0.3)
-			currentslow = Time.deltaTime;
-		if(currentslow > 0){
-			currentslow = 0;
-			Time.timeScale = 1.0f;
-		}
+				Time.timeScale = 1.0f;
+			if (Time.timeScale == 0.3)
+				currentslow = Time.deltaTime;
+			if (currentslow > 0) {
+				currentslow = 0;
+				Time.timeScale = 1.0f;
+			}
+		
 		jump = Input.GetKeyDown("up");
 		defense = Input.GetKey("down");
 		atk1 = Input.GetKey("f");
 		atk2 = Input.GetKey("t");
 		sprint = Input.GetKey("left shift");
 		h = Input.GetAxis ("Horizontal");
-		if(h != 0 || defense || jump || ((atk1|| atk2)?2:0) != 0 )
-			target.GetComponent<CharController>().Move(h, defense, jump,(atk1)?1:((atk2)?2:0),sprint);
+		if (h != 0 || defense || jump || ((atk1 || atk2) ? 2 : 0) != 0) {
+			target.GetComponent<CharController> ().Move (h, defense, jump, (atk1) ? 1 : ((atk2) ? 2 : 0), sprint);
+		}
 		jump = false;
 
 		if(Char1_List.Count != 0 || Char2_List.Count != 0)
@@ -112,16 +122,16 @@ public class Global : MonoBehaviour {
 		if(Comment) print(Char1);
 		if(Comment) print(Char2);
 		if (Char1 != null && Char1.activeSelf) {
-			if(Char1.GetInstanceID() == who.GetInstanceID ())
+			if (Char1.GetInstanceID () == who.GetInstanceID ()) {
 				Char1_List.Clear ();
-			else if(Char1.GetComponent<AI> ().enabled && Char1.GetComponent<AI> ().target_GO.GetInstanceID () == who.GetInstanceID ())
+			}else if(Char1.GetComponent<AI> ().enabled && Char1.GetComponent<AI> ().target_GO.GetInstanceID () == who.GetInstanceID ())
 				Char1.GetComponent<AI> ().target_GO = null;
 			
 		}
 		if (Char2 != null && Char2.activeSelf) {
-			if(Char2.GetInstanceID() == who.GetInstanceID ())
+			if (Char2.GetInstanceID () == who.GetInstanceID ()) {
 				Char2_List.Clear ();
-			else if(Char2.GetComponent<AI> ().enabled && !Char2.GetComponent<AI> ().target_GO && Char2.GetComponent<AI> ().target_GO.GetInstanceID () ==  who.GetInstanceID ())
+			}else if(Char2.GetComponent<AI> ().enabled && !Char2.GetComponent<AI> ().target_GO && Char2.GetComponent<AI> ().target_GO.GetInstanceID () ==  who.GetInstanceID ())
 				Char2.GetComponent<AI> ().target_GO = null;
 
 		}

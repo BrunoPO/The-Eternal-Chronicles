@@ -2,37 +2,45 @@
 using UnityEngine;
 using UnityStandardAssets._2D;
 
-public class CharController : MonoBehaviour{
+public class ControllerChar : MonoBehaviour {
+	
+	private PlayerAction Vertical;
+
 	[SerializeField] public bool m_AirControl = false,Flying=false;
 	[SerializeField] private int Timetowait=0;
 	[SerializeField] public float m_MaxSpeed = 10f,m_JumpHeight,life;//Alter
 	public bool Comment = false,animToRight,m_FacingRight = true,itsItem=false;
-	private bool jumpIni=false,canMoveY = true,canMoveX = true,minion;
+	private bool jumpIni=false,canMoveX = true,minion;
 	private float gravityScale; //lastMove = 0,
 	private int intecSprint = 2;
 	private Animator m_Anim; 
 	private Rigidbody2D m_Rigidbody2D;
-	private CircleCollider2D GroundCols;
 	private LayerMask m_WhatIsGround,m_WhatIsPlat;
 	private Transform m_GroundCheck,atack_Point_0,atack_Point_1;
 	private Vector3 ini,fim;
-	private float damage,m_JumpForce,k_GroundedRadius;
+	private float damage,k_GroundedRadius;
 	private bool damaged=false;
 	private int ID_Target,Efective,Efective_Aux,count_Without_move;//,Anim_Hash
 
-	private Collider2D on_Ground, m_Grounded, on_Plat,platatual;
-	private bool PlusJump=false;
-	
+	private Collider2D  on_Plat,platatual;
+
 	private LayerMask myEnemy_layer;
 	private float sprint_velo = 0;
 	public bool[] comboTree=new bool[14];
 	public bool[] Habilidades=new bool[4];//Dash,Pulo duplo,ataques em defesa
 	public float[] damageTree=new float[14];
-	[NonSerialized] public Collider2D m_lastPlat;
-	[NonSerialized] public int waitTime,altArvCombo=0;
-	[NonSerialized] public bool noAtacking=true,Gdamaged=false;
+	[NonSerialized] public Collider2D m_lastPlat,on_Ground,m_Grounded;
+	[NonSerialized] public int waitTime,altArvCombo=0,atk;
+	public bool noAtacking=true,Gdamaged=false,defense,jump,sprint,canMoveY = true,PlusJump=false;
+	[NonSerialized] public float move,m_JumpForce;
+	[NonSerialized] public CircleCollider2D GroundCols;
 
 	private void Start(){
+		if (Flying) {
+			Vertical = new VerticalFlyAction (this.gameObject);
+		}else{
+			Vertical = new JumpAction (this.gameObject);
+		}
 		if(Flying) intecSprint = 5 ;
 		if (gameObject.GetComponents<AI> ().Length != 0)
 			minion = GetComponent<AI> ().minion;
@@ -66,7 +74,7 @@ public class CharController : MonoBehaviour{
 				myEnemy_layer = LayerMask.GetMask ("Enemy") | LayerMask.GetMask ("InteractiveItens");
 			}else 
 				myEnemy_layer = LayerMask.GetMask("Character");
-			
+
 		}
 
 
@@ -78,7 +86,7 @@ public class CharController : MonoBehaviour{
 			GameObject.Find("GM").GetComponent<Global>().Died (gameObject);
 		else if (life <= 0)
 			m_Anim.SetBool ("Death", true);
-		
+
 		Gdamaged = (damaged)?damaged:Gdamaged;//guarda se houve dano sempre tentando guardar o true;
 		m_Anim.SetBool ("Damaged", damaged);
 		damaged = false;
@@ -97,13 +105,15 @@ public class CharController : MonoBehaviour{
 				jumpIni = false;
 				m_Anim.SetBool ("JumpIni", jumpIni);
 				canMoveX = true;
-				VerticalMove (false, true);
+				defense = false;
+				jump = true;
+				Vertical.perform (jump,defense);
 			}
 		}
 
 		if (!noAtacking || Flying) 
 			Calc_Efect ();
-		
+
 		if (!Flying) {
 			collidindoComTerreno ();
 		}
@@ -195,7 +205,7 @@ public class CharController : MonoBehaviour{
 	}
 
 	public int Damaged(float dano,int ID){//aqui é setado que foi recebido dano e possui um retorno 2 se acertou o inimigo certo 1 se ele estiver em defesa 0 se não formos o alvo.
-		
+
 		if (itsItem || minion || !m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense")) {
 			life -= dano;
 			damaged = true;
@@ -234,7 +244,7 @@ public class CharController : MonoBehaviour{
 				sprint = true;
 			noAtacking = false;
 		}	
-		
+
 		if (noAtacking) {//zera vars que serão usadas futuramente
 			Gdamaged = false;
 			if (!minion) {
@@ -264,12 +274,12 @@ public class CharController : MonoBehaviour{
 
 		if ((m_Grounded || m_AirControl)) {//verifica se ele está no chão ou pode se mover no ar.
 			move = (defense||atk != 0 ? move/1000: move);//caso esteja em modo de defesa ou atacando ele não pode se mover horinzontalmente
-			HorizontalMove(move, defense,sprint);
+			HorizontalMove(move, sprint);
 		}
 
 		if (!minion){
 			if (jump && defense) {
-				VerticalMove (defense, jump);
+				Vertical.perform (jump,defense);
 				//m_Anim.SetBool ("Jump_Bot", jump);
 			} else if (!jumpIni && jump && !defense && (m_Grounded || (PlusJump && m_Rigidbody2D.velocity.y < 0))) {
 				m_Rigidbody2D.velocity = new Vector2 (0, -0.5f);
@@ -280,9 +290,9 @@ public class CharController : MonoBehaviour{
 				canMoveX=false;			
 			}
 		} else {
-			VerticalMove (defense, jump);
+				Vertical.perform (jump,defense);
 		}
-		
+
 
 
 
@@ -315,7 +325,7 @@ public class CharController : MonoBehaviour{
 		}
 
 	}
-	private void HorizontalMove(float move, bool defense,bool sprint){
+	private void HorizontalMove(float move,bool sprint){
 		if (canMoveX) {
 			float veloX = 0;
 			if (sprint && sprint_velo == 0)
