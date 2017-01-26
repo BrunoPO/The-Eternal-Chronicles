@@ -17,12 +17,9 @@ namespace UnityStandardAssets._2D
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
 
-        //Limites do background
-        public SpriteRenderer spriteBG;
-        private float rightBound;
-        private float leftBound;
-        private float topBound;
-        private float bottomBound;
+        public bool bound;
+        public Vector3 minPos;
+        public Vector3 maxPos;        
 
 
         // Use this for initialization
@@ -31,9 +28,6 @@ namespace UnityStandardAssets._2D
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
-            
-            float vertExtent = Camera.main.GetComponent<Camera>().orthographicSize;  
-
         }
 
 		public void Change(){
@@ -61,6 +55,12 @@ namespace UnityStandardAssets._2D
 			if (newPos.y <= minimumHeight)
 				newPos.y = transform.position.y;
             transform.position = newPos;
+
+            if(bound){
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPos.x, maxPos.x),
+                    Mathf.Clamp(transform.position.y, minPos.y, maxPos.y),
+                    transform.position.z);
+            }
 
             m_LastTargetPosition = target.position;
         }
