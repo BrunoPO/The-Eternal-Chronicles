@@ -208,7 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 75125422}
   - component: {fileID: 75125423}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: plat-1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,6 +1007,8 @@ GameObject:
   m_Component:
   - component: {fileID: 324209479}
   - component: {fileID: 324209480}
+  - component: {fileID: 324209482}
+  - component: {fileID: 324209481}
   m_Layer: 13
   m_Name: tc-3
   m_TagString: Untagged
@@ -1067,6 +1069,33 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!61 &324209481
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324209478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.8590631, y: 0.9739661}
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.218127, y: 0.55206776}
+--- !u!114 &324209482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324209478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca47947d7afab441480b7a3d023b5d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &336818545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1313,7 @@ GameObject:
   - component: {fileID: 381850173}
   - component: {fileID: 381850175}
   - component: {fileID: 381850174}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1316,10 +1345,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.546692, y: 0.019181311}
+  m_Offset: {x: 2.546692, y: 0.8413907}
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.2864923, y: 2.4616375}
+  m_Size: {x: 7.2864923, y: 0.81721854}
 --- !u!212 &381850175
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1493,6 +1522,11 @@ Prefab:
         type: 2}
       propertyPath: life
       value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013349591410, guid: 95d76ea12e1edce4dbb5babe50c3ad18,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
@@ -2230,7 +2264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 661876500}
   - component: {fileID: 661876501}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: plat-1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2571,6 +2605,7 @@ MonoBehaviour:
   lookAheadFactor: 3
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
+  spriteBG: {fileID: 0}
 --- !u!1 &768868181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,7 +2614,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 768868182}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: ground_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3461,7 +3496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1059860904}
   - component: {fileID: 1059860905}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3601,7 +3636,7 @@ GameObject:
   - component: {fileID: 1082528054}
   - component: {fileID: 1082528053}
   - component: {fileID: 1082528055}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3767,7 +3802,7 @@ GameObject:
   - component: {fileID: 1118099091}
   - component: {fileID: 1118099093}
   - component: {fileID: 1118099092}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: plat-1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4061,7 +4096,7 @@ GameObject:
   - component: {fileID: 1197330851}
   - component: {fileID: 1197330850}
   - component: {fileID: 1197330852}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: plat-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4824,7 +4859,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1413510253}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: ground_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4924,8 +4959,8 @@ MonoBehaviour:
   m_WhatIsPlat:
     serializedVersion: 2
     m_Bits: 256
-  LimiteX: 0.2
-  LimiteY: 0.5
+  LimiteX: 0.5
+  LimiteY: 0.2
   waitForPath: 10
   Comment: 0
   Char1_List: []
@@ -5092,7 +5127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562980193}
   - component: {fileID: 1562980194}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5195,10 +5230,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.6231359, y: 15.232899}
+  m_Offset: {x: 0.6231359, y: 17.744228}
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2537282, y: 32.965797}
+  m_Size: {x: 1.2537282, y: 37.988457}
 --- !u!212 &1604740654
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5259,7 +5294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1607418263}
   - component: {fileID: 1607418264}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5328,7 +5363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1610089938}
   - component: {fileID: 1610089939}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5397,7 +5432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1619924215}
   - component: {fileID: 1619924216}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: plat-1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6229,7 +6264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1998779425}
   - component: {fileID: 1998779426}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6467,7 +6502,7 @@ GameObject:
   - component: {fileID: 2070558128}
   - component: {fileID: 2070558130}
   - component: {fileID: 2070558129}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: plat-0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6682,7 +6717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082172411}
   - component: {fileID: 2082172412}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: plat-1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6829,7 +6864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2113135233}
   - component: {fileID: 2113135234}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6898,7 +6933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124074265}
   - component: {fileID: 2124074266}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: tc-11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
