@@ -8,7 +8,7 @@ public class Global : MonoBehaviour {
 	public LayerMask m_WhatIsGround,m_WhatIsPlayer,m_WhatIsPlat;
 	public float LimiteX, LimiteY;
 	public int waitForPath;
-
+	public static bool[] fases = new bool[5];
 	public static GameObject target;
 
 	public static LayerMask WhatIsGround,WhatIsPlayer,WhatIsPlat;
@@ -27,6 +27,11 @@ public class Global : MonoBehaviour {
 	public List<GameObject> Char2_List = new List<GameObject>();
 	public List<GameObject> Graveyard_List = new List<GameObject>();
 	public float rot = 0;
+	public static void LoadLevel(int i){
+		SceneManager.LoadSceneAsync(i,LoadSceneMode.Additive);
+		if(fases[i] != null)
+			fases [i] = true;
+	}
 	private void Awake () {
 		LimitX = LimiteX;
 		LimitY = LimiteY;
@@ -37,6 +42,23 @@ public class Global : MonoBehaviour {
 		print ("Char Atual" + target);
 	}
 	private void Update () {
+		if (!fases[0]) {
+			//SceneManager.LoadScene(0,LoadSceneMode.Additive);
+			fases[0]=true;
+			LoadLevel(1);
+			LoadLevel(2);
+		}
+		//35 46
+		if (target.transform.position.x > 35 && target.transform.position.x < 46)
+			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 2.3f;
+		else if (target.transform.position.x > 48 && target.transform.position.x < 64)
+			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 3.7f;
+		else 
+			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 12.3f;
+		
+		if (target.transform.position.x > 42.5f && !fases [4]) {
+			LoadLevel (4);
+		}
 		counter++;
 
 		if(!bolean)
@@ -71,10 +93,11 @@ public class Global : MonoBehaviour {
 				SceneManager.LoadScene ("scene_4_caverna_direita_baixo");
 			}
 			if (target.transform.position.y < 0 || Input.inputString == "r") {//se o personagem cair no infinito ou apertar R será reiniciando a partida
-				if(target.transform.position.x > 36 && target.transform.position.x<39)
+				/*if(target.transform.position.x > 36 && target.transform.position.x<39)
 					SceneManager.LoadScene ("scene_2_caverna_baixo");
 				else
-					SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+					SceneManager.LoadScene (SceneManager.GetActiveScene ().name);*/
+				print("Ainda vou ver como reiniciar");
 				
 			}
 			if (Input.GetKey ("p") && counter >= 10) {

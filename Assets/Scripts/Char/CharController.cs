@@ -74,7 +74,7 @@ public class CharController : MonoBehaviour{
 	}
 	//Maybe use FixedUpdate(faster) have a precision between execution
 	private void Update(){	
-		if ( transform.position.y <= -10)
+		if ( transform.position.y <= 0)
 			GameObject.Find("GM").GetComponent<Global>().Died (gameObject);
 		else if (life <= 0)
 			m_Anim.SetBool ("Death", true);
@@ -197,6 +197,9 @@ public class CharController : MonoBehaviour{
 	public int Damaged(float dano,int ID){//aqui é setado que foi recebido dano e possui um retorno 2 se acertou o inimigo certo 1 se ele estiver em defesa 0 se não formos o alvo.
 		
 		if (itsItem || minion || !m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense")) {
+			if (transform.gameObject.name == "Parede" && !Global.fases [3]) {
+				Global.LoadLevel (3);
+			}
 			life -= dano;
 			damaged = true;
 			return (this.gameObject.GetInstanceID()==ID)?2:0;
