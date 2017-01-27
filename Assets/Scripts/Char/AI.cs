@@ -21,7 +21,7 @@ public class AI : MonoBehaviour {
 	private Vector3 pointAdap;
 	private bool animToRight = false;
 	private int timedefence = 0;
-
+	private Rigidbody2D m_Rigidbody2D;
 	public GameObject target_GO;
 	private bool finded=false;
 	[NonSerialized] public int Atk=0,round=0,ID_Target;
@@ -33,6 +33,7 @@ public class AI : MonoBehaviour {
 	private bool noAtacking,zerado=false,Flying;
 	private Collider2D lastPlat;
 	void Start() {
+		m_Rigidbody2D = GetComponent<Rigidbody2D>(); 
 		animToRight = GetComponent<CharController> ().animToRight;
 		Flying = GetComponent<CharController> ().Flying;
 
@@ -78,7 +79,7 @@ public class AI : MonoBehaviour {
 				Debug.DrawLine (new Vector2(Path[i][0],Path[i][1]),new Vector2(Path[i+1][0],Path[i+1][1]));
 
 		if (!iniAI) {
-			if (Vector2.Distance (Global.target.transform.position, transform.position) < 5)
+			if (Vector2.Distance (Global.target.transform.position, transform.position) < 2)
 				iniAI = true;
 			return;
 		}
@@ -335,12 +336,13 @@ public class AI : MonoBehaviour {
 
 			//try to do not sucide
 			if (!minion) {
-				if (this.GetComponent<Animator> ().GetBool ("Ground") == false && this.GetComponent<Animator> ().GetFloat ("vSpeed") < 0 && target [0] != float.NaN) {
+				//this.GetComponent<Animator> ().GetBool ("Ground") == false && this.GetComponent<Animator> ().GetFloat ("vSpeed") < 0
+				if (target [0] != float.NaN) {
 					Collider2D lastPlat = this.GetComponent<CharController> ().m_lastPlat; 
 
 					float DistancX = (transform.position.x > target [0]) ? transform.position.x - target [0] : target [0] - transform.position.x;
 					float DistancY = (transform.position.y > target [1]) ? transform.position.y - target [1] : target [1] - transform.position.y;
-					if (this.GetComponent<CharController> ().m_MaxSpeed < DistancX || (Global.target.transform.position.y >= this.transform.position.y)) {
+					if ((this.GetComponent<CharController> ().m_MaxSpeed < DistancX ) || ((transform.position.y < target [1] && DistancY>m_JumpHeight))) {//|| Global.target.transform.position.y >= this.transform.position.y
 						print ("Tentou Salvar");
 						reloadTarget = true;
 						lastTarget = target;

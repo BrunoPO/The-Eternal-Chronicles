@@ -10,7 +10,7 @@ public class Global : MonoBehaviour {
 	public int waitForPath;
 	public static bool[] fases = new bool[5];
 	public static GameObject target;
-
+	public float[] gravityScale = new float[2];
 	public static LayerMask WhatIsGround,WhatIsPlayer,WhatIsPlat;
 	public static float LimitY, LimitX;
 	public bool Comment = false;
@@ -47,6 +47,7 @@ public class Global : MonoBehaviour {
 			fases[0]=true;
 			LoadLevel(1);
 			LoadLevel(2);
+			print ("Carregou Fases");
 		}
 		//35 46
 		if (target.transform.position.x > 35 && target.transform.position.x < 46)

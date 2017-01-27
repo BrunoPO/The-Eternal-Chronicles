@@ -48,8 +48,13 @@ public class CharController : MonoBehaviour{
 			m_GroundCheck = transform.Find ("GroundCheck");
 			atack_Point_0 = transform.Find ("Point_Atack").Find ("0");
 			atack_Point_1 = atack_Point_0.Find ("1");
-			gravityScale = m_Rigidbody2D.gravityScale;
+			print (GameObject.Find("GM").GetComponent<Global>().gravityScale [1]);
 
+			if (transform.gameObject.name == "Char2")
+				gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [1];
+			else
+				gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [0];
+			m_Rigidbody2D.gravityScale = gravityScale;
 			m_WhatIsGround = Global.WhatIsGround | LayerMask.GetMask ("InteractiveItens");
 			m_WhatIsPlat = Global.WhatIsPlat;
 			GroundCols = GetComponent<CircleCollider2D> ();
