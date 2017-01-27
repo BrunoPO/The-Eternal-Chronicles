@@ -50,6 +50,14 @@ public class Global : MonoBehaviour {
 			print ("Carregou Fases");
 		}
 		//35 46
+		Vector3 localScale = GameObject.Find("Verde").transform.localScale;
+		if(target == Char1)
+			localScale.x = target.GetComponent<CharController>().life / 600;
+		else 
+			localScale.x = target.GetComponent<CharController>().life / 400;
+		if (localScale.x < 0)
+			localScale.x = 0;
+		GameObject.Find("Verde").transform.localScale = localScale;
 		if (target.transform.position.x > 35 && target.transform.position.x < 46)
 			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 2.3f;
 		else if (target.transform.position.x > 48 && target.transform.position.x < 64)
@@ -201,8 +209,12 @@ public class Global : MonoBehaviour {
 			target.GetComponent<AI> ().enabled = true;
 		
 		if (Char1 != null && target == Char1 && Char2 != null && Char2.activeSelf) {
+			GameObject.Find("HPRose").GetComponent<SpriteRenderer> ().sortingOrder = 3;
+			GameObject.Find("HPEnzo").GetComponent<SpriteRenderer> ().sortingOrder = 4;
 			target = Char2;
 		} else if (Char1 != null && Char1.activeSelf) {
+			GameObject.Find("HPRose").GetComponent<SpriteRenderer> ().sortingOrder = 4;
+			GameObject.Find("HPEnzo").GetComponent<SpriteRenderer> ().sortingOrder = 3;
 			target = Char1;
 		}
 		target.GetComponent<SpriteRenderer> ().sortingOrder = 1;
