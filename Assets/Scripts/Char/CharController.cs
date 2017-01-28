@@ -19,10 +19,10 @@ public class CharController : MonoBehaviour{
 	private CircleCollider2D GroundCols;
 	private BoxCollider2D BoxCols;
 	private LayerMask m_WhatIsGround,m_WhatIsPlat;
-	private Transform m_GroundCheck,atack_Point_0,atack_Point_1;
+	private Transform m_GroundCheck,atack_Point_0,atack_Point_1,Point_Atack;
 	private Vector3 ini,fim;
 	private float damage,m_JumpForce,k_GroundedRadius;
-	private bool damaged=false;
+	public bool damaged=false;
 	private int ID_Target,Efective,Efective_Aux,count_Without_move;//,Anim_Hash
 	private Collider2D on_Ground, m_Grounded, on_Plat,platatual;
 	private bool PlusJump=false;
@@ -36,7 +36,7 @@ public class CharController : MonoBehaviour{
 	[NonSerialized] public float lifeIni;
 	[NonSerialized] public Collider2D m_lastPlat;
 	[NonSerialized] public int waitTime,altArvCombo=0;
-	[NonSerialized] public bool noAtacking=true,Gdamaged=false;
+	public bool noAtacking=true,Gdamaged=false;//[NonSerialized] 
 
 	private void Start(){
 		PosiIni = transform.position;
@@ -52,9 +52,10 @@ public class CharController : MonoBehaviour{
 		m_Anim = GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
-		if (!itsItem) {
+		if (!(itsItem && !Flying)) {
 			m_GroundCheck = transform.Find ("GroundCheck");
-			atack_Point_0 = transform.Find ("Point_Atack").Find ("0");
+			Point_Atack = transform.Find ("Point_Atack");
+			atack_Point_0 = Point_Atack.Find ("0");
 			atack_Point_1 = atack_Point_0.Find ("1");
 
 			if (transform.gameObject.name == "Char2")
@@ -86,6 +87,10 @@ public class CharController : MonoBehaviour{
 
 
 	}
+	public void ClearDamage(){
+		damaged = false;
+		Gdamaged = false;
+	}
 	//Maybe use FixedUpdate(faster) have a precision between execution
 	private void Update(){	
 		//print (lifeIni);
@@ -98,6 +103,9 @@ public class CharController : MonoBehaviour{
 		if(!itsBotao) m_Anim.SetBool ("Damaged", damaged);
 		damaged = false;
 
+		if (!noAtacking || Flying) 
+			Calc_Efect ();
+		
 		if (itsItem) {
 			//Gdamaged = false;
 			return;
@@ -118,8 +126,7 @@ public class CharController : MonoBehaviour{
 			}
 		}
 
-		if (!noAtacking || Flying) 
-			Calc_Efect ();
+
 		
 		if (!Flying) {
 			collidindoComTerreno ();
@@ -127,7 +134,7 @@ public class CharController : MonoBehaviour{
 
 	}
 
-	private void FixedUpdate(){
+	/*private void FixedUpdate(){
 		if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") > 2.0F){
 			print("Speed: " + m_Anim.GetFloat("Speed"));
 			walkSound.Play();
@@ -135,7 +142,7 @@ public class CharController : MonoBehaviour{
 		else if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") < 0.2F){
 
 		}
-	}
+	}*/
 	private void collidindoComTerreno(){
 		m_Grounded = null;on_Ground = null;on_Plat=null;
 		//abaixo é verificado se colidindo enquando intagivel se não torna tangivel(só é tangivel se não estiver batendo em nada)
@@ -177,10 +184,11 @@ public class CharController : MonoBehaviour{
 	}
 
 	public void Calc_Efect(){
-		ID_Target = transform.GetComponent<AI> ().ID_Target;
+		if(!itsItem)
+			ID_Target = transform.GetComponent<AI> ().ID_Target;
 		//Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;
 		damage = 0;
-		RaycastHit2D[] col1 = Physics2D.LinecastAll (transform.position, atack_Point_0.position, myEnemy_layer);
+		RaycastHit2D[] col1 = Physics2D.LinecastAll (Point_Atack.position, atack_Point_0.position, myEnemy_layer);
 		RaycastHit2D[] col2 = Physics2D.LinecastAll (atack_Point_0.position, atack_Point_1.position, myEnemy_layer);
 		int damage_posi = 0;
 
@@ -221,7 +229,7 @@ public class CharController : MonoBehaviour{
 		}
 		if(Efective != 0 && !minion && transform.GetComponent<AI> ().enabled)
 			transform.GetComponent<AI> ().Golpe_Detec(Efective+(Gdamaged ? (m_Anim.GetBool ("Defense") ? 5 : 0) : 5));
-		Debug.DrawLine (transform.position, atack_Point_0.position);
+		Debug.DrawLine (Point_Atack.position, atack_Point_0.position);
 		Debug.DrawLine (atack_Point_0.position, atack_Point_1.position);
 	}
 

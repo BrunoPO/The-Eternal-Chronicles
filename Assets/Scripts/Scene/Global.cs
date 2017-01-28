@@ -50,16 +50,19 @@ public class Global : MonoBehaviour {
 		//print (Graveyard_List.Count);
 		if (killSelf) {
 			killSelf = false;
-
+			GetComponent<Puzzle0> ().zerou = true;
 			while(Graveyard_List.Count > 0){
 				GameObject resurect = Graveyard_List [0];
 				resurect.GetComponent<CharController> ().life = resurect.GetComponent<CharController> ().lifeIni;
 				resurect.transform.position = resurect.GetComponent<CharController> ().PosiIni;
 				if(!resurect.GetComponent<CharController>().itsItem)
 					resurect.GetComponent<AI> ().ini();
+				if (resurect.GetComponent<CharController> ().itsItem && resurect.GetComponent<CharController> ().Flying)
+					resurect.GetComponent<Rigidbody2D>().gravityScale = 0;
 				resurect.SetActive (true);
 				Graveyard_List.RemoveAt(0);
 			}
+
 		}
 			
 		if (!fases[0]) {
@@ -191,7 +194,7 @@ public class Global : MonoBehaviour {
 		if (Char2 != null && Char2.activeSelf) {
 			if (Char2.GetInstanceID () == who.GetInstanceID ()) {
 				Char2_List.Clear ();
-			}else if(Char2.GetComponent<AI> ().enabled && !Char2.GetComponent<AI> ().target_GO && Char2.GetComponent<AI> ().target_GO.GetInstanceID () ==  who.GetInstanceID ())
+			}else if(Char2.GetComponent<AI> ().enabled && !Char2.GetComponent<AI> ().target_GO && Char2.GetComponent<AI> ().target_GO != null &&  Char2.GetComponent<AI> ().target_GO.GetInstanceID () ==  who.GetInstanceID ())
 				Char2.GetComponent<AI> ().target_GO = null;
 
 		}

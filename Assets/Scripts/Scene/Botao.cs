@@ -15,10 +15,16 @@ public class Botao : MonoBehaviour {
 		}
 		GetComponent<Animator>().SetBool ("Damaged", damaged); 
 		if(GetComponent<CharController>().Gdamaged){
-			if (!damaged) {
-				GameObject.Find ("GM").GetComponent<Puzzle0> ().botao [posi-1] = ++GameObject.Find ("GM").GetComponent<Puzzle0> ().hit;
+			if (!damaged ) {
+				damaged = true;
+				if(posi != 4 ){
+					GameObject.Find ("GM").GetComponent<Puzzle0> ().botao [posi - 1] = ++GameObject.Find ("GM").GetComponent<Puzzle0> ().hit;
+				} else {
+					GameObject.Find ("GM").GetComponent<Puzzle0> ().trap1 = true;
+				}
+
 			}
-			damaged = true;
-		}
+
+		}	
 	}
 }
