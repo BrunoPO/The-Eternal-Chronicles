@@ -8,8 +8,9 @@ public class Interactive_Itens : MonoBehaviour {
 	void Start () {
 		
 	}
-	void  OnTriggerEnter2D(Collider2D collision) {
+	void  OnTriggerStay2D(Collider2D collision) {
 		if (collision.gameObject.layer == 10 || collision.gameObject.layer == 9) {
+			print ("Interation with coll");
 			collision.isTrigger = false;
 		}
 	}

@@ -13,6 +13,7 @@ public class CharController : MonoBehaviour{
 	private Animator m_Anim; 
 	private Rigidbody2D m_Rigidbody2D;
 	private CircleCollider2D GroundCols;
+	private BoxCollider2D BoxCols;
 	private LayerMask m_WhatIsGround,m_WhatIsPlat;
 	private Transform m_GroundCheck,atack_Point_0,atack_Point_1;
 	private Vector3 ini,fim;
@@ -58,6 +59,7 @@ public class CharController : MonoBehaviour{
 			m_WhatIsGround = Global.WhatIsGround | LayerMask.GetMask ("InteractiveItens");
 			m_WhatIsPlat = Global.WhatIsPlat;
 			GroundCols = GetComponent<CircleCollider2D> ();
+			BoxCols = GetComponent<BoxCollider2D> ();
 			k_GroundedRadius = GroundCols.radius;
 
 			m_JumpForce = (float) Mathf.Sqrt (Mathf.Abs( 2.075f * m_JumpHeight * Physics2D.gravity.y * m_Rigidbody2D.gravityScale))*m_Rigidbody2D.mass;
@@ -85,14 +87,15 @@ public class CharController : MonoBehaviour{
 			m_Anim.SetBool ("Death", true);
 		
 		Gdamaged = (damaged)?damaged:Gdamaged;//guarda se houve dano sempre tentando guardar o true;
-		m_Anim.SetBool ("Damaged", damaged);
+		m_Anim.SetBool ("Damaged", Gdamaged);
 		damaged = false;
-
 
 		if (itsItem) {
 			Gdamaged = false;
 			return;
 		}
+		if (m_Anim.GetBool ("Ground") && !BoxCols.isTrigger)
+			BoxCols.isTrigger = true;
 
 		if (jumpIni) {
 			m_Anim.SetBool ("Jump_Bot", false);
@@ -202,9 +205,7 @@ public class CharController : MonoBehaviour{
 	public int Damaged(float dano,int ID){//aqui é setado que foi recebido dano e possui um retorno 2 se acertou o inimigo certo 1 se ele estiver em defesa 0 se não formos o alvo.
 		
 		if (itsItem || minion || !m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense")) {
-			if (transform.gameObject.name == "Parede" && !Global.fases [3]) {
-				Global.LoadLevel (3);
-			}
+			print ("Está batendo");
 			life -= dano;
 			damaged = true;
 			return (this.gameObject.GetInstanceID()==ID)?2:0;

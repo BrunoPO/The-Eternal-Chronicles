@@ -298,7 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AirControl: 1
   Flying: 0
-  Timetowait: 20
+  Timetowait: 80
   m_MaxSpeed: 4
   m_JumpHeight: 2
   life: 100
