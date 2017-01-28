@@ -142,6 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 43361801}
   - component: {fileID: 43361802}
+  - component: {fileID: 43361803}
   m_Layer: 8
   m_Name: tc-2
   m_TagString: Untagged
@@ -202,6 +203,22 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!61 &43361803
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43361800}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.2327197, y: 0.8755199}
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.9654408, y: 0.74896026}
 --- !u!1 &62488754
 GameObject:
   m_ObjectHideFlags: 0

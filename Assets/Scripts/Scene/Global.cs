@@ -46,7 +46,9 @@ public class Global : MonoBehaviour {
 			//SceneManager.LoadScene(0,LoadSceneMode.Additive);
 			fases[0]=true;
 			LoadLevel(1);
+			fases[1]=true;
 			LoadLevel(2);
+			fases[2]=true;
 			print ("Carregou Fases");
 		}
 		//35 46
@@ -64,9 +66,12 @@ public class Global : MonoBehaviour {
 			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 3.7f;
 		else 
 			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 12.3f;
-		
+
+
 		if (target.transform.position.x > 42.5f && !fases [4]) {
-			LoadLevel (4);
+			LoadLevel(4);
+		}else if (target.transform.position.x > 34.0f && !fases [3]) {
+			LoadLevel(3);
 		}
 		counter++;
 
@@ -80,6 +85,7 @@ public class Global : MonoBehaviour {
 		if(Input.GetKey ("q")){
 			if(Graveyard_List.Count > 0){
 				GameObject resurect = Graveyard_List [0];
+
 				resurect.GetComponent<CharController> ().life = 40;
 				resurect.transform.position = new Vector3 (0, 3, 0);
 				resurect.GetComponent<AI> ().ini ();
