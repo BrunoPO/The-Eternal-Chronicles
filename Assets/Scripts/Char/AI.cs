@@ -44,12 +44,13 @@ public class AI : MonoBehaviour {
 		m_JumpDist = GetComponent<CharController> ().m_MaxSpeed;
 		Dist = (this.GetComponent<CircleCollider2D> ().offset.y -  this.GetComponent<CircleCollider2D> ().radius) * this.GetComponent<Transform> ().localScale.y;
 		altArvCombo = transform.GetComponent<CharController> ().altArvCombo;
+		Boxsize.x = GetComponent<BoxCollider2D> ().size.x * transform.localScale.x;
+		Boxsize.y = GetComponent<BoxCollider2D> ().size.y * transform.localScale.y;
 		ini ();
 	}
 	public void ini(){
 		GetComponent<AI> ().enabled = (GetComponent<Transform> ().name != Global.target.name);
-		Boxsize.x = GetComponent<BoxCollider2D> ().size.x * transform.localScale.x;
-		Boxsize.y = GetComponent<BoxCollider2D> ().size.y * transform.localScale.y;
+
 		//Possibilidade de não ser utilizado essa var LimitX ou LimitY(consumo de men por duplicação)
 		LimitX = (Flying)?2:Global.LimitX;
 		LimitY = (Flying)?0.2f:1 * Global.LimitY;

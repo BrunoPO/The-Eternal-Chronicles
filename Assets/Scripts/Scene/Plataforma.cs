@@ -40,8 +40,10 @@ public class Plataforma : MonoBehaviour {
 
 				if(Mathf.Abs(transform.position.y-child.GetChild(0).transform.position.y)>=distBFRGetOut){
 				print ("Out: " + child.gameObject);
-				if( child.transform.parent != null )
-					child.transform.SetParent ( null );
+					if( child.transform.parent != null ){
+						child.transform.SetParent ( null );
+						GameObject.Find ("GM").GetComponent<Global> ().devolverChar(child.gameObject);
+					}
 				}
 			}
 		}

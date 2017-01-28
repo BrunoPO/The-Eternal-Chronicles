@@ -20,10 +20,11 @@ namespace UnityStandardAssets._2D
         public bool bound;
         public Vector3 minPos;//pega a posição minima que a camera pode chegar
         public Vector3 maxPos;//pega a posição maxima que a camera pode chegar
-
+		private Vector3 PosiIni;
 
         // Use this for initialization
         private void Start() {
+			PosiIni = transform.position;
 			target = Global.target.transform;
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
@@ -36,6 +37,9 @@ namespace UnityStandardAssets._2D
         // Update is called once per frame
         private void Update()
         {
+			if (Global.killSelf) {
+				transform.position = PosiIni;
+			}
             // only update lookahead pos if accelerating or changed direction
             float xMoveDelta = (target.position - m_LastTargetPosition).x;
 

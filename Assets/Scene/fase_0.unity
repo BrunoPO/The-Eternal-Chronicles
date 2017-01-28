@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72668210}
   - component: {fileID: 72668211}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 198013584}
   - component: {fileID: 198013583}
   - component: {fileID: 198013585}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028429937}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &198013583
 BoxCollider2D:
@@ -719,7 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223617532}
   - component: {fileID: 223617533}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -857,7 +857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 241216652}
   - component: {fileID: 241216653}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1012,7 +1012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 401128792}
   - component: {fileID: 401128793}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 472208204}
   - component: {fileID: 472208205}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1461,7 +1461,7 @@ GameObject:
   - component: {fileID: 472277850}
   - component: {fileID: 472277849}
   - component: {fileID: 472277851}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1557,7 +1557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491891300}
   - component: {fileID: 491891301}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1628,7 +1628,7 @@ GameObject:
   - component: {fileID: 502003638}
   - component: {fileID: 502003637}
   - component: {fileID: 502003639}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1879,7 +1879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 521877173}
   - component: {fileID: 521877174}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2086,7 +2086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566852940}
   - component: {fileID: 566852941}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-8 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2549,7 @@ GameObject:
   - component: {fileID: 675023501}
   - component: {fileID: 675023500}
   - component: {fileID: 675023502}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: t4-p3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2567,7 +2567,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1028429937}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &675023500
 EdgeCollider2D:
@@ -2940,7 +2940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 734471878}
   - component: {fileID: 734471879}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3009,7 +3009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741426650}
   - component: {fileID: 741426651}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3179,7 +3179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 789827078}
   - component: {fileID: 789827079}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3317,7 +3317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827406634}
   - component: {fileID: 827406635}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3385,7 +3385,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 842215191}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: ground_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3517,7 +3517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914469142}
   - component: {fileID: 914469143}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3588,7 +3588,7 @@ GameObject:
   - component: {fileID: 914951162}
   - component: {fileID: 914951163}
   - component: {fileID: 914951161}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: t4-10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3606,7 +3606,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028429937}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &914951161
 MonoBehaviour:
@@ -4207,12 +4207,12 @@ Transform:
   - {fileID: 472277848}
   - {fileID: 2116125974}
   - {fileID: 914469142}
-  - {fileID: 914951160}
-  - {fileID: 1208306715}
-  - {fileID: 675023499}
   - {fileID: 1147706392}
   - {fileID: 1540666578}
   - {fileID: 198013582}
+  - {fileID: 914951160}
+  - {fileID: 1208306715}
+  - {fileID: 675023499}
   m_Father: {fileID: 649312707}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4531,7 +4531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1147706392}
   - component: {fileID: 1147706393}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4549,7 +4549,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028429937}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1147706393
 SpriteRenderer:
@@ -4602,7 +4602,7 @@ GameObject:
   - component: {fileID: 1204135953}
   - component: {fileID: 1204135955}
   - component: {fileID: 1204135954}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4730,7 +4730,7 @@ GameObject:
   - component: {fileID: 1208306715}
   - component: {fileID: 1208306717}
   - component: {fileID: 1208306716}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: t4-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4748,7 +4748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.01, z: 1}
   m_Children: []
   m_Father: {fileID: 1028429937}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1208306716
 BoxCollider2D:
@@ -5221,7 +5221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1329768039}
   - component: {fileID: 1329768040}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5985,7 +5985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497106907}
   - component: {fileID: 1497106908}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6252,7 +6252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1528308773}
   - component: {fileID: 1528308774}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6321,7 +6321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1540666578}
   - component: {fileID: 1540666579}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6339,7 +6339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028429937}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1540666579
 SpriteRenderer:
@@ -6390,7 +6390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1543998072}
   - component: {fileID: 1543998073}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6671,7 +6671,7 @@ GameObject:
   - component: {fileID: 1594113356}
   - component: {fileID: 1594113355}
   - component: {fileID: 1594113357}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6767,7 +6767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645090200}
   - component: {fileID: 1645090201}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7071,7 +7071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738852582}
   - component: {fileID: 1738852583}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7813,7 +7813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1886398076}
   - component: {fileID: 1886398077}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7883,7 +7883,8 @@ GameObject:
   - component: {fileID: 1897511065}
   - component: {fileID: 1897511067}
   - component: {fileID: 1897511066}
-  m_Layer: 8
+  - component: {fileID: 1897511068}
+  m_Layer: 13
   m_Name: platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7959,6 +7960,22 @@ SpriteRenderer:
   m_Size: {x: 7.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &1897511068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1897511064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e85dc0ef09147fab9ba32a76c84f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  end: {x: 0, y: -2, z: 0}
+  time: 2
+  relative: 1
+  evil: 0
+  distBFRGetOut: 0.5
 --- !u!1 &1988383727
 GameObject:
   m_ObjectHideFlags: 0
@@ -8037,7 +8054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2012046727}
   - component: {fileID: 2012046728}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-8 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8173,7 +8190,7 @@ GameObject:
   - component: {fileID: 2036077209}
   - component: {fileID: 2036077208}
   - component: {fileID: 2036077210}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8526,7 +8543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2071651388}
   - component: {fileID: 2071651389}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8664,7 +8681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081503885}
   - component: {fileID: 2081503886}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8805,7 +8822,7 @@ GameObject:
   - component: {fileID: 2103627690}
   - component: {fileID: 2103627689}
   - component: {fileID: 2103627692}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-8 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8849,7 +8866,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2103627687}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 21315308c4ef748a1a78d28a445d55bc, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -8917,7 +8934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2106059382}
   - component: {fileID: 2106059383}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-4 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8988,7 +9005,7 @@ GameObject:
   - component: {fileID: 2116125976}
   - component: {fileID: 2116125975}
   - component: {fileID: 2116125977}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9084,7 +9101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129470296}
   - component: {fileID: 2129470297}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: t4-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
