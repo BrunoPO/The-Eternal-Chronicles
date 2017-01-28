@@ -18,8 +18,8 @@ namespace UnityStandardAssets._2D
         private Vector3 m_LookAheadPos;
 
         public bool bound;
-        public Vector3 minPos;
-        public Vector3 maxPos;        
+        public Vector3 minPos;//pega a posição minima que a camera pode chegar
+        public Vector3 maxPos;//pega a posição maxima que a camera pode chegar
 
 
         // Use this for initialization
