@@ -10,7 +10,7 @@ public class Interactive_Itens : MonoBehaviour {
 	}
 	void  OnTriggerStay2D(Collider2D collision) {
 		if (collision.gameObject.layer == 10 || collision.gameObject.layer == 9) {
-			print ("Interation with coll");
+			//print ("Interation with coll");
 			collision.isTrigger = false;
 		}
 	}

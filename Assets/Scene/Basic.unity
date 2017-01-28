@@ -142,6 +142,19 @@ Prefab:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
+      propertyPath: m_Size.x
+      value: 9.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
+      propertyPath: m_Size.y
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013840903542, guid: 95d76ea12e1edce4dbb5babe50c3ad18,
+        type: 2}
+      propertyPath: life
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
   m_IsPrefabParent: 0
@@ -747,12 +760,12 @@ Prefab:
     - target: {fileID: 114000013840903542, guid: 832f1041cce264cbba82d6ec3d96ef16,
         type: 2}
       propertyPath: Comment
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000013349591410, guid: 832f1041cce264cbba82d6ec3d96ef16,
         type: 2}
       propertyPath: Comment
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
       propertyPath: m_Name
@@ -777,6 +790,15 @@ Prefab:
     - target: {fileID: 21200000, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
       propertyPath: m_Size.y
       value: 2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013349591410, guid: 832f1041cce264cbba82d6ec3d96ef16,
+        type: 2}
+      propertyPath: minion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
@@ -887,7 +909,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   LimiteX: 0.5
-  LimiteY: 0.2
+  LimiteY: 0.5
   waitForPath: 10
   gravityScale:
   - 5
