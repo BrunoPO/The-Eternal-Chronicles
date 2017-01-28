@@ -6,7 +6,11 @@ public class CharController : MonoBehaviour{
 	[SerializeField] public bool m_AirControl = false,Flying=false;
 	[SerializeField] private int Timetowait=0;
 	[SerializeField] public float m_MaxSpeed = 10f,m_JumpHeight,life;//Alter
+	public bool[] comboTree=new bool[14];
+	public bool[] Habilidades=new bool[4];//Dash,Pulo duplo,ataques em defesa
+	public float[] damageTree=new float[14];
 	public bool Comment = false,animToRight,m_FacingRight = true,itsItem=false;
+
 	private bool jumpIni=false,canMoveY = true,canMoveX = true,minion;
 	private float gravityScale; //lastMove = 0,
 	private int intecSprint = 2;
@@ -20,20 +24,20 @@ public class CharController : MonoBehaviour{
 	private float damage,m_JumpForce,k_GroundedRadius;
 	private bool damaged=false;
 	private int ID_Target,Efective,Efective_Aux,count_Without_move;//,Anim_Hash
-
 	private Collider2D on_Ground, m_Grounded, on_Plat,platatual;
 	private bool PlusJump=false;
-	
 	private LayerMask myEnemy_layer;
 	private float sprint_velo = 0;
-	public bool[] comboTree=new bool[14];
-	public bool[] Habilidades=new bool[4];//Dash,Pulo duplo,ataques em defesa
-	public float[] damageTree=new float[14];
+
+	[NonSerialized] public  Vector3 PosiIni;
+	[NonSerialized] public float lifeIni;
 	[NonSerialized] public Collider2D m_lastPlat;
 	[NonSerialized] public int waitTime,altArvCombo=0;
 	[NonSerialized] public bool noAtacking=true,Gdamaged=false;
 
 	private void Start(){
+		PosiIni = transform.position;
+		lifeIni = life;
 		if(Flying) intecSprint = 5 ;
 		if (gameObject.GetComponents<AI> ().Length != 0)
 			minion = GetComponent<AI> ().minion;
@@ -81,13 +85,14 @@ public class CharController : MonoBehaviour{
 	}
 	//Maybe use FixedUpdate(faster) have a precision between execution
 	private void Update(){	
-		if ( transform.position.y <= 0)
+		//print (lifeIni);
+		if ( transform.position.y <= 0 || Global.killSelf)
 			GameObject.Find("GM").GetComponent<Global>().Died (gameObject);
 		else if (life <= 0)
 			m_Anim.SetBool ("Death", true);
 		
 		Gdamaged = (damaged)?damaged:Gdamaged;//guarda se houve dano sempre tentando guardar o true;
-		m_Anim.SetBool ("Damaged", Gdamaged);
+		m_Anim.SetBool ("Damaged", damaged);
 		damaged = false;
 
 		if (itsItem) {

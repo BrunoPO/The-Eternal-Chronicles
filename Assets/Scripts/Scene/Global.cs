@@ -23,6 +23,7 @@ public class Global : MonoBehaviour {
 	//float[][] distan=new float[3][];
 	//public GameObject[] Char1_List = new GameObject[5];
 	//public GameObject[] Char2_List = new GameObject[5];
+	public static bool killSelf=false;
 	public List<GameObject> Char1_List = new List<GameObject>();
 	public List<GameObject> Char2_List = new List<GameObject>();
 	public List<GameObject> Graveyard_List = new List<GameObject>();
@@ -41,7 +42,26 @@ public class Global : MonoBehaviour {
 		target = Char1;
 		print ("Char Atual" + target);
 	}
+	public void devolverChar(GameObject Char){
+		if(Char == Char1 || Char == Char2)
+			SceneManager.MoveGameObjectToScene (Char,SceneManager.GetSceneAt(0));
+	}
 	private void Update () {
+		//print (Graveyard_List.Count);
+		if (killSelf) {
+			killSelf = false;
+
+			while(Graveyard_List.Count > 0){
+				GameObject resurect = Graveyard_List [0];
+				resurect.GetComponent<CharController> ().life = resurect.GetComponent<CharController> ().lifeIni;
+				resurect.transform.position = resurect.GetComponent<CharController> ().PosiIni;
+				if(!resurect.GetComponent<CharController>().itsItem)
+					resurect.GetComponent<AI> ().ini();
+				resurect.SetActive (true);
+				Graveyard_List.RemoveAt(0);
+			}
+		}
+			
 		if (!fases[0]) {
 			//SceneManager.LoadScene(0,LoadSceneMode.Additive);
 			fases[0]=true;
@@ -86,9 +106,9 @@ public class Global : MonoBehaviour {
 			if(Graveyard_List.Count > 0){
 				GameObject resurect = Graveyard_List [0];
 
-				resurect.GetComponent<CharController> ().life = 40;
-				resurect.transform.position = new Vector3 (0, 3, 0);
-				resurect.GetComponent<AI> ().ini ();
+				resurect.GetComponent<CharController> ().life = resurect.GetComponent<CharController> ().lifeIni;
+				resurect.transform.position = resurect.GetComponent<CharController> ().PosiIni;
+				resurect.GetComponent<AI> ().ini();
 				resurect.SetActive (true);
 				Graveyard_List.RemoveAt(0);
 			}
@@ -108,12 +128,7 @@ public class Global : MonoBehaviour {
 				SceneManager.LoadScene ("scene_4_caverna_direita_baixo");
 			}
 			if (target.transform.position.y < 0 || Input.inputString == "r") {//se o personagem cair no infinito ou apertar R será reiniciando a partida
-				/*if(target.transform.position.x > 36 && target.transform.position.x<39)
-					SceneManager.LoadScene ("scene_2_caverna_baixo");
-				else
-					SceneManager.LoadScene (SceneManager.GetActiveScene ().name);*/
-				print("Ainda vou ver como reiniciar");
-				
+				killSelf=true;
 			}
 			if (Input.GetKey ("p") && counter >= 10) {
 				counter = 0;
@@ -176,7 +191,8 @@ public class Global : MonoBehaviour {
 		Graveyard_List.Add (who);
 		Char1_List.Remove(who);
 		Char2_List.Remove(who);
-		who.GetComponent<AI>().target_GO = null;
+		if(!who.GetComponent<CharController>().itsItem)
+			who.GetComponent<AI>().target_GO = null;
 		who.SetActive (false);
 		return (Graveyard_List[Graveyard_List.Count-1] == who);
 	}
@@ -186,7 +202,7 @@ public class Global : MonoBehaviour {
 	public GameObject chooseTarget(GameObject who){
 		//GameObject Send = Char2;
 		if (!(who.name == "Char1" || who.name == "Char2")) {
-			if (Char2_List.Count < Char1_List.Count && Char2 != null && Char2.activeSelf) {
+			if ((Char2_List.Count < Char1_List.Count && Char2 != null && Char2.activeSelf) || !Char1.activeSelf) {
 				Char2_List.Add (who);
 				return Char2;
 			} else if (Char1 != null && Char1.activeSelf) {

@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Menino
+  m_Name: Menino_New
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Death
@@ -344,7 +344,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3f684000628c9bb448017c06533ce306, type: 2}
+  m_Motion: {fileID: 7400000, guid: 60d413de9a2c1433a930a2a2a849413c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

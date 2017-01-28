@@ -104,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 54263261}
   - component: {fileID: 54263262}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,11 +343,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 105673595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.020519, y: -7.95, z: 0}
+  m_LocalPosition: {x: 1.540515, y: 12.929998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1942101627}
-  m_RootOrder: 8
+  m_Father: {fileID: 761131651}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &105673597
 SpriteRenderer:
@@ -451,7 +451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 166385926}
   - component: {fileID: 166385927}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174186100}
   - component: {fileID: 174186101}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 182388525}
   - component: {fileID: 182388526}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184325515}
   - component: {fileID: 184325516}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 187342067}
   - component: {fileID: 187342068}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 302401220}
   - component: {fileID: 302401221}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -964,7 +964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 303003103}
   - component: {fileID: 303003104}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 312564298}
   - component: {fileID: 312564299}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1511,7 +1511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409214144}
   - component: {fileID: 409214145}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1679,6 +1679,7 @@ GameObject:
   - component: {fileID: 460273534}
   - component: {fileID: 460273535}
   - component: {fileID: 460273536}
+  - component: {fileID: 460273537}
   m_Layer: 8
   m_Name: platform3
   m_TagString: Untagged
@@ -1693,7 +1694,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 460273533}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.69, y: 11.96, z: 0}
+  m_LocalPosition: {x: 5.1, y: 11.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 254912147}
@@ -1755,6 +1756,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 3.8509204, y: 0.26884925}
+--- !u!114 &460273537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460273533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e85dc0ef09147fab9ba32a76c84f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  end: {x: 0, y: -2, z: 0}
+  time: 1
+  relative: 1
+  evil: 0
+  distBFRGetOut: 0.4
 --- !u!1 &502502582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,7 +2034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600986499}
   - component: {fileID: 600986500}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2085,7 +2102,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 676125768}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: ground_5_teto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2162,7 +2179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 684930687}
   - component: {fileID: 684930688}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2231,7 +2248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705906712}
   - component: {fileID: 705906713}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2300,7 +2317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 714383671}
   - component: {fileID: 714383672}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2369,7 +2386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 714615362}
   - component: {fileID: 714615363}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2438,7 +2455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 720441221}
   - component: {fileID: 720441222}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2507,7 +2524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 722660768}
   - component: {fileID: 722660769}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2595,7 +2612,38 @@ Transform:
   - {fileID: 562186372}
   - {fileID: 1142109448}
   m_Father: {fileID: 2096625866}
-  m_RootOrder: 6
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &761131650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 761131651}
+  m_Layer: 13
+  m_Name: Plat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &761131651
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761131650}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 105673596}
+  - {fileID: 901378848}
+  - {fileID: 1751078943}
+  m_Father: {fileID: 2096625866}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &764335097
 GameObject:
@@ -2692,7 +2740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 769486285}
   - component: {fileID: 769486286}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2790,7 +2838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861563159}
   - component: {fileID: 861563160}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2859,7 +2907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 877526726}
   - component: {fileID: 877526727}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2997,7 +3045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 891855915}
   - component: {fileID: 891855916}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3080,11 +3128,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 901378847}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.06, y: -5.470477, z: 0}
+  m_LocalPosition: {x: 1.5800065, y: 15.409518, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1942101627}
-  m_RootOrder: 9
+  m_Father: {fileID: 761131651}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &901378849
 SpriteRenderer:
@@ -3135,7 +3183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 987968709}
   - component: {fileID: 987968710}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3204,7 +3252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 993028488}
   - component: {fileID: 993028489}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3273,7 +3321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 998481724}
   - component: {fileID: 998481725}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3428,7 +3476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1082399343}
   - component: {fileID: 1082399344}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3497,7 +3545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1132622508}
   - component: {fileID: 1132622509}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3566,7 +3614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1134667242}
   - component: {fileID: 1134667243}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3635,7 +3683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1136980589}
   - component: {fileID: 1136980590}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3943,7 +3991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230580408}
   - component: {fileID: 1230580409}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4098,7 +4146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1310757934}
   - component: {fileID: 1310757935}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4168,7 +4216,7 @@ GameObject:
   - component: {fileID: 1363791267}
   - component: {fileID: 1363791268}
   - component: {fileID: 1363791269}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4253,7 +4301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371500553}
   - component: {fileID: 1371500554}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4322,7 +4370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1395333060}
   - component: {fileID: 1395333061}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4529,7 +4577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548103248}
   - component: {fileID: 1548103249}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4598,7 +4646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1611951332}
   - component: {fileID: 1611951333}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4736,7 +4784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1692354472}
   - component: {fileID: 1692354473}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4889,11 +4937,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751078942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.55, y: -5.4699993, z: 0}
+  m_LocalPosition: {x: 4.069996, y: 15.409995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1942101627}
-  m_RootOrder: 10
+  m_Father: {fileID: 761131651}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1751078944
 SpriteRenderer:
@@ -4975,7 +5023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802978145}
   - component: {fileID: 1802978146}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5229,7 +5277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1897732419}
   - component: {fileID: 1897732420}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5298,7 +5346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909762872}
   - component: {fileID: 1909762873}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5367,7 +5415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1924683406}
   - component: {fileID: 1924683407}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5437,7 +5485,7 @@ GameObject:
   - component: {fileID: 1926468563}
   - component: {fileID: 1926468564}
   - component: {fileID: 1926468565}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5521,7 +5569,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1942101627}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: ground_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5546,11 +5594,8 @@ Transform:
   - {fileID: 722660768}
   - {fileID: 1363791267}
   - {fileID: 1136980589}
-  - {fileID: 105673596}
-  - {fileID: 901378848}
-  - {fileID: 1751078943}
   m_Father: {fileID: 2096625866}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1947464574
 GameObject:
@@ -5716,7 +5761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963705303}
   - component: {fileID: 1963705304}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-3 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5785,7 +5830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977862949}
   - component: {fileID: 1977862950}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5855,7 +5900,7 @@ GameObject:
   - component: {fileID: 2034111135}
   - component: {fileID: 2034111136}
   - component: {fileID: 2034111137}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: tc-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5961,6 +6006,7 @@ Transform:
   - {fileID: 154414334}
   - {fileID: 2101416368}
   - {fileID: 676125768}
+  - {fileID: 761131651}
   - {fileID: 1942101627}
   - {fileID: 724421635}
   m_Father: {fileID: 0}
@@ -5974,7 +6020,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2101416368}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: ground_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

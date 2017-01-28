@@ -25,9 +25,11 @@ public class Death : StateMachineBehaviour {
 				animator.GetComponent<CharController> ().waitTime = 0;
 			}
 			animator.GetComponent<CharController> ().noAtacking = true;
+			animator.SetBool ("Death",false);
 			GameObject.Find ("GM").GetComponent<Global> ().Died (animator.gameObject);
+
 		} else {
-			Destroy (animator.gameObject);
+			GameObject.Find ("GM").GetComponent<Global> ().Died (animator.gameObject);
 		}
 
 	}
