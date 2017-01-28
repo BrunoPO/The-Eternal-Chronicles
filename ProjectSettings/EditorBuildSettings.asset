@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scene/fase_0.unity
   - enabled: 1
     path: Assets/Scene/scene_2_caverna_baixo.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/scene_3_caverna_direita.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/scene_4_caverna_direita_baixa.unity

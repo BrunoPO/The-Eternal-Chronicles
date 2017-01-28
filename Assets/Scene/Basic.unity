@@ -563,7 +563,7 @@ MonoBehaviour:
   lookAheadMoveThreshold: 0.1
   bound: 1
   minPos: {x: 18.61553, y: 2, z: 0}
-  maxPos: {x: 58.89, y: 15, z: 0}
+  maxPos: {x: 58.61, y: 15, z: 0}
 --- !u!81 &1094289460
 AudioListener:
   m_ObjectHideFlags: 0
