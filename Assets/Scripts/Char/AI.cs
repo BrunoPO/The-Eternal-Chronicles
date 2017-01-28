@@ -267,7 +267,7 @@ public class AI : MonoBehaviour {
 	}
 
 	void chooseYourPath(){
-		if(Comment) print("Escolhendo destino");
+		//if(Comment) print("Escolhendo destino");
 		target [0] = float.NaN;
 		target [1] = float.NaN;
 		if (Flying) {

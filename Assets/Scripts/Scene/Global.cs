@@ -69,6 +69,10 @@ public class Global : MonoBehaviour {
 			fases[1]=true;
 			LoadLevel(2);
 			fases[2]=true;
+			LoadLevel(3);
+			fases[3]=true;
+			LoadLevel(4);
+			fases[4]=true;
 			print ("Carregou Fases");
 		}
 		//35 46

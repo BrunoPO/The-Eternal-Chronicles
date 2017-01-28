@@ -29,6 +29,9 @@ public class CharController : MonoBehaviour{
 	private LayerMask myEnemy_layer;
 	private float sprint_velo = 0;
 
+	//Audio
+	public AudioSource walkSound;
+
 	[NonSerialized] public  Vector3 PosiIni;
 	[NonSerialized] public float lifeIni;
 	[NonSerialized] public Collider2D m_lastPlat;
@@ -58,6 +61,7 @@ public class CharController : MonoBehaviour{
 				gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [1];
 			else
 				gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [0];
+
 			m_Rigidbody2D.gravityScale = gravityScale;
 			m_WhatIsGround = Global.WhatIsGround | LayerMask.GetMask ("InteractiveItens");
 			m_WhatIsPlat = Global.WhatIsPlat;
@@ -98,8 +102,9 @@ public class CharController : MonoBehaviour{
 			//Gdamaged = false;
 			return;
 		}
-		if (m_Anim.GetBool ("Ground") && !BoxCols.isTrigger)
+		if (m_Anim.GetBool ("Ground") && !BoxCols.isTrigger){
 			BoxCols.isTrigger = true;
+		}
 
 		if (jumpIni) {
 			m_Anim.SetBool ("Jump_Bot", false);
@@ -121,14 +126,27 @@ public class CharController : MonoBehaviour{
 		}
 
 	}
+
+	private void FixedUpdate(){
+		if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") > 2.0F){
+			print("Speed: " + m_Anim.GetFloat("Speed"));
+			walkSound.Play();
+		}
+		else if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") < 0.2F){
+
+		}
+	}
 	private void collidindoComTerreno(){
 		m_Grounded = null;on_Ground = null;on_Plat=null;
 		//abaixo é verificado se colidindo enquando intagivel se não torna tangivel(só é tangivel se não estiver batendo em nada)
 		on_Ground = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsGround);
 		on_Plat = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
 		m_Grounded = (on_Ground)?on_Ground:on_Plat;
-		if (m_Grounded) m_lastPlat = m_Grounded;
-		//print ("está no chão?" + m_Grounded);
+		if (m_Grounded) {
+			m_lastPlat = m_Grounded;
+			//print ("está no chão?" + m_Grounded);
+		}
+		
 		if (m_Rigidbody2D.velocity.y <= 0) {//estiver apenas cainda verificar se encostou no chão
 			if (m_Grounded) {
 				if (!GroundCols.isTrigger) {
@@ -157,6 +175,7 @@ public class CharController : MonoBehaviour{
 			count_Without_move++;
 		m_Anim.SetFloat ("Speed", Mathf.Abs (m_Rigidbody2D.velocity.x));
 	}
+
 	public void Calc_Efect(){
 		ID_Target = transform.GetComponent<AI> ().ID_Target;
 		//Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;
@@ -182,8 +201,8 @@ public class CharController : MonoBehaviour{
 		if (Flying) {
 			damage_posi = 0;
 		}
-		if(Comment) print ("Damage Posi:"+ damage_posi);
-		if(Comment) print ("Damage inflict:"+ damageTree[damage_posi]);
+		//if(Comment) print ("Damage Posi:"+ damage_posi);
+		//if(Comment) print ("Damage inflict:"+ damageTree[damage_posi]);
 		if (damage_posi >= 0) {
 			damage = damageTree [damage_posi];
 		}
@@ -209,7 +228,7 @@ public class CharController : MonoBehaviour{
 	public int Damaged(float dano,int ID){//aqui é setado que foi recebido dano e possui um retorno 2 se acertou o inimigo certo 1 se ele estiver em defesa 0 se não formos o alvo.
 		
 		if (itsItem || minion || !m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense")) {
-			print ("Está batendo");
+			//print ("Está batendo");
 			life -= dano;
 			damaged = true;
 			return (this.gameObject.GetInstanceID()==ID)?2:0;
@@ -227,7 +246,7 @@ public class CharController : MonoBehaviour{
 
 	public void Move(float move, bool defense, bool jump,int atk,bool sprint){//procedimento acessado externamente que altera o corpo de acordo com as vars
 		//print("Last Move"+lastMove);
-		if(Comment) print("Vars de movimento:"+move+","+defense+","+jump+","+atk+","+sprint);
+		//if(Comment) print("Vars de movimento:"+move+","+defense+","+jump+","+atk+","+sprint);
 		if (m_Anim.GetBool ("Death"))
 			return;
 		/*if (move != 0)
@@ -333,10 +352,13 @@ public class CharController : MonoBehaviour{
 	private void HorizontalMove(float move, bool defense,bool sprint){
 		if (canMoveX) {
 			float veloX = 0;
-			if (sprint && sprint_velo == 0)
+			if (sprint && sprint_velo == 0){
 				sprint_velo = intecSprint * m_MaxSpeed;
-			else if (sprint_velo > 0)
+			}
+			else if (sprint_velo > 0){
 				sprint_velo = sprint_velo - 0.1f;
+				print("teste");
+			}				
 			else
 				sprint_velo = 0;
 
