@@ -24,8 +24,8 @@ public class Plataforma : MonoBehaviour {
 
 		speed = (end-start) / time;
 
-		if (Application.isEditor)
-			print ( start );
+		/*if (Application.isEditor)
+			print ( start );*/
 	}
 
 	// Update is called once per frame

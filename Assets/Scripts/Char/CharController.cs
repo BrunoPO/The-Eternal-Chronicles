@@ -13,7 +13,7 @@ public class CharController : MonoBehaviour{
 
 	private bool jumpIni=false,canMoveY = true,canMoveX = true,minion;
 	private float gravityScale; //lastMove = 0,
-	private int intecSprint = 2;
+	public float intecSprint;
 	private Animator m_Anim; 
 	private Rigidbody2D m_Rigidbody2D;
 	private CircleCollider2D GroundCols;
@@ -38,7 +38,7 @@ public class CharController : MonoBehaviour{
 	private void Start(){
 		PosiIni = transform.position;
 		lifeIni = life;
-		if(Flying) intecSprint = 5 ;
+		//if(Flying) intecSprint = 5 ;
 		if (gameObject.GetComponents<AI> ().Length != 0)
 			minion = GetComponent<AI> ().minion;
 		else {
@@ -53,7 +53,6 @@ public class CharController : MonoBehaviour{
 			m_GroundCheck = transform.Find ("GroundCheck");
 			atack_Point_0 = transform.Find ("Point_Atack").Find ("0");
 			atack_Point_1 = atack_Point_0.Find ("1");
-			print (GameObject.Find("GM").GetComponent<Global>().gravityScale [1]);
 
 			if (transform.gameObject.name == "Char2")
 				gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [1];
@@ -228,6 +227,7 @@ public class CharController : MonoBehaviour{
 
 	public void Move(float move, bool defense, bool jump,int atk,bool sprint){//procedimento acessado externamente que altera o corpo de acordo com as vars
 		//print("Last Move"+lastMove);
+		if(Comment) print("Vars de movimento:"+move+","+defense+","+jump+","+atk+","+sprint);
 		if (m_Anim.GetBool ("Death"))
 			return;
 		/*if (move != 0)
@@ -239,6 +239,7 @@ public class CharController : MonoBehaviour{
 		//if(Comment) print(move+" "+defense+" "+jump+" "+atk);
 		//Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;//guarda hash em int da animação atual para possiveis verificações futuras.
 		if (waitTime < Timetowait) {//tempo de pausa entre ataques(evitar combos infinitos)
+			noAtacking = true;
 			atk = 0;
 			waitTime++;
 		}
@@ -277,7 +278,7 @@ public class CharController : MonoBehaviour{
 			m_Anim.SetBool ("Defense", defense);//seta defesa
 
 		if ((m_Grounded || m_AirControl)) {//verifica se ele está no chão ou pode se mover no ar.
-			move = (defense||atk != 0 ? move/1000: move);//caso esteja em modo de defesa ou atacando ele não pode se mover horinzontalmente
+			move = ((defense||atk != 0)&&!Flying ? move/1000: move);//caso esteja em modo de defesa ou atacando ele não pode se mover horinzontalmente
 			HorizontalMove(move, defense,sprint);
 		}
 
@@ -307,9 +308,9 @@ public class CharController : MonoBehaviour{
 			if (!jump && !defense) {
 				m_Rigidbody2D.velocity = new Vector3 (m_Rigidbody2D.velocity.x, 0, 0);
 			} else if (defense) {
-				m_Rigidbody2D.velocity = new Vector3 (m_Rigidbody2D.velocity.x, -3f, 0);
+				m_Rigidbody2D.velocity = new Vector3 (m_Rigidbody2D.velocity.x, -m_JumpHeight, 0);
 			} else if (jump) {
-				m_Rigidbody2D.velocity = new Vector3 (m_Rigidbody2D.velocity.x, 3f, 0);
+				m_Rigidbody2D.velocity = new Vector3 (m_Rigidbody2D.velocity.x, m_JumpHeight, 0);
 			}
 		} else if(canMoveY){
 			if (m_Grounded && jump && defense) {//verifica se no chao,defesa e pulando (desativa trigger para cair)
@@ -339,7 +340,7 @@ public class CharController : MonoBehaviour{
 			else
 				sprint_velo = 0;
 
-			veloX = (move * m_MaxSpeed) + ((m_FacingRight) ? sprint_velo : -sprint_velo);	
+			veloX = (move * m_MaxSpeed) + ((!m_FacingRight) ? sprint_velo : -sprint_velo);	
 
 			//float veloY = (m_Rigidbody2D.velocity.y > -8) ? m_Rigidbody2D.velocity.y : -9;//limita velocidade minina no eixo Y
 

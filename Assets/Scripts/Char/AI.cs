@@ -10,7 +10,7 @@ public class AI : MonoBehaviour {
 	private bool iniAI=false;
 	private int waitforPath = 0;
 	private float LimitX, LimitY, Dist;
-	private int VeloX,CountBFPath=0;
+	private int VeloX,veloXOld,CountBFPath=0;
 	private bool jump, defense;
 	private float[][] Path;
 	private int posiPath = 0,altArvCombo;
@@ -50,9 +50,9 @@ public class AI : MonoBehaviour {
 	}
 	public void ini(){
 		GetComponent<AI> ().enabled = (GetComponent<Transform> ().name != Global.target.name);
-
+		iniAI = false;
 		//Possibilidade de não ser utilizado essa var LimitX ou LimitY(consumo de men por duplicação)
-		LimitX = (Flying)?2:Global.LimitX;
+		LimitX = (Flying)?2:1 * Global.LimitX;
 		LimitY = (Flying)?0.2f:1 * Global.LimitY;
 		n_Golpe [0] = 1;
 		n_EfectGolpe [0] = 6;
@@ -94,7 +94,7 @@ public class AI : MonoBehaviour {
 		difX = (transform.position.x > target_GO.transform.position.x) ? transform.position.x - target_GO.transform.position.x : target_GO.transform.position.x - transform.position.x;
 		difY = (transform.position.y > target_GO.transform.position.y) ? transform.position.y - target_GO.transform.position.y : target_GO.transform.position.y - transform.position.y;
 
-		if (!Flying && ((!enemy && target_GO.name != Global.target.name) || enemy) && difX < m_JumpDist / 8 && difY < m_JumpDist / 8 ) {
+		if (((!enemy && target_GO.name != Global.target.name) || enemy) && difX < m_JumpDist / 8 && difY < m_JumpDist / 8 ) {
 			atack();
 		}
 		//vá para o proximo ponto
@@ -197,6 +197,7 @@ public class AI : MonoBehaviour {
 		float posiLimit,dif=0;
 		if (!float.IsNaN (target [0])) {//Ande em direção ao alvo
 			//print("Há um alvo");
+			if(Flying && VeloX != 0) veloXOld = VeloX;
 			if (this.transform.position.x < target [0] - LimitX) {
 				VeloX = 1;
 			} else if (this.transform.position.x > target [0] + LimitX) {
@@ -205,6 +206,7 @@ public class AI : MonoBehaviour {
 				VeloX = 0;
 				boolX = true;
 			}
+			if(Flying && VeloX == 0) VeloX = veloXOld;
 
 
 			//Suba e/ou desça em direção ao alvo
@@ -239,7 +241,7 @@ public class AI : MonoBehaviour {
 				defense = false;
 			}
 			if (!Flying && VeloX != 0 && !(jump || !m_Anim.GetBool("Ground"))) {
-				print ("Trying to move");
+				if(Comment) print ("Trying to move");
 				if (lastPlat != null) {
 					if (VeloX > 0) {
 						posiLimit = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;
@@ -258,11 +260,14 @@ public class AI : MonoBehaviour {
 			jump = false;
 			boolX = true;
 			boolY = true;
-
+		}
+		if (Flying && VeloX == 0) {
+			VeloX = veloXOld;
 		}
 	}
 
 	void chooseYourPath(){
+		if(Comment) print("Escolhendo destino");
 		target [0] = float.NaN;
 		target [1] = float.NaN;
 		if (Flying) {
@@ -344,7 +349,7 @@ public class AI : MonoBehaviour {
 					float DistancX = (transform.position.x > target [0]) ? transform.position.x - target [0] : target [0] - transform.position.x;
 					float DistancY = (transform.position.y > target [1]) ? transform.position.y - target [1] : target [1] - transform.position.y;
 					if ((this.GetComponent<CharController> ().m_MaxSpeed < DistancX ) || ((transform.position.y < target [1] && DistancY>m_JumpHeight))) {//|| Global.target.transform.position.y >= this.transform.position.y
-						print ("Tentou Salvar");
+						if(Comment) print ("Tentou Salvar");
 						reloadTarget = true;
 						lastTarget = target;
 						if (lastPlat != null) {
@@ -357,11 +362,12 @@ public class AI : MonoBehaviour {
 			
 				}
 			}
-			moviment ();
-			if (reloadTarget) {
-				reloadTarget = false;
-				target = lastTarget;
-			}
+		}
+		//if(Comment) print("Destino escolhido"+target[0]+" "+target[1]);
+		moviment ();
+		if (reloadTarget) {
+			reloadTarget = false;
+			target = lastTarget;
 		}
 	}
 		

@@ -74,9 +74,9 @@ public class Global : MonoBehaviour {
 		//35 46
 		Vector3 localScale = GameObject.Find("Verde").transform.localScale;
 		if(target == Char1)
-			localScale.x = target.GetComponent<CharController>().life / 600;
+			localScale.x = target.GetComponent<CharController>().life / target.GetComponent<CharController>().lifeIni;
 		else 
-			localScale.x = target.GetComponent<CharController>().life / 400;
+			localScale.x = target.GetComponent<CharController>().life / target.GetComponent<CharController>().lifeIni;
 		if (localScale.x < 0)
 			localScale.x = 0;
 		GameObject.Find("Verde").transform.localScale = localScale;
@@ -92,7 +92,10 @@ public class Global : MonoBehaviour {
 			LoadLevel(4);
 		}else if (target.transform.position.x > 34.0f && !fases [3]) {
 			LoadLevel(3);
+		}else if (target.transform.position.x > 30.04f && !fases [2]) {
+			LoadLevel(2);
 		}
+
 		counter++;
 
 		if(!bolean)
