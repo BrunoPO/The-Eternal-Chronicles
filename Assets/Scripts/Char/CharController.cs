@@ -9,7 +9,7 @@ public class CharController : MonoBehaviour{
 	public bool[] comboTree=new bool[14];
 	public bool[] Habilidades=new bool[4];//Dash,Pulo duplo,ataques em defesa
 	public float[] damageTree=new float[14];
-	public bool Comment = false,animToRight,m_FacingRight = true,itsItem=false;
+	public bool Comment = false,animToRight,m_FacingRight = true,itsItem=false,itsBotao=false;
 
 	private bool jumpIni=false,canMoveY = true,canMoveX = true,minion;
 	private float gravityScale; //lastMove = 0,
@@ -91,11 +91,11 @@ public class CharController : MonoBehaviour{
 			m_Anim.SetBool ("Death", true);
 		
 		Gdamaged = (damaged)?damaged:Gdamaged;//guarda se houve dano sempre tentando guardar o true;
-		m_Anim.SetBool ("Damaged", damaged);
+		if(!itsBotao) m_Anim.SetBool ("Damaged", damaged);
 		damaged = false;
 
 		if (itsItem) {
-			Gdamaged = false;
+			//Gdamaged = false;
 			return;
 		}
 		if (m_Anim.GetBool ("Ground") && !BoxCols.isTrigger)

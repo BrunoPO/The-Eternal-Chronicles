@@ -104,11 +104,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 18.55
+      value: 50.36
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 15
+      value: 4.94
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_LocalPosition.z
@@ -154,6 +154,10 @@ Prefab:
         type: 2}
       propertyPath: life
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
@@ -881,6 +885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768650121}
   - component: {fileID: 1768650120}
+  - component: {fileID: 1768650122}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -932,3 +937,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1768650122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1768650119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c820a2d8a554165a71279d6d0940ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zerou: 0
+  Comment: 1
+  botao: 000000000000000000000000
+  hit: 0
