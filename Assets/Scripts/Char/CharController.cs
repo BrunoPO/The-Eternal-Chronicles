@@ -139,9 +139,9 @@ public class CharController : MonoBehaviour{
 			print("Speed: " + m_Anim.GetFloat("Speed"));
 			walkSound.Play();
 		}
-		else if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") < 0.2F){
+		/*else if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") < 0.2F){
 
-		}
+		}*/
 	}
 	private void collidindoComTerreno(){
 		m_Grounded = null;on_Ground = null;on_Plat=null;
