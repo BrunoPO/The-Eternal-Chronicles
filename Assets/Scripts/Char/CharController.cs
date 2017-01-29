@@ -134,7 +134,7 @@ public class CharController : MonoBehaviour{
 
 	}
 
-	/*private void FixedUpdate(){
+	private void FixedUpdate(){
 		if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") > 2.0F){
 			print("Speed: " + m_Anim.GetFloat("Speed"));
 			walkSound.Play();
@@ -142,7 +142,7 @@ public class CharController : MonoBehaviour{
 		else if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") < 0.2F){
 
 		}
-	}*/
+	}
 	private void collidindoComTerreno(){
 		m_Grounded = null;on_Ground = null;on_Plat=null;
 		//abaixo é verificado se colidindo enquando intagivel se não torna tangivel(só é tangivel se não estiver batendo em nada)
