@@ -655,7 +655,7 @@ PlayerSettings:
   cloudServicesEnabled:
     Analytics: 0
     Build: 0
-    Collab: 0
+    Collab: 1
     ErrorHub: 0
     Game_Performance: 0
     Hub: 0
@@ -664,8 +664,8 @@ PlayerSettings:
     Unity_Ads: 0
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: f81edad5-4ad5-4611-a793-c6ce2b8f2ec9
+  projectName: Alpha
+  organizationId: matheus-bonfim
   cloudEnabled: 0
   enableNewInputSystem: 0
