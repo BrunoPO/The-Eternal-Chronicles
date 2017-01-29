@@ -46,6 +46,18 @@ public class Global : MonoBehaviour {
 		if(Char == Char1 || Char == Char2)
 			SceneManager.MoveGameObjectToScene (Char,SceneManager.GetSceneAt(0));
 	}
+	private void FixedUpdate(){
+		jump = Input.GetKeyDown("up");
+		defense = Input.GetKey("down");
+		atk1 = Input.GetKey("f");
+		atk2 = Input.GetKey("t");
+		sprint = Input.GetKey("left shift");
+		h = Input.GetAxis ("Horizontal");
+		if (h != 0 || defense || jump || ((atk1 || atk2) ? 2 : 0) != 0) {
+			target.GetComponent<CharController> ().Move (h, defense, jump, (atk1) ? 1 : ((atk2) ? 2 : 0), sprint);
+		}
+		jump = false;
+	}
 	private void Update () {
 		//print (Graveyard_List.Count);
 		if (killSelf) {
@@ -79,20 +91,7 @@ public class Global : MonoBehaviour {
 			print ("Carregou Fases");
 		}
 		//35 46
-		Vector3 localScale = GameObject.Find("Verde").transform.localScale;
-		if(target == Char1)
-			localScale.x = target.GetComponent<CharController>().life / target.GetComponent<CharController>().lifeIni;
-		else 
-			localScale.x = target.GetComponent<CharController>().life / target.GetComponent<CharController>().lifeIni;
-		if (localScale.x < 0)
-			localScale.x = 0;
-		GameObject.Find("Verde").transform.localScale = localScale;
-		if (target.transform.position.x > 35 && target.transform.position.x < 46)
-			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 2.3f;
-		else if (target.transform.position.x > 48 && target.transform.position.x < 64)
-			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 3.7f;
-		else 
-			GameObject.Find("Main Camera").GetComponent<Camera2DFollow>().minimumHeight = 12.3f;
+		;
 
 
 		if (target.transform.position.x > 42.5f && !fases [4]) {
@@ -112,17 +111,17 @@ public class Global : MonoBehaviour {
 		rot = Time.time *20;
 		RenderSettings.skybox.SetFloat("_Rotate",rot);
 		RenderSettings.skybox.SetTextureOffset ("_Parallax",offset);*/
-		if(Input.GetKey ("q")){
-			if(Graveyard_List.Count > 0){
-				GameObject resurect = Graveyard_List [0];
+			if(Input.GetKey ("q")){
+				if(Graveyard_List.Count > 0){
+					GameObject resurect = Graveyard_List [0];
 
-				resurect.GetComponent<CharController> ().life = resurect.GetComponent<CharController> ().lifeIni;
-				resurect.transform.position = resurect.GetComponent<CharController> ().PosiIni;
-				resurect.GetComponent<AI> ().ini();
-				resurect.SetActive (true);
-				Graveyard_List.RemoveAt(0);
+					resurect.GetComponent<CharController> ().life = resurect.GetComponent<CharController> ().lifeIni;
+					resurect.transform.position = resurect.GetComponent<CharController> ().PosiIni;
+					resurect.GetComponent<AI> ().ini();
+					resurect.SetActive (true);
+					Graveyard_List.RemoveAt(0);
+				}
 			}
-		}
 			if (Input.inputString == "h") {
 				toggle_target (true);
 			} else if (Input.inputString == "g") {
@@ -159,24 +158,14 @@ public class Global : MonoBehaviour {
 				currentslow = 0;
 				Time.timeScale = 1.0f;
 			}
-		
-		jump = Input.GetKeyDown("up");
-		defense = Input.GetKey("down");
-		atk1 = Input.GetKey("f");
-		atk2 = Input.GetKey("t");
-		sprint = Input.GetKey("left shift");
-		h = Input.GetAxis ("Horizontal");
-		if (h != 0 || defense || jump || ((atk1 || atk2) ? 2 : 0) != 0) {
-			target.GetComponent<CharController> ().Move (h, defense, jump, (atk1) ? 1 : ((atk2) ? 2 : 0), sprint);
-		}
-		jump = false;
 
-		if(Char1_List.Count != 0 || Char2_List.Count != 0)
+		//remover os mortos da lista
+		/*if(Char1_List.Count != 0 || Char2_List.Count != 0)
 			for(int i = 0;i<Graveyard_List.Count;i++){
 			//print (Char1_List[0] == Graveyard_List[i]);
 			Char1_List.Remove(Graveyard_List[i]);
 			Char2_List.Remove(Graveyard_List[i]);
-			}
+		}*/
 	}
 
 

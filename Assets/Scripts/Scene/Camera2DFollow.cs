@@ -37,6 +37,21 @@ namespace UnityStandardAssets._2D
         // Update is called once per frame
         private void Update()
         {
+			Vector3 localScale = GameObject.Find("Verde").transform.localScale;
+			localScale.x = target.GetComponent<CharController>().life / target.GetComponent<CharController>().lifeIni;
+			if (localScale.x < 0)
+				localScale.x = 0;
+			
+			GameObject.Find("Verde").transform.localScale = localScale;
+
+			if (target.transform.position.x > 35 && target.transform.position.x < 46)
+				transform.gameObject.GetComponent<Camera2DFollow> ().minimumHeight = 2.3f;
+			else if (target.transform.position.x > 48 && target.transform.position.x < 64)
+				transform.gameObject.GetComponent<Camera2DFollow> ().minimumHeight = 3.7f;
+			else
+				transform.gameObject.GetComponent<Camera2DFollow> ().minimumHeight = 12.3f;
+
+
 			if (Global.killSelf) {
 				transform.position = PosiIni;
 			}

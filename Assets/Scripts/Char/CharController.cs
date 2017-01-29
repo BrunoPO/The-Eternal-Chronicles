@@ -96,11 +96,11 @@ public class CharController : MonoBehaviour{
 		//print (lifeIni);
 		if ( transform.position.y <= 0 || Global.killSelf)
 			GameObject.Find("GM").GetComponent<Global>().Died (gameObject);
-		else if (life <= 0)
+		else if (life <= 0 && !(Flying && itsItem))
 			m_Anim.SetBool ("Death", true);
 		
 		Gdamaged = (damaged)?damaged:Gdamaged;//guarda se houve dano sempre tentando guardar o true;
-		if(!itsBotao) m_Anim.SetBool ("Damaged", damaged);
+		if(!itsBotao && !(Flying && itsItem)) m_Anim.SetBool ("Damaged", damaged);
 		damaged = false;
 
 		if (!noAtacking || Flying) 
@@ -192,7 +192,7 @@ public class CharController : MonoBehaviour{
 		RaycastHit2D[] col2 = Physics2D.LinecastAll (atack_Point_0.position, atack_Point_1.position, myEnemy_layer);
 		int damage_posi = 0;
 
-		if (!minion) {
+		if (!minion && !(Flying && itsItem)) {
 			if (m_Anim.GetInteger ("Atk_3") != 0) {
 				damage_posi = ((2*(2*(m_Anim.GetInteger ("Atk_1"))+m_Anim.GetInteger ("Atk_2")))+m_Anim.GetInteger ("Atk_3"))-1;
 			} else if (m_Anim.GetInteger ("Atk_2") != 0) {
@@ -200,7 +200,7 @@ public class CharController : MonoBehaviour{
 			} else {
 				damage_posi = m_Anim.GetInteger ("Atk_1");
 			}
-		} else {
+		} else if(!(Flying && itsItem)){
 			damage_posi = damage_posi!=0?m_Anim.GetInteger ("Atk_1")-1:0;
 		}
 
@@ -227,7 +227,7 @@ public class CharController : MonoBehaviour{
 				Efective_Aux = col2 [i].transform.GetComponent<CharController> ().Damaged (damage, ID_Target);
 			Efective = (Efective_Aux > Efective) ? Efective_Aux : Efective;
 		}
-		if(Efective != 0 && !minion && transform.GetComponent<AI> ().enabled)
+		if(Efective != 0 && !minion && transform.GetComponent<AI> ().enabled && !(Flying && itsItem))
 			transform.GetComponent<AI> ().Golpe_Detec(Efective+(Gdamaged ? (m_Anim.GetBool ("Defense") ? 5 : 0) : 5));
 		Debug.DrawLine (Point_Atack.position, atack_Point_0.position);
 		Debug.DrawLine (atack_Point_0.position, atack_Point_1.position);
