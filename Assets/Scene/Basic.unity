@@ -164,6 +164,18 @@ Prefab:
       propertyPath: m_MaxSpeed
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 21315308c4ef748a1a78d28a445d55bc, type: 2}
+    - target: {fileID: 6100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 21315308c4ef748a1a78d28a445d55bc, type: 2}
+    - target: {fileID: 6100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
   m_IsPrefabParent: 0
