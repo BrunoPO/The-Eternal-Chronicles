@@ -13,7 +13,7 @@ public class Puzzle0 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Comment) print ("Botões "+botao [0]+","+botao [1]+","+botao [2]);
+		//if (Comment) print ("Botões "+botao [0]+","+botao [1]+","+botao [2]);
 		if (zerou) {
 			if (++counter > 3) {
 				counter = 0;

@@ -30,7 +30,7 @@ public class CharController : MonoBehaviour{
 	private float sprint_velo = 0;
 
 	//Audio
-	public AudioSource walkSound;
+	//public AudioSource walkSound;
 
 	[NonSerialized] public  Vector3 PosiIni;
 	[NonSerialized] public float lifeIni;
@@ -134,15 +134,15 @@ public class CharController : MonoBehaviour{
 
 	}
 
-	private void FixedUpdate(){
+	/*private void FixedUpdate(){
 		if(!(itsItem || Flying)   && m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") > 2.0F){
 			print("Speed: " + m_Anim.GetFloat("Speed"));
 			walkSound.Play();
 		}
 		/*else if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") < 0.2F){
 
-		}*/
-	}
+		}
+	}*/
 	private void collidindoComTerreno(){
 		m_Grounded = null;on_Ground = null;on_Plat=null;
 		//abaixo é verificado se colidindo enquando intagivel se não torna tangivel(só é tangivel se não estiver batendo em nada)
@@ -365,7 +365,7 @@ public class CharController : MonoBehaviour{
 			}
 			else if (sprint_velo > 0){
 				sprint_velo = sprint_velo - 0.1f;
-				print("teste");
+				//print("teste");
 			}				
 			else
 				sprint_velo = 0;
