@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114000011979633562}
   - component: {fileID: 95000011413491480}
   - component: {fileID: 114787142011481376}
-  m_Layer: 14
+  m_Layer: 15
   m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010268120618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.34, y: 0.25262308, z: 0}
+  m_LocalPosition: {x: 13.517292, y: -2.167715, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -115,13 +115,19 @@ MonoBehaviour:
   m_MaxSpeed: 10
   m_JumpHeight: 0
   life: 200
+  comboTree: 
+  Habilidades: 
+  damageTree: []
   Comment: 0
   animToRight: 0
   m_FacingRight: 1
   itsItem: 0
-  comboTree: 
-  Habilidades: 
-  damageTree: []
+  itsBotao: 0
+  intecSprint: 0
+  damaged: 0
+  walkSound: {fileID: 0}
+  noAtacking: 1
+  Gdamaged: 0
 --- !u!114 &114787142011481376
 MonoBehaviour:
   m_ObjectHideFlags: 1

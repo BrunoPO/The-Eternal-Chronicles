@@ -46,7 +46,8 @@ public class Global : MonoBehaviour {
 		if(Char == Char1 || Char == Char2)
 			SceneManager.MoveGameObjectToScene (Char,SceneManager.GetSceneAt(0));
 	}
-	private void FixedUpdate(){
+
+	private void Update () {
 		jump = Input.GetKeyDown("up");
 		defense = Input.GetKey("down");
 		atk1 = Input.GetKey("f");
@@ -57,8 +58,7 @@ public class Global : MonoBehaviour {
 			target.GetComponent<CharController> ().Move (h, defense, jump, (atk1) ? 1 : ((atk2) ? 2 : 0), sprint);
 		}
 		jump = false;
-	}
-	private void Update () {
+	
 		//print (Graveyard_List.Count);
 		if (killSelf) {
 			killSelf = false;
