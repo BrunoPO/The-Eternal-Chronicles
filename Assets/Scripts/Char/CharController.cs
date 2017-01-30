@@ -175,7 +175,6 @@ public class CharController : MonoBehaviour{
 	}
 
 	public void Calc_Efect(){
-		if(!Flying)m_Rigidbody2D.velocity = new Vector3 (0,m_Rigidbody2D.velocity.y,0);
 		if(!itsItem)
 			ID_Target = transform.GetComponent<AI> ().ID_Target;
 		//Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;
@@ -301,8 +300,7 @@ public class CharController : MonoBehaviour{
 
 		if ((m_Grounded || m_AirControl)) {//verifica se ele está no chão ou pode se mover no ar.
 			canMoveX = !(defense||atk != 0);
-			if (!canMoveX)
-				m_Rigidbody2D.velocity = new Vector3 (0,m_Rigidbody2D.velocity.y,0);
+
 			Horizontal.perform(move,sprint);
 		}
 
