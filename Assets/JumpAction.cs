@@ -11,12 +11,19 @@ public class JumpAction : PlayerAction
 	public JumpAction ( GameObject go )
 		: base(go)
 	{
+		m_JumpForce = playerScript.m_JumpForce;
+	}
+
+
+	public override bool  perform(float move,bool sprint){
+		return true;
 	}
 	public override bool  perform(bool jump,bool defense)
 	{
 		m_Grounded = playerScript.m_Grounded;
 		on_Ground = playerScript.on_Ground;
-		m_JumpForce = playerScript.m_JumpForce;
+		PlusJump = playerScript.PlusJump;
+		Debug.Log(m_Grounded + "," + on_Ground + "," + m_JumpForce + "," + PlusJump + ",");
 
 		if(playerScript.canMoveY){
 			if (m_Grounded && jump && defense) {//verifica se no chao,defesa e pulando (desativa trigger para cair)

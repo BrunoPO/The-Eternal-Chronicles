@@ -83,11 +83,11 @@ public class Global : MonoBehaviour {
 			LoadLevel(1);
 			fases[1]=true;
 			LoadLevel(2);
-			fases[2]=true;
+			/*fases[2]=true;
 			LoadLevel(3);
 			fases[3]=true;
 			LoadLevel(4);
-			fases[4]=true;
+			fases[4]=true;*/
 			print ("Carregou Fases");
 		}
 		//35 46
@@ -111,7 +111,7 @@ public class Global : MonoBehaviour {
 		rot = Time.time *20;
 		RenderSettings.skybox.SetFloat("_Rotate",rot);
 		RenderSettings.skybox.SetTextureOffset ("_Parallax",offset);*/
-			if(Input.GetKey ("q")){
+			/*if(Input.GetKey ("q")){
 				if(Graveyard_List.Count > 0){
 					GameObject resurect = Graveyard_List [0];
 
@@ -121,21 +121,13 @@ public class Global : MonoBehaviour {
 					resurect.SetActive (true);
 					Graveyard_List.RemoveAt(0);
 				}
-			}
+			}*/
 			if (Input.inputString == "h") {
 				toggle_target (true);
 			} else if (Input.inputString == "g") {
 				toggle_target (false);
 			}
-			if (Input.inputString == "1") {
-				SceneManager.LoadScene ("fase_0");
-			} else if (Input.inputString == "2") {
-				SceneManager.LoadScene ("scene_2_caverna_baixo");
-			}else if (Input.inputString == "3") {
-				SceneManager.LoadScene ("scene_3_caverna_direita");
-			}else if (Input.inputString == "3") {
-				SceneManager.LoadScene ("scene_4_caverna_direita_baixo");
-			}
+
 			if (target.transform.position.y < 0 || Input.inputString == "r") {//se o personagem cair no infinito ou apertar R será reiniciando a partida
 				killSelf=true;
 			}

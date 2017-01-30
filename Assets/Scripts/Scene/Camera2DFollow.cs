@@ -38,7 +38,7 @@ namespace UnityStandardAssets._2D
         private void Update()
         {
 			Vector3 localScale = GameObject.Find("Verde").transform.localScale;
-			localScale.x = target.GetComponent<CharController>().life / target.GetComponent<CharController>().lifeIni;
+			if(target.GetComponent<CharController>().enabled)localScale.x = target.GetComponent<CharController>().life / target.GetComponent<CharController>().lifeIni;
 			if (localScale.x < 0)
 				localScale.x = 0;
 			

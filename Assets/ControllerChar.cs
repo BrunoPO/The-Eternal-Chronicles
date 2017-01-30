@@ -2,46 +2,40 @@
 using UnityEngine;
 using UnityStandardAssets._2D;
 
-public class ControllerChar : MonoBehaviour {
-	
-	private PlayerAction Vertical;
-
+public class ControllerChar : MonoBehaviour{
 	[SerializeField] public bool m_AirControl = false,Flying=false;
 	[SerializeField] private int Timetowait=0;
 	[SerializeField] public float m_MaxSpeed = 10f,m_JumpHeight,life;//Alter
-	public bool Comment = false,animToRight,m_FacingRight = true,itsItem=false;
-	private bool jumpIni=false,canMoveX = true,minion;
-	private float gravityScale; //lastMove = 0,
-	private int intecSprint = 2;
-	private Animator m_Anim; 
-	private Rigidbody2D m_Rigidbody2D;
-	private LayerMask m_WhatIsGround,m_WhatIsPlat;
-	private Transform m_GroundCheck,atack_Point_0,atack_Point_1;
-	private Vector3 ini,fim;
-	private float damage,k_GroundedRadius;
-	private bool damaged=false;
-	private int ID_Target,Efective,Efective_Aux,count_Without_move;//,Anim_Hash
-
-	private Collider2D  on_Plat,platatual;
-
-	private LayerMask myEnemy_layer;
-	private float sprint_velo = 0;
 	public bool[] comboTree=new bool[14];
 	public bool[] Habilidades=new bool[4];//Dash,Pulo duplo,ataques em defesa
 	public float[] damageTree=new float[14];
-	[NonSerialized] public Collider2D m_lastPlat,on_Ground,m_Grounded;
-	[NonSerialized] public int waitTime,altArvCombo=0,atk;
-	public bool noAtacking=true,Gdamaged=false,defense,jump,sprint,canMoveY = true,PlusJump=false;
-	[NonSerialized] public float move,m_JumpForce;
+	public bool Comment = false,animToRight,m_FacingRight = true,itsItem=false,itsBotao=false;
+
+	private float gravityScale; //lastMove = 0,
+	private Animator m_Anim; 
+	private Rigidbody2D m_Rigidbody2D;
+	private BoxCollider2D BoxCols;
+	private LayerMask m_WhatIsGround,m_WhatIsPlat;
+	private Transform m_GroundCheck,atack_Point_0,atack_Point_1,Point_Atack;
+	private Vector3 ini,fim;
+	private int ID_Target,Efective,Efective_Aux,count_Without_move;//,Anim_Hash
+	private LayerMask myEnemy_layer;
+	private PlayerAction Vertical,Horizontal,Atk;
+
+	//Audio
+	//public AudioSource walkSound;
 	[NonSerialized] public CircleCollider2D GroundCols;
+	[NonSerialized] public Collider2D on_Ground, m_Grounded, on_Plat,platatual;
+	[NonSerialized] public float lifeIni,damage,m_JumpForce,k_GroundedRadius,sprint_velo=0,intecSprint;
+	[NonSerialized] public  Vector3 PosiIni;
+	[NonSerialized] public Collider2D m_lastPlat;
+	[NonSerialized] public int waitTime,altArvCombo=0;
+	[NonSerialized]  public bool noAtacking=true,Gdamaged=false,PlusJump=false,damaged=false,jumpIni=false,canMoveY = true,canMoveX = true,minion;
 
 	private void Start(){
-		if (Flying) {
-			Vertical = new VerticalFlyAction (this.gameObject);
-		}else{
-			Vertical = new JumpAction (this.gameObject);
-		}
-		if(Flying) intecSprint = 5 ;
+		PosiIni = transform.position;
+		lifeIni = life;
+		//if(Flying) intecSprint = 5 ;
 		if (gameObject.GetComponents<AI> ().Length != 0)
 			minion = GetComponent<AI> ().minion;
 		else {
@@ -52,51 +46,77 @@ public class ControllerChar : MonoBehaviour {
 		m_Anim = GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
-		if (!itsItem) {
-			m_GroundCheck = transform.Find ("GroundCheck");
-			atack_Point_0 = transform.Find ("Point_Atack").Find ("0");
+		if (!(itsItem && !Flying)) {
+			Point_Atack = transform.Find ("Point_Atack");
+			atack_Point_0 = Point_Atack.Find ("0");
 			atack_Point_1 = atack_Point_0.Find ("1");
+
 			gravityScale = m_Rigidbody2D.gravityScale;
-
-			m_WhatIsGround = Global.WhatIsGround | LayerMask.GetMask ("InteractiveItens");
-			m_WhatIsPlat = Global.WhatIsPlat;
-			GroundCols = GetComponent<CircleCollider2D> ();
-			k_GroundedRadius = GroundCols.radius;
-
-			m_JumpForce = (float) Mathf.Sqrt (Mathf.Abs( 2.075f * m_JumpHeight * Physics2D.gravity.y * m_Rigidbody2D.gravityScale))*m_Rigidbody2D.mass;
 
 			if (Flying) {
 				m_Rigidbody2D.gravityScale = 0f;
-				GroundCols.isTrigger = true;
+			} else {
+				m_GroundCheck = transform.Find ("GroundCheck");
+				m_WhatIsGround = Global.WhatIsGround | LayerMask.GetMask ("InteractiveItens");
+				m_WhatIsPlat = Global.WhatIsPlat;
+				GroundCols = GetComponent<CircleCollider2D> ();
+				BoxCols = GetComponent<BoxCollider2D> ();
+				k_GroundedRadius = GroundCols.radius;
+				m_JumpForce = (float) Mathf.Sqrt (Mathf.Abs( 2.075f * m_JumpHeight * Physics2D.gravity.y * m_Rigidbody2D.gravityScale))*m_Rigidbody2D.mass;
 			}
 
 			if (LayerMask.LayerToName (gameObject.layer) == "Character") {
 				myEnemy_layer = LayerMask.GetMask ("Enemy") | LayerMask.GetMask ("InteractiveItens");
+				if (transform.gameObject.name == "Char2")
+					gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [1];
+				else
+					gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [0];
+				m_Rigidbody2D.gravityScale = gravityScale;
 			}else 
 				myEnemy_layer = LayerMask.GetMask("Character");
 
 		}
+		if (Flying) {
+			Vertical = new VerticalFlyAction (this.gameObject);
+		}else{
+			Vertical = new JumpAction (this.gameObject);
+		}
+		Horizontal = new HorizontalMove (this.gameObject);
 
 
 
 	}
+	public void ClearDamage(){
+		damaged = false;
+		Gdamaged = false;
+	}
 	//Maybe use FixedUpdate(faster) have a precision between execution
 	private void Update(){	
-		if ( transform.position.y <= -10)
+		m_Anim.SetFloat ("Speed", Mathf.Abs (m_Rigidbody2D.velocity.x));
+		//print (lifeIni);
+		if ( transform.position.y <= 0 || Global.killSelf)
 			GameObject.Find("GM").GetComponent<Global>().Died (gameObject);
-		else if (life <= 0)
+		else if (life <= 0 && !(Flying && itsItem))
 			m_Anim.SetBool ("Death", true);
 
 		Gdamaged = (damaged)?damaged:Gdamaged;//guarda se houve dano sempre tentando guardar o true;
-		m_Anim.SetBool ("Damaged", damaged);
+		if(!itsBotao && !(Flying && itsItem)) m_Anim.SetBool ("Damaged", damaged);
 		damaged = false;
 
+		if (!noAtacking || Flying) 
+			Calc_Efect ();
 
 		if (itsItem) {
-			Gdamaged = false;
+			//Gdamaged = false;
 			return;
 		}
 
+		if (m_Anim.GetBool ("Ground") && !BoxCols.isTrigger){
+			BoxCols.isTrigger = true;
+		}
+		if (!Flying) {
+			collidindoComTerreno ();
+		}
 		if (jumpIni) {
 			m_Anim.SetBool ("Jump_Bot", false);
 			float pocertanim=m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Jumping 0")?m_Anim.GetCurrentAnimatorClipInfo (0).Length * m_Anim.GetCurrentAnimatorStateInfo (0).normalizedTime:0;
@@ -105,28 +125,32 @@ public class ControllerChar : MonoBehaviour {
 				jumpIni = false;
 				m_Anim.SetBool ("JumpIni", jumpIni);
 				canMoveX = true;
-				defense = false;
-				jump = true;
-				Vertical.perform (jump,defense);
+				Vertical.perform(true,false);
 			}
 		}
 
-		if (!noAtacking || Flying) 
-			Calc_Efect ();
-
-		if (!Flying) {
-			collidindoComTerreno ();
-		}
-
 	}
+
+	/*private void FixedUpdate(){
+		if(!(itsItem || Flying)   && m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") > 2.0F){
+			print("Speed: " + m_Anim.GetFloat("Speed"));
+			walkSound.Play();
+		}
+		/*else if(m_Anim.GetBool("Ground") && m_Anim.GetFloat("Speed") < 0.2F){
+
+		}
+	}*/
 	private void collidindoComTerreno(){
 		m_Grounded = null;on_Ground = null;on_Plat=null;
 		//abaixo é verificado se colidindo enquando intagivel se não torna tangivel(só é tangivel se não estiver batendo em nada)
 		on_Ground = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsGround);
 		on_Plat = Physics2D.OverlapCircle (new Vector2 (m_GroundCheck.position.x, m_GroundCheck.position.y), k_GroundedRadius, m_WhatIsPlat);
 		m_Grounded = (on_Ground)?on_Ground:on_Plat;
-		if (m_Grounded) m_lastPlat = m_Grounded;
-		//print ("está no chão?" + m_Grounded);
+		if (m_Grounded) {
+			m_lastPlat = m_Grounded;
+			//print ("está no chão?" + m_Grounded);
+		}
+
 		if (m_Rigidbody2D.velocity.y <= 0) {//estiver apenas cainda verificar se encostou no chão
 			if (m_Grounded) {
 				if (!GroundCols.isTrigger) {
@@ -155,15 +179,17 @@ public class ControllerChar : MonoBehaviour {
 			count_Without_move++;
 		m_Anim.SetFloat ("Speed", Mathf.Abs (m_Rigidbody2D.velocity.x));
 	}
+
 	public void Calc_Efect(){
-		ID_Target = transform.GetComponent<AI> ().ID_Target;
+		if(!itsItem)
+			ID_Target = transform.GetComponent<AI> ().ID_Target;
 		//Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;
 		damage = 0;
-		RaycastHit2D[] col1 = Physics2D.LinecastAll (transform.position, atack_Point_0.position, myEnemy_layer);
+		RaycastHit2D[] col1 = Physics2D.LinecastAll (Point_Atack.position, atack_Point_0.position, myEnemy_layer);
 		RaycastHit2D[] col2 = Physics2D.LinecastAll (atack_Point_0.position, atack_Point_1.position, myEnemy_layer);
 		int damage_posi = 0;
 
-		if (!minion) {
+		if (!minion && !(Flying && itsItem)) {
 			if (m_Anim.GetInteger ("Atk_3") != 0) {
 				damage_posi = ((2*(2*(m_Anim.GetInteger ("Atk_1"))+m_Anim.GetInteger ("Atk_2")))+m_Anim.GetInteger ("Atk_3"))-1;
 			} else if (m_Anim.GetInteger ("Atk_2") != 0) {
@@ -171,7 +197,7 @@ public class ControllerChar : MonoBehaviour {
 			} else {
 				damage_posi = m_Anim.GetInteger ("Atk_1");
 			}
-		} else {
+		} else if(!(Flying && itsItem)){
 			damage_posi = damage_posi!=0?m_Anim.GetInteger ("Atk_1")-1:0;
 		}
 
@@ -180,8 +206,8 @@ public class ControllerChar : MonoBehaviour {
 		if (Flying) {
 			damage_posi = 0;
 		}
-		if(Comment) print ("Damage Posi:"+ damage_posi);
-		if(Comment) print ("Damage inflict:"+ damageTree[damage_posi]);
+		//if(Comment) print ("Damage Posi:"+ damage_posi);
+		//if(Comment) print ("Damage inflict:"+ damageTree[damage_posi]);
 		if (damage_posi >= 0) {
 			damage = damageTree [damage_posi];
 		}
@@ -198,15 +224,16 @@ public class ControllerChar : MonoBehaviour {
 				Efective_Aux = col2 [i].transform.GetComponent<CharController> ().Damaged (damage, ID_Target);
 			Efective = (Efective_Aux > Efective) ? Efective_Aux : Efective;
 		}
-		if(Efective != 0 && !minion && transform.GetComponent<AI> ().enabled)
+		if(Efective != 0 && !minion && transform.GetComponent<AI> ().enabled && !(Flying && itsItem))
 			transform.GetComponent<AI> ().Golpe_Detec(Efective+(Gdamaged ? (m_Anim.GetBool ("Defense") ? 5 : 0) : 5));
-		Debug.DrawLine (transform.position, atack_Point_0.position);
+		Debug.DrawLine (Point_Atack.position, atack_Point_0.position);
 		Debug.DrawLine (atack_Point_0.position, atack_Point_1.position);
 	}
 
 	public int Damaged(float dano,int ID){//aqui é setado que foi recebido dano e possui um retorno 2 se acertou o inimigo certo 1 se ele estiver em defesa 0 se não formos o alvo.
 
 		if (itsItem || minion || !m_Anim.GetCurrentAnimatorStateInfo (0).IsName("Defense")) {
+			//print ("Está batendo");
 			life -= dano;
 			damaged = true;
 			return (this.gameObject.GetInstanceID()==ID)?2:0;
@@ -224,6 +251,7 @@ public class ControllerChar : MonoBehaviour {
 
 	public void Move(float move, bool defense, bool jump,int atk,bool sprint){//procedimento acessado externamente que altera o corpo de acordo com as vars
 		//print("Last Move"+lastMove);
+		if(Comment) print("Vars de movimento:"+move+","+defense+","+jump+","+atk+","+sprint);
 		if (m_Anim.GetBool ("Death"))
 			return;
 		/*if (move != 0)
@@ -232,9 +260,12 @@ public class ControllerChar : MonoBehaviour {
 		if (!Habilidades [0]) {
 			sprint = false;
 		}
+
+
 		//if(Comment) print(move+" "+defense+" "+jump+" "+atk);
 		//Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;//guarda hash em int da animação atual para possiveis verificações futuras.
 		if (waitTime < Timetowait) {//tempo de pausa entre ataques(evitar combos infinitos)
+			noAtacking = true;
 			atk = 0;
 			waitTime++;
 		}
@@ -266,6 +297,7 @@ public class ControllerChar : MonoBehaviour {
 			}
 
 		}
+
 		if(atk!=0 && m_Anim.GetInteger ("Atk_1")==0 && comboTree[atk-1]){
 			m_Anim.SetInteger ("Atk_1", atk);//seta ataque
 		}
@@ -273,13 +305,13 @@ public class ControllerChar : MonoBehaviour {
 			m_Anim.SetBool ("Defense", defense);//seta defesa
 
 		if ((m_Grounded || m_AirControl)) {//verifica se ele está no chão ou pode se mover no ar.
-			move = (defense||atk != 0 ? move/1000: move);//caso esteja em modo de defesa ou atacando ele não pode se mover horinzontalmente
-			HorizontalMove(move, sprint);
+			move = ((defense||atk != 0)&&!Flying ? move/1000: move);//caso esteja em modo de defesa ou atacando ele não pode se mover horinzontalmente
+			Horizontal.perform(move,sprint);
 		}
 
 		if (!minion){
 			if (jump && defense) {
-				Vertical.perform (jump,defense);
+				Vertical.perform(jump,defense);
 				//m_Anim.SetBool ("Jump_Bot", jump);
 			} else if (!jumpIni && jump && !defense && (m_Grounded || (PlusJump && m_Rigidbody2D.velocity.y < 0))) {
 				m_Rigidbody2D.velocity = new Vector2 (0, -0.5f);
@@ -290,74 +322,13 @@ public class ControllerChar : MonoBehaviour {
 				canMoveX=false;			
 			}
 		} else {
-				Vertical.perform (jump,defense);
+			Vertical.perform(jump,defense);
 		}
 
 
 
 
 	}
-	public void VerticalMove(bool defense, bool jump){
-		//if (!m_Grounded && m_Rigidbody2D.velocity.y >= 4) jump = false;
-		if (Flying) {
-			if (!jump && !defense) {
-				m_Rigidbody2D.velocity = new Vector3 (m_Rigidbody2D.velocity.x, 0, 0);
-			} else if (defense) {
-				m_Rigidbody2D.velocity = new Vector3 (m_Rigidbody2D.velocity.x, -3f, 0);
-			} else if (jump) {
-				m_Rigidbody2D.velocity = new Vector3 (m_Rigidbody2D.velocity.x, 3f, 0);
-			}
-		} else if(canMoveY){
-			if (m_Grounded && jump && defense) {//verifica se no chao,defesa e pulando (desativa trigger para cair)
-				if (!on_Ground) {
-					GroundCols.isTrigger = true;
-					PlusJump = false;
-				} else {
-					jump = false;
-					defense = false;
-				}
-			} else if ((m_Grounded || PlusJump) && jump) {//verifica se no chao, e pulando "envia" movimento para o corpo e desativa colisão
-				if (!m_Grounded)
-					PlusJump = false;
-				GroundCols.isTrigger = true; 
-				m_Rigidbody2D.AddForce(new Vector2(0,-1*m_Rigidbody2D.velocity.y+(m_JumpForce)),ForceMode2D.Impulse);//força adaptada a gravidade negativa
-			} 
-		}
-
-	}
-	private void HorizontalMove(float move,bool sprint){
-		if (canMoveX) {
-			float veloX = 0;
-			if (sprint && sprint_velo == 0)
-				sprint_velo = intecSprint * m_MaxSpeed;
-			else if (sprint_velo > 0)
-				sprint_velo = sprint_velo - 0.1f;
-			else
-				sprint_velo = 0;
-
-			veloX = (move * m_MaxSpeed) + ((m_FacingRight) ? sprint_velo : -sprint_velo);	
-
-			//float veloY = (m_Rigidbody2D.velocity.y > -8) ? m_Rigidbody2D.velocity.y : -9;//limita velocidade minina no eixo Y
-
-			m_Rigidbody2D.velocity = new Vector2 (veloX, m_Rigidbody2D.velocity.y);
-			m_Anim.SetFloat ("Speed", Mathf.Abs (m_Rigidbody2D.velocity.x));
-
-			//if (Comment) print (animToRight);
-			if (animToRight == true) {
-				if (move < 0 && m_FacingRight)
-					Flip ();
-				else if (move > 0 && !m_FacingRight)
-					Flip ();
-			} else if (animToRight != true) {
-				if (move < 0 && !m_FacingRight)
-					Flip ();
-				else if (move > 0 && m_FacingRight)
-					Flip ();
-			}
-		}
-	}
-
-
 	//girar personagem no ambiente(sem suavização),as sprites são unidirecionais
 	public void Flip(){//vira a escala (muda de lado) e altera a var responsavel
 		//if(Comment) print("Virou de Lado");

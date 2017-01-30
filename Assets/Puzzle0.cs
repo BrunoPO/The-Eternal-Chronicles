@@ -20,7 +20,7 @@ public class Puzzle0 : MonoBehaviour {
 		}
 		if (Comment) print ("Botões "+botao [0]+","+botao [1]+","+botao [2]);
 		if (zerou) {
-			if (++counter > 6) {
+			if (++counter > 30) {
 				counter = 0;
 				botao[0]=0;botao[1]=0;botao[2]=0;
 				trap1 = false;

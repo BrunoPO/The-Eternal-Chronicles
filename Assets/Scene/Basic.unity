@@ -140,7 +140,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_GravityScale
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_Size.x
@@ -167,13 +167,28 @@ Prefab:
     - target: {fileID: 5800000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 21315308c4ef748a1a78d28a445d55bc, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 21315308c4ef748a1a78d28a445d55bc, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013840903542, guid: 95d76ea12e1edce4dbb5babe50c3ad18,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013349591410, guid: 95d76ea12e1edce4dbb5babe50c3ad18,
+        type: 2}
+      propertyPath: minion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013349591410, guid: 95d76ea12e1edce4dbb5babe50c3ad18,
+        type: 2}
+      propertyPath: Comment
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -898,10 +913,12 @@ MonoBehaviour:
   zerou: 0
   Comment: 1
   trap1: 0
+  fim: 0
   botao: 000000000000000000000000
   hit: 0
   counter: 0
   counterFrames: 0
+  ChaoFalso: {fileID: 0}
 --- !u!1 &1853105105 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
