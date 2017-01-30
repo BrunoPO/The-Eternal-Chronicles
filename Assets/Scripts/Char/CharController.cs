@@ -53,6 +53,16 @@ public class CharController : MonoBehaviour{
 
 			gravityScale = m_Rigidbody2D.gravityScale;
 
+			if (LayerMask.LayerToName (gameObject.layer) == "Character") {
+				myEnemy_layer = LayerMask.GetMask ("Enemy") | LayerMask.GetMask ("InteractiveItens");
+				if (transform.gameObject.name == "Char2")
+					gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [1];
+				else
+					gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [0];
+				m_Rigidbody2D.gravityScale = gravityScale;
+			}else 
+				myEnemy_layer = LayerMask.GetMask("Character");
+			
 			if (Flying) {
 				m_Rigidbody2D.gravityScale = 0f;
 			} else {
@@ -65,15 +75,7 @@ public class CharController : MonoBehaviour{
 				m_JumpForce = (float) Mathf.Sqrt (Mathf.Abs( 2.075f * m_JumpHeight * Physics2D.gravity.y * m_Rigidbody2D.gravityScale))*m_Rigidbody2D.mass;
 			}
 
-			if (LayerMask.LayerToName (gameObject.layer) == "Character") {
-				myEnemy_layer = LayerMask.GetMask ("Enemy") | LayerMask.GetMask ("InteractiveItens");
-				if (transform.gameObject.name == "Char2")
-					gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [1];
-				else
-					gravityScale = GameObject.Find ("GM").GetComponent<Global>().gravityScale [0];
-				m_Rigidbody2D.gravityScale = gravityScale;
-			}else 
-				myEnemy_layer = LayerMask.GetMask("Character");
+
 
 		}
 
@@ -173,6 +175,7 @@ public class CharController : MonoBehaviour{
 	}
 
 	public void Calc_Efect(){
+		if(!Flying)m_Rigidbody2D.velocity = new Vector3 (0,m_Rigidbody2D.velocity.y,0);
 		if(!itsItem)
 			ID_Target = transform.GetComponent<AI> ().ID_Target;
 		//Anim_Hash = m_Anim.GetCurrentAnimatorStateInfo (0).shortNameHash;
@@ -298,6 +301,8 @@ public class CharController : MonoBehaviour{
 
 		if ((m_Grounded || m_AirControl)) {//verifica se ele está no chão ou pode se mover no ar.
 			canMoveX = !(defense||atk != 0);
+			if (!canMoveX)
+				m_Rigidbody2D.velocity = new Vector3 (0,m_Rigidbody2D.velocity.y,0);
 			Horizontal.perform(move,sprint);
 		}
 

@@ -297,7 +297,7 @@ public class ControllerChar : MonoBehaviour{
 			}
 
 		}
-
+		print ("Atk" + atk);
 		if(atk!=0 && m_Anim.GetInteger ("Atk_1")==0 && comboTree[atk-1]){
 			m_Anim.SetInteger ("Atk_1", atk);//seta ataque
 		}
