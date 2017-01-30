@@ -244,10 +244,10 @@ public class AI : MonoBehaviour {
 				if(Comment) print ("Trying to move");
 				if (lastPlat != null) {
 					if (VeloX > 0) {
-						posiLimit = lastPlat.bounds.center.x + lastPlat.bounds.extents.x;
+						posiLimit = lastPlat.bounds.max.x;
 						dif = posiLimit - transform.position.x;
 					} else {
-						posiLimit = lastPlat.bounds.center.x - lastPlat.bounds.extents.x;
+						posiLimit = lastPlat.bounds.min.x;
 						dif = transform.position.x - posiLimit;
 					}
 				}
@@ -344,11 +344,23 @@ public class AI : MonoBehaviour {
 			if (!minion) {
 				//this.GetComponent<Animator> ().GetBool ("Ground") == false && this.GetComponent<Animator> ().GetFloat ("vSpeed") < 0
 				if (target [0] != float.NaN) {
-					Collider2D lastPlat = this.GetComponent<CharController> ().m_lastPlat; 
-
+					bool perigo = false;
 					float DistancX = (transform.position.x > target [0]) ? transform.position.x - target [0] : target [0] - transform.position.x;
 					float DistancY = (transform.position.y > target [1]) ? transform.position.y - target [1] : target [1] - transform.position.y;
-					if ((this.GetComponent<CharController> ().m_MaxSpeed < DistancX ) || ((transform.position.y < target [1] && DistancY>m_JumpHeight))) {//|| Global.target.transform.position.y >= this.transform.position.y
+					float DistLastPlat = 0;
+					if(target_GO.GetComponent<CharController> ().Flying){
+						Collider2D lastPlat = this.GetComponent<CharController> ().m_lastPlat; 
+						if (lastPlat != null) {
+							float hLastPlat = lastPlat.bounds.max.y;
+							DistLastPlat = (transform.position.y > hLastPlat) ? transform.position.y - hLastPlat : hLastPlat - transform.position.y;
+							perigo = (this.GetComponent<CharController> ().m_MaxSpeed < DistancX) && ((m_Rigidbody2D.velocity.y < 0 && DistancY > hLastPlat));
+						} else
+							perigo = false;
+
+					}else
+						perigo = (this.GetComponent<CharController> ().m_MaxSpeed < DistancX) || ((transform.position.y < target [1] && DistancY > m_JumpHeight));
+
+					if (perigo) {//|| Global.target.transform.position.y >= this.transform.position.y
 						if(Comment) print ("Tentou Salvar");
 						reloadTarget = true;
 						lastTarget = target;
