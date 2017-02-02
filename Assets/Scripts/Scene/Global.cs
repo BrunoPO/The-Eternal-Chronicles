@@ -30,8 +30,8 @@ public class Global : MonoBehaviour {
 	public float rot = 0;
 	public static void LoadLevel(int i){
 		SceneManager.LoadSceneAsync(i,LoadSceneMode.Additive);
-		if(fases[i] != null)
-			fases [i] = true;
+		if(fases[i-1] != null)
+			fases [i-1] = true;
 	}
 	private void Awake () {
 		LimitX = LimiteX;
@@ -80,7 +80,7 @@ public class Global : MonoBehaviour {
 		if (!fases[0]) {
 			//SceneManager.LoadScene(0,LoadSceneMode.Additive);
 			fases[0]=true;
-			LoadLevel(1);
+			//LoadLevel(1);
 			fases[1]=true;
 			LoadLevel(2);
 			/*fases[2]=true;
@@ -93,13 +93,12 @@ public class Global : MonoBehaviour {
 		//35 46
 		;
 
-
 		if (target.transform.position.x > 42.5f && !fases [4]) {
-			LoadLevel(4);
+			LoadLevel(5);
 		}else if (target.transform.position.x > 34.0f && !fases [3]) {
-			LoadLevel(3);
+			LoadLevel(4);
 		}else if (target.transform.position.x > 30.04f && !fases [2]) {
-			LoadLevel(2);
+			LoadLevel(3);
 		}
 
 		counter++;
@@ -127,8 +126,9 @@ public class Global : MonoBehaviour {
 			} else if (Input.inputString == "g") {
 				toggle_target (false);
 			}
-
-			if (target.transform.position.y < 0 || Input.inputString == "r") {//se o personagem cair no infinito ou apertar R será reiniciando a partida
+			if (target.transform.position.x > 53.0f && target.transform.position.x < 55.0f && target.transform.position.y < 0) {
+				SceneManager.LoadScene(0);
+			}else if (target.transform.position.y < 0 || Input.inputString == "r") {//se o personagem cair no infinito ou apertar R será reiniciando a partida
 				killSelf=true;
 			}
 			if (Input.GetKey ("p") && counter >= 10) {
