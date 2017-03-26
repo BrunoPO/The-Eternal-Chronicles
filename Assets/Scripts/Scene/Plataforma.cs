@@ -66,7 +66,8 @@ public class Plataforma : MonoBehaviour {
 
 		if (coll.gameObject.CompareTag ("Alive"))
 		{
-			coll.transform.SetParent (this.transform);
+			if(!coll.gameObject.GetComponent<CharController> ().Flying)
+				coll.transform.SetParent (this.transform);
 		}
 	}
 

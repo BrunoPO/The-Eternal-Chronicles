@@ -14,6 +14,7 @@ public class ChaoFalso : MonoBehaviour {
 	void Update () {
 		if (GameObject.Find ("GM").GetComponent<Puzzle0> ().fim) {
 			//Enemy = Instantiate(Resources.Load<GameObject>("Enemy_0")); 
+			GetComponent<Plataforma> ().enabled = true;
 			Enemy.transform.position = transform.position;
 			Enemy.transform.SetParent (this.transform);
 			counter++;

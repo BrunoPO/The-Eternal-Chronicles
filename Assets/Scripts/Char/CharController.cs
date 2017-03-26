@@ -155,7 +155,7 @@ public class CharController : MonoBehaviour{
 				if (Habilidades [1]) {
 					PlusJump = true;
 				}
-			} else if (GroundCols.isTrigger && m_Rigidbody2D.velocity.y < 3) {
+			} else if (GroundCols.isTrigger && m_Rigidbody2D.velocity.y < 1) {
 				//m_WhatIsGround == UnityEngine.LayerMask.NameToLayer ("Platform")
 				GroundCols.isTrigger = false;
 			}

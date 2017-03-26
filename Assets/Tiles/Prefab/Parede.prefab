@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61000011222137918}
   - component: {fileID: 114000011979633562}
   - component: {fileID: 95000011413491480}
-  - component: {fileID: 114787142011481376}
+  - component: {fileID: 114771605526160050}
   m_Layer: 15
   m_Name: Parede
   m_TagString: Untagged
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010268120618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.517292, y: -1.7, z: 0}
+  m_LocalPosition: {x: 13.517292, y: -1.23, z: 0}
   m_LocalScale: {x: 0.049999997, y: 0.049999997, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -123,12 +123,7 @@ MonoBehaviour:
   m_FacingRight: 1
   itsItem: 0
   itsBotao: 0
-  intecSprint: 0
-  damaged: 0
-  walkSound: {fileID: 0}
-  noAtacking: 1
-  Gdamaged: 0
---- !u!114 &114787142011481376
+--- !u!114 &114771605526160050
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -136,7 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010268120618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca47947d7afab441480b7a3d023b5d90, type: 3}
+  m_Script: {fileID: 11500000, guid: 45d29d8c8b49648e3ad169ecdb3f0c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212000010130846446

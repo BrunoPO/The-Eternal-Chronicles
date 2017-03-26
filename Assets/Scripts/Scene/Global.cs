@@ -59,6 +59,8 @@ public class Global : MonoBehaviour {
 		}
 		jump = false;
 	
+
+
 		//print (Graveyard_List.Count);
 		if (killSelf) {
 			killSelf = false;
@@ -82,6 +84,9 @@ public class Global : MonoBehaviour {
 			fases[0]=true;
 			//LoadLevel(1);
 			fases[1]=true;
+			fases[2]=false;
+			fases[3]=false;
+			fases[4]=false;
 			LoadLevel(2);
 			/*fases[2]=true;
 			LoadLevel(3);
@@ -91,7 +96,6 @@ public class Global : MonoBehaviour {
 			print ("Carregou Fases");
 		}
 		//35 46
-		;
 
 		if (target.transform.position.x > 42.5f && !fases [4]) {
 			LoadLevel(5);
@@ -127,6 +131,7 @@ public class Global : MonoBehaviour {
 				toggle_target (false);
 			}
 			if (target.transform.position.x > 53.0f && target.transform.position.x < 55.0f && target.transform.position.y < 0) {
+				fases [0] = false;
 				SceneManager.LoadScene(0);
 			}else if (target.transform.position.y < 0 || Input.inputString == "r") {//se o personagem cair no infinito ou apertar R será reiniciando a partida
 				killSelf=true;
