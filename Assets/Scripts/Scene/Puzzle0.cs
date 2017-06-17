@@ -34,10 +34,10 @@ public class Puzzle0 : MonoBehaviour {
 			if (botao [0] == 1 && botao [1] == 2 && botao [2] == 3) {
 				fim = true;
 				if (Comment)
-					print ("Só felicidade");
+					print ("Puzzle Concluido");
 			} else {
 				if (Comment)
-					print ("Deu Ruim");
+					print ("Errou a ordem dos botões");
 				zerou = true;
 			}
 		} else if(botao [0] != 0 || botao [1] != 0 || botao [2] != 0){

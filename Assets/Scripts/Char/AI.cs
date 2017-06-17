@@ -306,7 +306,7 @@ public class AI : MonoBehaviour {
 				boolY = false;
 				Dist = (this.GetComponent<CircleCollider2D> ().offset.y - this.GetComponent<CircleCollider2D> ().radius) * this.GetComponent<Transform> ().localScale.y / 2;
 				pointAdap = target_GO.transform.position;
-				pointAdap.y = pointAdap.y + Dist;
+				pointAdap.y += Dist;
 				CountBFPath = 0;
 
 				Path = GameObject.Find ("GM").GetComponent<Global> ().Pathfind (this.gameObject, pointAdap);
@@ -330,9 +330,16 @@ public class AI : MonoBehaviour {
 
 				if (Flying || (difY < m_JumpHeight || target_GO.transform.position.y < transform.position.y)) {
 					if (Comment)
-						print ("Taking him");
+						print ("Take him");
 					target [0] = target_GO.transform.position.x;
 					target [1] = target_GO.transform.position.y + Dist;
+					float dist = (this.transform.position.y > target [1])?(this.transform.position.y - target [1]):(target [1] - this.transform.position.y);
+					if (Comment)
+						print ("dist:"+dist+",Dist:"+Dist);
+					if (m_Anim.GetBool ("Ground") && dist < -Dist) {
+						target [1] += -Dist*1.5f;
+					}
+
 				} else {
 					if (Comment)
 						print ("Can't taking him" + difX + " " + m_JumpHeight);

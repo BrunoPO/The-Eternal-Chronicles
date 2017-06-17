@@ -270,8 +270,9 @@ public class Global : MonoBehaviour {
 				vectorPaths [i] [1] = 1;
 			}else
 			if (cima) {
+				print ("Player está acima da char da AI");
 				int l = j;
-				for (; dif < m_JumpHeight; ++l) {
+				for (; dif < m_JumpHeight; ++l) {//vai passar pelo for até encontrar a plataforma mais proxima das não possiveis de pular
 					if (l >= colliders.Length)
 						break;
 					if (i != 0 && !float.IsNaN (vectorPaths [i - 1] [0]))
@@ -279,28 +280,29 @@ public class Global : MonoBehaviour {
 					else if (i == 0)
 						dif = (colliders [l].collider.bounds.center.y > Bot.transform.position.y) ? colliders [l].collider.bounds.center.y - Bot.transform.position.y : Bot.transform.position.y - colliders [l].collider.bounds.center.y;
 				}
-				j = l - 1;
+				j = l - 1;//l-- para pegar o index da mais distante das possiveis de pular
 					//|| j == colliders.Length
 				if (dif >= m_JumpHeight ) {
 						//if(Comment) print (i + " " + j);
 					dif = 0;
-					if (j > 0)
+					if (j > 0)//se existe alguma plaforma pulavel então
 						j--;
-					else if (dif < m_JumpHeight) {
+					else {//Erased else if (dif < m_JumpHeight) condisão sempre true
 						vectorPaths [i] [0] = float.NaN;
 						vectorPaths [i] [1] = 1;
 						continue;
 					}
-					if (i != -1) {
-						vectorPaths [i] [0] = colliders [j].collider.bounds.center.x;
-						vectorPaths [i] [1] = colliders [j].collider.bounds.center.y;
-						j++;
-					}
+					//Erased if (i != -1) { i não é alterado logo sempre true
+					vectorPaths [i] [0] = colliders [j].collider.bounds.center.x;
+
+					vectorPaths [i] [1] = colliders [j].collider.bounds.center.y;
+					j++;
 				} else {
 					vectorPaths [i] [0] = float.NaN;
 					vectorPaths [i] [1] = 1;
 				}
 			} else {
+				print ("Player está abaixo da char da AI");
 				//print (colliders [j].collider.bounds.center.x);
 				vectorPaths [i] [0] = colliders [j].collider.bounds.center.x;
 				vectorPaths [i] [1] = colliders [j].collider.bounds.center.y;
@@ -314,7 +316,23 @@ public class Global : MonoBehaviour {
 				j++;
 			}
 		}
-
+		/*if (!cima) {
+			int k = 0;
+			print (vectorPaths.Length);
+			while (k<vectorPaths.Length && (!float.IsNaN (vectorPaths [k] [0]) || k <= 3))
+				k++;
+			print (k);
+			if (k > 0){
+				k--;
+			print ("------Open Teste cima");
+			print (k);
+				print (vectorPaths [k] [1]);
+				vectorPaths [k] [1] += (Bot.transform.localScale.y * Bot.GetComponent<BoxCollider2D> ().size.y)*5f;
+				print (vectorPaths [k] [1]);
+			print ("------Exit Teste cima");
+			}
+			
+		}*/
 		/*if(Comment)
 			for (int i = 0; i < vectorPaths.Length; i++) {
 				print (i + " " + vectorPaths [i] [0] + " " + vectorPaths [i] [1] + " " + Bot.name);

@@ -23,7 +23,7 @@ public class JumpAction : PlayerAction
 		m_Grounded = playerScript.m_Grounded;
 		on_Ground = playerScript.on_Ground;
 		PlusJump = playerScript.PlusJump;
-		Debug.Log(m_Grounded + "," + on_Ground + "," + m_JumpForce + "," + PlusJump + ",");
+		//Debug.Log(m_Grounded + "," + on_Ground + "," + m_JumpForce + "," + PlusJump + ",");
 
 		if(playerScript.canMoveY){
 			if (m_Grounded && jump && defense) {//verifica se no chao,defesa e pulando (desativa trigger para cair)
