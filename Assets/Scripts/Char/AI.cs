@@ -74,11 +74,11 @@ public class AI : MonoBehaviour {
 		//print ("Bools" + boolX + boolY);
 
 		lastPlat = GetComponent<CharController>().m_lastPlat; 
-		if(target_GO != null) Debug.DrawLine (gameObject.transform.position,new Vector2(target [0],target [1]));
-		if(null != Path [0] && this.name == "Char2")//Debug
+		if(null != Path [0] && this.name == "Char2") 
+			Debug.DrawLine (gameObject.transform.position,new Vector2(Path[0][0],Path[0][1]));
+		if(null != Path [0] && this.name == "Char2")//Debug 
 			for (int i = 0; null != Path [i+1] && i<Path.Length-2; i++)
 				Debug.DrawLine (new Vector2(Path[i][0],Path[i][1]),new Vector2(Path[i+1][0],Path[i+1][1]));
-
 		if (!iniAI) {
 			if (Vector2.Distance (Global.target.transform.position, transform.position) < 2)
 				iniAI = true;
@@ -268,13 +268,12 @@ public class AI : MonoBehaviour {
 
 	void chooseYourPath(){
 		//if(Comment) print("Escolhendo destino");
-		target [0] = float.NaN;
-		target [1] = float.NaN;
+		//target [0] = float.NaN;
+		//target [1] = float.NaN;
 		if (Flying) {
 			target [0] = target_GO.transform.position.x;
 			target [1] = target_GO.transform.position.y - Boxsize.y;
 		} else if (difX > m_JumpDist / 8 || difY > m_JumpHeight / 5) {
-			
 			if (posiPath < 0)
 				posiPath = 0;
 			else if (posiPath > Path.Length)
@@ -296,10 +295,10 @@ public class AI : MonoBehaviour {
 				posiPath = -1;
 				//posiPath = -1;//em toda rodada é incremetado um para o valor ficar zero é preciso q valor esteja -1(começar da posição 0 do Path)
 				finded = true;
-			} else if ((posiPath >= Path.Length) || finded) {//O caminho chegou ao fim,mas o inimigo não foi encontrado então recalculo
+			} else if (true || (posiPath >= Path.Length) || finded) {//O caminho chegou ao fim,mas o inimigo não foi encontrado então recalculo
 				if (Comment)
 					print ("Recalculo para chegar em: " + target_GO.name);
-				//if(CountBFPath>=waitforPath){
+				if(CountBFPath>=waitforPath){
 				finded = false;
 				posiPath = -1;
 				boolX = false;
@@ -310,9 +309,9 @@ public class AI : MonoBehaviour {
 				CountBFPath = 0;
 
 				Path = GameObject.Find ("GM").GetComponent<Global> ().Pathfind (this.gameObject, pointAdap);
-				/*}else{
+				}else{
 					CountBFPath++;
-				}*/
+				}
 
 			} else if (posiPath < Path.Length - 1 && !float.IsNaN (Path [posiPath] [0])) {//ainda não chegou siga o caminho
 				//if(Comment) print ("Tentando se aproximar através do caminho");

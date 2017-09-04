@@ -18,7 +18,7 @@ public class Global : MonoBehaviour {
 	private GameObject Char1,Char2;
 	private CircleCollider2D tarCollider;
 	private float h,currentslow;
-	private bool defense, jump,atk1,atk2,sprint,bolean=true;
+	private bool defense, jump,atk1,atk2,sprint,bolean=false;
 	private Vector3 Ini = new Vector3(0,0,0), Fim = new Vector3(0,0,0);
 	//float[][] distan=new float[3][];
 	//public GameObject[] Char1_List = new GameObject[5];
@@ -146,7 +146,7 @@ public class Global : MonoBehaviour {
 			
 			if (Input.GetKey ("\\"))
 			if (Time.timeScale == 1.0)
-				Time.timeScale = 0.3f;
+				Time.timeScale = 0.1f;
 			else
 				Time.timeScale = 1.0f;
 			if (Time.timeScale == 0.3)
@@ -255,22 +255,22 @@ public class Global : MonoBehaviour {
 		}
 
 		bool cima = (Bot.transform.position.y<=Target.y);
-
-		float m_JumpHeight = Bot.GetComponent<CharController> ().m_JumpHeight/2;
+		//cima = false;
+		float m_JumpHeight = Bot.GetComponent<CharController> ().m_JumpHeight/2;///2;
 		//float m_JumpDist = Bot.GetComponent<CharController> ().m_MaxSpeed;
 		float[][] vectorPaths=new float[4][];
 		int j= 0;
 		float dif = 0;
 		RaycastHit2D[] colliders = Physics2D.LinecastAll(Bot.transform.position, Target, m_WhatIsPlat);
-
+		Debug.DrawLine (Bot.transform.position, Target);
 		for (int i = 0; i <= 3; i++) {
 			vectorPaths [i] = new float[2];
 			if(colliders.Length==0 || j>=colliders.Length){
+				if(Comment) print ("Passou Aqui ");
 				vectorPaths [i] [0] = float.NaN;
 				vectorPaths [i] [1] = 1;
-			}else
-			if (cima) {
-				print ("Player está acima da char da AI");
+			}else if (cima) {
+				//print ("Player está acima da char da AI");
 				int l = j;
 				for (; dif < m_JumpHeight; ++l) {//vai passar pelo for até encontrar a plataforma mais proxima das não possiveis de pular
 					if (l >= colliders.Length)
@@ -283,6 +283,7 @@ public class Global : MonoBehaviour {
 				j = l - 1;//l-- para pegar o index da mais distante das possiveis de pular
 					//|| j == colliders.Length
 				if (dif >= m_JumpHeight ) {
+					//print ("dif>=m_JumpHeight"+dif+"  -  "+m_JumpHeight);
 						//if(Comment) print (i + " " + j);
 					dif = 0;
 					if (j > 0)//se existe alguma plaforma pulavel então
@@ -294,15 +295,18 @@ public class Global : MonoBehaviour {
 					}
 					//Erased if (i != -1) { i não é alterado logo sempre true
 					vectorPaths [i] [0] = colliders [j].collider.bounds.center.x;
-
 					vectorPaths [i] [1] = colliders [j].collider.bounds.center.y;
 					j++;
 				} else {
+					/*print ("dif<m_JumpHeight"+dif+"  -  "+m_JumpHeight);
+					vectorPaths [i] [0] = colliders [j].collider.bounds.center.x;
+					vectorPaths [i] [1] = colliders [j].collider.bounds.center.y;
+					j++;;*/
 					vectorPaths [i] [0] = float.NaN;
 					vectorPaths [i] [1] = 1;
 				}
 			} else {
-				print ("Player está abaixo da char da AI");
+				//print ("Player está abaixo da char da AI");
 				//print (colliders [j].collider.bounds.center.x);
 				vectorPaths [i] [0] = colliders [j].collider.bounds.center.x;
 				vectorPaths [i] [1] = colliders [j].collider.bounds.center.y;

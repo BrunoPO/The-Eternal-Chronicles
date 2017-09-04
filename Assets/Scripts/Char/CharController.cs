@@ -245,7 +245,7 @@ public class CharController : MonoBehaviour{
 
 	public void Move(float move, bool defense, bool jump,int atk,bool sprint){//procedimento acessado externamente que altera o corpo de acordo com as vars
 		//print("Last Move"+lastMove);
-		if(Comment) print("Vars de movimento:"+move+","+defense+","+jump+","+atk+","+sprint);
+		//if(Comment) print("Vars de movimento:"+move+","+defense+","+jump+","+atk+","+sprint);
 		if (m_Anim.GetBool ("Death"))
 			return;
 		/*if (move != 0)

@@ -117,11 +117,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 19.35
+      value: 19.34
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 14.81
+      value: 13.08
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
       propertyPath: m_LocalPosition.z
@@ -203,6 +203,14 @@ Prefab:
         type: 2}
       propertyPath: Comment
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 9.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95d76ea12e1edce4dbb5babe50c3ad18, type: 2}
@@ -695,7 +703,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1094289458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.96, y: 14.12, z: -0.3}
+  m_LocalPosition: {x: 20.26, y: 12.75, z: -0.3}
   m_LocalScale: {x: 2.0033355, y: 0.70197964, z: 1}
   m_Children:
   - {fileID: 942840508}
@@ -712,11 +720,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 18.56
+      value: 18.869999
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 14.734209
+      value: 13.19
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
       propertyPath: m_LocalPosition.z
@@ -788,6 +796,14 @@ Prefab:
     - target: {fileID: 5000000, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
       propertyPath: m_GravityScale
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 4.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 832f1041cce264cbba82d6ec3d96ef16, type: 2}
@@ -906,7 +922,7 @@ MonoBehaviour:
   gravityScale:
   - 5
   - 3
-  Comment: 1
+  Comment: 0
   Char1_List: []
   Char2_List: []
   Graveyard_List: []
@@ -918,7 +934,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1768650119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.55, y: 10.97, z: 0}
+  m_LocalPosition: {x: 19.36, y: 12.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
